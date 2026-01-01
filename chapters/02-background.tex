@@ -1,0 +1,28 @@
+\chapter{Background}
+
+\section{DNS Research}
+Firstly, I think a bit of background about DNS helps to understand why it became waht it is today. DNS started 
+as ARPANET, which mapped names to addresses using a host file that was distributed
+to all entities whenever changes occurred. As it may seem, this system became rapidly unsustainable once there
+were over 100 networked entities, which led to DNS today.\cite{bind-9}
+
+In my research about DNS, I learned a lot about what happens behind the scenes with DNS Servers.
+Cloudflare called it, "DNS is like the phone book of the internet." \cite{cloudflare-dns} All network systems operate with network addresses, such as IPv4 and IPv6. 
+More or less, DNS translates domain names, like www.example.com, to IP addresses, like 127.0.0.1, so browsers can load internet resources.
+
+DNS naming system is organized as a tree structure made up of multiple levels and naturally creates a distributed system\cref{fig:dns}.
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/dns.png}
+  \caption{Test}
+  \label{fig:dns}
+\end{figure}
+
+
+
+
+\section{VM Research}
+
+I have never dealt directly with Virtual Machines before, and building a network of them was something I had never really thought about. However, the thought excited me 
+and it seemed like a great opportunity to learn a new skill.
