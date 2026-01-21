@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.15)  1 JAN 2026 12:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.15)  15 JAN 2026 11:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -834,15 +834,26 @@ Chapter 1.
 
 ]
 Chapter 2.
-<figures/dns.png, id=67, 437.2335pt x 233.07076pt>
+<figures/dns.png, id=78, 437.2335pt x 233.07076pt>
 File: figures/dns.png Graphic file (type png)
 <use figures/dns.png>
-Package pdftex.def Info: figures/dns.png  used on input line 17.
+Package pdftex.def Info: figures/dns.png  used on input line 21.
 (pdftex.def)             Requested size: 346.89732pt x 184.92049pt.
-) (chapters/03-methods.tex) (chapters/04-results.tex)
-(chapters/05-conclusion.tex) [2
+[2
 
-] [3 <./figures/dns.png>]
+]
+<figures/fqdn.png, id=87, 151.767pt x 28.30576pt>
+File: figures/fqdn.png Graphic file (type png)
+<use figures/fqdn.png>
+Package pdftex.def Info: figures/fqdn.png  used on input line 33.
+(pdftex.def)             Requested size: 346.89732pt x 64.70578pt.
+ [3 <./figures/dns.png> <./figures/fqdn.png>]
+LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 45.
+LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 45.
+) (chapters/03-methods.tex)
+(chapters/04-results.tex) (chapters/05-conclusion.tex) [4]
 (C:\Users\steve\OneDrive - James Madison University (Dukes)\Desktop\Independent
  Study\DNSSEC-Thesis\_build\main.bbl
 LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line
@@ -854,7 +865,7 @@ File: ot1ntxtt.fd 2012/04/20 v3.1
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
 (Font)              scaled to size 12.0pt on input line 5.
 )
-[4
+[5
 
 
 ] (appendices/appendices.tex)
@@ -865,14 +876,14 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D9F086276E971F22107263A9B8CCC242;874.
+(rerunfilecheck)             Checksum: C50C56AD16142828118C136B0DF751B8;1181.
  ) 
 Here is how much of TeX's memory you used:
- 16627 strings out of 467871
- 266908 string characters out of 5418375
+ 16649 strings out of 467871
+ 267292 string characters out of 5418375
  684241 words of memory out of 5000000
- 45221 multiletter control sequences out of 15000+600000
- 646922 words of font info for 77 fonts, out of 8000000 for 9000
+ 45237 multiletter control sequences out of 15000+600000
+ 649495 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,282b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txtt
@@ -880,10 +891,10 @@ Here is how much of TeX's memory you used:
 b.pfb><C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/zt
 mr.pfb>
 Output written on "C:\Users\steve\OneDrive - James Madison University (Dukes)\D
-esktop\Independent Study\DNSSEC-Thesis\_build\main.pdf" (7 pages, 181671 bytes)
+esktop\Independent Study\DNSSEC-Thesis\_build\main.pdf" (8 pages, 188879 bytes)
 .
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 500000)
- 70 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 134 PDF objects out of 1000 (max. 8388607)
+ 24 named destinations out of 1000 (max. 500000)
+ 91 words of extra memory for PDF output out of 10000 (max. 10000000)
 
