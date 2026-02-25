@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.15)  24 FEB 2026 20:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.15)  24 FEB 2026 21:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -880,7 +880,7 @@ l.77 \clearpage
 
 ] (chapters/01-intro.tex
 Chapter 1.
-) (chapters/02-background.tex [1
+) (chapters/02-dns.tex [1
 
 
 ]
@@ -893,7 +893,7 @@ Package pdftex.def Info: figures/dns.png  used on input line 22.
 [2
 
 ]
-<figures/fqdn.png, id=107, 151.767pt x 28.30576pt>
+<figures/fqdn.png, id=108, 151.767pt x 28.30576pt>
 File: figures/fqdn.png Graphic file (type png)
 <use figures/fqdn.png>
 Package pdftex.def Info: figures/fqdn.png  used on input line 34.
@@ -903,9 +903,9 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 45.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 45.
- [4] [5])
+ [4] [5] [6])
 (chapters/03-methods.tex) (chapters/04-results.tex) (chapters/05-conclusion.tex
-) [6]
+) [7]
 (C:\Users\steve\OneDrive - James Madison University (Dukes)\Desktop\Independent
  Study\DNSSEC-Thesis\_build\main.bbl
 LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line
@@ -917,282 +917,15 @@ File: ot1ntxtt.fd 2012/04/20 v3.1
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
 (Font)              scaled to size 12.0pt on input line 5.
 )
-[7
+[8
 
 
 ] (appendices/appendices.tex
 Appendix A.
-
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=154, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf  used on input line 6.
-
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=156, page=1, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 1>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page1 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 1>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page1 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[8
+) [9
 
 
 ]
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 1>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page1 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 1>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page1 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 1>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page1 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [9
-
- <./appendices/PROCEDURE_MANUAL.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=193, page=2, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 2>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page2 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 2>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page2 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 2>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page2 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[10
-
- <./appendices/PROCEDURE_MANUAL.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=200, page=3, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 3>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page3 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 3>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page3 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 3>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page3 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[11
-
- <./appendices/PROCEDURE_MANUAL.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=206, page=4, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 4>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page4 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 4>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page4 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 4>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page4 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[12
-
- <./appendices/PROCEDURE_MANUAL.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=214, page=5, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 5>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page5 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 5>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page5 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 5>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page5 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[13
-
- <./appendices/PROCEDURE_MANUAL.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=222, page=6, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 6>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page6 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 6>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page6 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 6>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page6 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[14
-
- <./appendices/PROCEDURE_MANUAL.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=230, page=7, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 7>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page7 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 7>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page7 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 7>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page7 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[15
-
- <./appendices/PROCEDURE_MANUAL.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=237, page=8, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 8>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page8 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 8>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page8 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 8>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page8 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[16
-
- <./appendices/PROCEDURE_MANUAL.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=246, page=9, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 9>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page9 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 9>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page9 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 9>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page9 used on input 
-line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[17
-
- <./appendices/PROCEDURE_MANUAL.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=253, page=10, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 10>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page10 used on input
- line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 10>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page10 used on input
- line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 10>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page10 used on input
- line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[18
-
- <./appendices/PROCEDURE_MANUAL.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=260, page=11, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 11>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page11 used on input
- line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 11>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page11 used on input
- line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 11>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page11 used on input
- line 6.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[19
-
- <./appendices/PROCEDURE_MANUAL.pdf>])
 (C:\Users\steve\OneDrive - James Madison University (Dukes)\Desktop\Independent
  Study\DNSSEC-Thesis\_build\main.aux)
  ***********
@@ -1200,25 +933,25 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E24E569A533EC4D3BDE81070558BAAA1;1579.
+(rerunfilecheck)             Checksum: FA9D8DE350C7308B0840EBC6B996CF82;1570.
  ) 
 Here is how much of TeX's memory you used:
- 17550 strings out of 467871
- 284427 string characters out of 5418375
+ 17498 strings out of 467871
+ 282319 string characters out of 5418375
  700244 words of memory out of 5000000
- 46092 multiletter control sequences out of 15000+600000
+ 46050 multiletter control sequences out of 15000+600000
  649495 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,17n,79p,313b,665s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,79p,306b,532s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txtt
 .pfb><C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztm
 b.pfb><C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/zt
 mr.pfb>
 Output written on "C:\Users\steve\OneDrive - James Madison University (Dukes)\D
-esktop\Independent Study\DNSSEC-Thesis\_build\main.pdf" (22 pages, 812849 bytes
+esktop\Independent Study\DNSSEC-Thesis\_build\main.pdf" (12 pages, 208434 bytes
 ).
 PDF statistics:
- 294 PDF objects out of 1000 (max. 8388607)
- 46 named destinations out of 1000 (max. 500000)
- 188 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 188 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 

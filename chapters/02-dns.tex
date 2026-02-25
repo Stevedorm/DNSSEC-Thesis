@@ -1,4 +1,4 @@
-\chapter{Background}
+\chapter{DNS Setup}
 
 \section{DNS Research}
 
@@ -9,30 +9,30 @@ were over 100 networked entities, which led to DNS today.\cite{bind-9}
 
 In my research about DNS, I learned a lot about what happens behind the scenes with DNS Servers.
 Cloudflare called it, "DNS is like the phone book of the internet." \cite{cloudflare-dns} All network systems operate with network addresses, such as IPv4 and IPv6. 
-More or less, DNS translates domain names, like www.example.com, to IP addresses, like 127.0.0.1, so browsers can load internet resources.
+More or less, DNS translates domain names, like www.example.com, to IP addresses, like 134.126.126.99 (jmu.edu), so browsers can load internet resources.
 
 DNS naming system is organized as a tree structure made up of multiple levels and naturally creates a distributed system.
 Each node in the tree is given a label which defines its Domain (its area or zone) of Authority. The topmost node in the tree is the Root Domain; 
 it delegates to Domains at the next level which are generically known as the Top-Level Domains (TLDs). They in turn delegate to Second-Level Domains (SLDs), 
 and so on. The Top-Level Domains (TLDs) include a special group of TLDs called the Country Code Top-Level Domains (ccTLDs), in which every 
-country is assigned a unique two-character country code. Below is a diagram demonstrating this hierarchy\cref{fig:dns}.\cite{bind-9}
+country is assigned a unique two-character country code. Below is a diagram demonstrating this hierarchy \cref{fig:dns}.\cite{bind-9}
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[width=0.8\textwidth]{figures/dns.png}
-  \caption{Test}
+  \caption{Root Delegation Hierarchy\cite{bind-9}}
   \label{fig:dns}
 \end{figure}
 
 A domain is the label of a node in the tree. A domain name uniquely identifies any node in the DNS tree and is written, left to right, by 
 combining all the domain labels (each of which are unique within their parent's zone or domain of authority), with a dot separating each component, 
 up to the root domain. In the above diagram the following are all domain names: example.com, b.com, ac.uk, us, and org. The root has a unique label of "." (dot), 
-which is normally omitted when it is written as a domain name, but when it is written as a Fully Qualified Domain Name (FQDN) the dot must be present. As seen in \cref{fig:fqdn}:\cite{bind-9}
+which is normally omitted when it is written as a domain name, but when it is written as a Fully Qualified Domain Name (FQDN) the dot must be present.\cite{bind-9} As seen in \cref{fig:fqdn}:
 
 \begin{figure}[htbp]
   \centering
   \fbox{\includegraphics[width=0.8\textwidth]{figures/fqdn.png}}
-  \caption{FDQN example, the dot on the far right making it FQDN}
+  \caption{FDQN example, the dot on the far right making it FQDN\cite{bind-9}}
   \label{fig:fqdn}
 \end{figure}
 
@@ -40,7 +40,12 @@ These root servers play a critical part of the DNS authoritative infrastructure.
 that could be packed into a 512-byte UDP message. This data limit is no longer an issue with all root servers supporting IPv4 and IPv6. In addition, almost 
 all the root servers use anycast, with well over 300 instances of the root servers now providing service worldwide. The root servers are the starting point for all name resolution within the DNS.\cite{bind-9}
 
-The bridge between the user and DNS servers is the DNS resolver or name resolution. 
+PLEASE CHECK
+\subsection{DNS In This Sense}
+There are numerous similarities between DNS with the internet and this testbed study. The bridge between the user and DNS servers is the DNS resolver or name resolution. In the project, the client digs at a server, and gets a response. This is a higher level abstraction, 
+as there are no websites mapped to the IPs on my DNS servers, just more local IPs which could be a website. There is also no official "." or root domain, but my "root" domain is lab., which is also my top level domain.
+In this setup, authority is held in the parent vm and passed downward onto the child server. In real DNS, a recursive resolver is used and traverses the different levels of domains. In this study, both the parent and the
+child server have authority over their own domains, and you can also traverse the tree to query the parent for information on the child server.
 
 \subsection{DNS Records}
   These DNS records are the most common records used in building a DNS server. These records are all in db files, which are database files used for each zone defined. For example, the zone ".lab" will have a db.lab file. You can name it whatever, 
@@ -73,6 +78,7 @@ pointing to the secondary server for the .jmu.lab domain.\cite{ns-records} See b
 % Pick of NS and A records maybe
 
 \subsection{DNS Vulnerabilities}
+  SHOULD THIS BE MOVED TO DNSSEC, I'M THINKING SO.
     DNS without DNSSEC is very insecure and vulnerable to a plethora of attacks.
 
 \subsubsection{DNS Spoofing/Cache Poisoning}
@@ -97,16 +103,24 @@ pointing to the secondary server for the .jmu.lab domain.\cite{ns-records} See b
 
 \section{VM Research}
 % Add this to background/abstract?
+ADD TO BACKGROUND SECTION?
+
+
 I have never dealt directly with Virtual Machines before, and building a network of them was something I had never really thought about. However, the thought excited me 
-and it seemed like a great opportunity to learn a new skill.
+and it seemed like a great opportunity to learn a new skill. Setting up the first one was a bit of a learning curve, but after setting up the first one to the specifications I wanted,
+I was able to clone the rest as needed.
 
-The software I used to set up the testbed network for my DNSSEC program was VMWare Workstation. This software made it very easy to set up the virtual machines and network.
-
-\subsection{Bind9}
-
-I installed Bind9 on all of the VMs in the Virtual Network.
+The software I used to set up the testbed network for my DNSSEC program was VMWare Workstation. This software made it very easy to set up the virtual machines and network. Having a built in option to create a virtual
+network was very nice. I was also able to connect to the internet and download the necessary tools I needed, like Bind9, VMWare Tools, Wireshark, gcc and more.
 
 \subsection{VM Network}
 
-On VM Workstation, it is very easy and simple to set up a Virtual Network. I made a custom network, isolated from the outside networks. The IP I used
-was 192.168.107.X, with a subnet mask of 255.255.255.0.
+On VM Workstation, it is very easy and simple to set up a Virtual Network. Under the "Edit" tab in the menu, I was able to create a new vmnet and customize it to my needs. I made a custom network, isolated from the outside networks. The IP I used
+was 192.168.107.X, with a subnet mask of 255.255.255.0. The 192.168 is an IP reserved for local networks, so this was perfect for me to to use. There was an option to enable or disable DHCP service. Enabling it meant that you could let DCHP assign 
+addresses to machines on the network. For me, I wanted to statically and manually assign IPs without and DHCP intervention, so I deselected this option.
+
+\section{Bind9}
+
+I installed Bind9 on all of the VMs in the Virtual Network. The version I installed was 9.18.39 (check). I decided on Bind9 because it was a good option to be used on Ubuntu machines and gave me the control I wanted.
+
+
