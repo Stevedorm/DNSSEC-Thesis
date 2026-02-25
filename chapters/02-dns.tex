@@ -40,12 +40,6 @@ These root servers play a critical part of the DNS authoritative infrastructure.
 that could be packed into a 512-byte UDP message. This data limit is no longer an issue with all root servers supporting IPv4 and IPv6. In addition, almost 
 all the root servers use anycast, with well over 300 instances of the root servers now providing service worldwide. The root servers are the starting point for all name resolution within the DNS.\cite{bind-9}
 
-PLEASE CHECK
-\subsection{DNS In This Sense}
-There are numerous similarities between DNS with the internet and this testbed study. The bridge between the user and DNS servers is the DNS resolver or name resolution. In the project, the client digs at a server, and gets a response. This is a higher level abstraction, 
-as there are no websites mapped to the IPs on my DNS servers, just more local IPs which could be a website. There is also no official "." or root domain, but my "root" domain is lab., which is also my top level domain.
-In this setup, authority is held in the parent vm and passed downward onto the child server. In real DNS, a recursive resolver is used and traverses the different levels of domains. In this study, both the parent and the
-child server have authority over their own domains, and you can also traverse the tree to query the parent for information on the child server.
 
 \subsection{DNS Records}
   These DNS records are the most common records used in building a DNS server. These records are all in db files, which are database files used for each zone defined. For example, the zone ".lab" will have a db.lab file. You can name it whatever, 
@@ -67,7 +61,6 @@ cane be seen below in \cref{fig:soa}.
   \label{fig:soa}
 \end{figure}
 
-% Add a pic of SOA record.
 
 \subsubsection{A Records}
   A records are address records, "A" for short. These are the records you get when a domain maps to an IP address of a given domain. This is the most fundamental type of DNS record.
@@ -90,7 +83,6 @@ Below, \cref{fig:a}, is an example of what these records look like.
   \label{fig:a}
 \end{figure}
 
-% Demostration pic
 
 \subsubsection{NS Records}
 \phantomsection
@@ -106,30 +98,21 @@ pointing to the secondary server for the .jmu.lab domain.\cite{ns-records} See b
   \label{fig:ns}
 \end{figure}
 
-% Pick of NS and A records maybe
 
-\subsection{DNS Vulnerabilities}
-  SHOULD THIS BE MOVED TO DNSSEC, I'M THINKING SO.
-    DNS without DNSSEC is very insecure and vulnerable to a plethora of attacks.
+PLEASE CHECK
+\subsection{DNS In This Sense}
+There are numerous similarities between DNS with the internet and this testbed study. The bridge between the user and DNS servers is the DNS resolver or name resolution. In the project, the client digs at a server, and gets a response. This is a higher level abstraction, 
+as there are no websites mapped to the IPs on my DNS servers, just more local IPs which could be a website. There is also no official "." or root domain, but my "root" domain is lab., which is also my top level domain.
+In this setup, authority is held in the parent vm and passed downward onto the child server. In real DNS, a recursive resolver is used and traverses the different levels of domains. In this study, both the parent and the
+child server have authority over their own domains, and you can also traverse the tree to query the parent for information on the child server, as seen below in \cref{fig:p-c}.
 
-\subsubsection{DNS Spoofing/Cache Poisoning}
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{figures/dns/dig_p_get_c.png}}
+  \caption{Querying the parent for information about the child, the querying the child with that information.}
+  \label{fig:p-c}
+\end{figure}
 
-
-\subsubsection{DNS Tunneling}
-  
-
-\subsubsection{DNS Hijacking}
-
-
-\subsubsection{NXDOMAIN Attack}
-
-% \subsubsection{Phantom Domain Attack}
-
-% \subsubsection{Random Subdomain Attack}
-
-% \subsubsection{Domain Lock-up Attack}
-
-% \subsubsection{Botnet-Based CPE Attack}
 
 
 \section{VM Research}

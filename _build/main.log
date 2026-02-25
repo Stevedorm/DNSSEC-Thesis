@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.15)  24 FEB 2026 22:50
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.15)  24 FEB 2026 23:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -885,7 +885,7 @@ Chapter 1.
 
 ]
 Chapter 2.
-<figures/dns/dns.png, id=103, 437.2335pt x 233.07076pt>
+<figures/dns/dns.png, id=113, 437.2335pt x 233.07076pt>
 File: figures/dns/dns.png Graphic file (type png)
 <use figures/dns/dns.png>
 Package pdftex.def Info: figures/dns/dns.png  used on input line 22.
@@ -893,7 +893,7 @@ Package pdftex.def Info: figures/dns/dns.png  used on input line 22.
 [2
 
 ]
-<figures/dns/fqdn.png, id=113, 151.767pt x 28.30576pt>
+<figures/dns/fqdn.png, id=123, 151.767pt x 28.30576pt>
 File: figures/dns/fqdn.png Graphic file (type png)
 <use figures/dns/fqdn.png>
 Package pdftex.def Info: figures/dns/fqdn.png  used on input line 34.
@@ -903,31 +903,40 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 44.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 44.
- [4]
-<figures/dns/soa_lab.png, id=132, 454.69875pt x 102.98476pt>
+<figures/dns/soa_lab.png, id=137, 454.69875pt x 102.98476pt>
 File: figures/dns/soa_lab.png Graphic file (type png)
 <use figures/dns/soa_lab.png>
-Package pdftex.def Info: figures/dns/soa_lab.png  used on input line 65.
+Package pdftex.def Info: figures/dns/soa_lab.png  used on input line 59.
 (pdftex.def)             Requested size: 346.89732pt x 78.56935pt.
-<figures/dns/a_dig.png, id=135, 611.886pt x 30.1125pt>
+ [4]
+<figures/dns/a_dig.png, id=148, 611.886pt x 30.1125pt>
 File: figures/dns/a_dig.png Graphic file (type png)
 <use figures/dns/a_dig.png>
-Package pdftex.def Info: figures/dns/a_dig.png  used on input line 79.
+Package pdftex.def Info: figures/dns/a_dig.png  used on input line 72.
 (pdftex.def)             Requested size: 346.89732pt x 17.07193pt.
-<figures/dns/a_record.png, id=137, 348.1005pt x 34.32825pt>
+<figures/dns/a_record.png, id=150, 348.1005pt x 34.32825pt>
 File: figures/dns/a_record.png Graphic file (type png)
 <use figures/dns/a_record.png>
-Package pdftex.def Info: figures/dns/a_record.png  used on input line 88.
+Package pdftex.def Info: figures/dns/a_record.png  used on input line 81.
 (pdftex.def)             Requested size: 346.89732pt x 34.20975pt.
- [5 <./figures/dns/soa_lab.png>]
-<figures/dns/ns_lab.png, id=149, 358.33875pt x 97.5645pt>
+ [5 <./figures/dns/soa_lab.png> <./figures/dns/a_dig.png> <./figures/dns/a_reco
+rd.png>]
+<figures/dns/ns_lab.png, id=162, 358.33875pt x 97.5645pt>
 File: figures/dns/ns_lab.png Graphic file (type png)
 <use figures/dns/ns_lab.png>
-Package pdftex.def Info: figures/dns/ns_lab.png  used on input line 104.
+Package pdftex.def Info: figures/dns/ns_lab.png  used on input line 96.
 (pdftex.def)             Requested size: 346.89732pt x 94.4558pt.
- [6 <./figures/dns/a_dig.png> <./figures/dns/a_record.png> <./figures/dns/ns_la
-b.png>] [7]) (chapters/03-dnssec.tex) (chapters/04-results.tex)
-(chapters/05-conclusion.tex) [8]
+<figures/dns/dig_p_get_c.png, id=164, 612.48825pt x 217.41225pt>
+File: figures/dns/dig_p_get_c.png Graphic file (type png)
+<use figures/dns/dig_p_get_c.png>
+Package pdftex.def Info: figures/dns/dig_p_get_c.png  used on input line 111.
+(pdftex.def)             Requested size: 346.89732pt x 123.14001pt.
+ [6 <./figures/dns/ns_lab.png>] [7 <./figures/dns/dig_p_get_c.png>])
+(chapters/03-dnssec.tex [8]
+Chapter 3.
+) (chapters/04-results.tex) (chapters/05-conclusion.tex) [9
+
+]
 (C:\Users\steve\OneDrive - James Madison University (Dukes)\Desktop\Independent
  Study\DNSSEC-Thesis\_build\main.bbl
 LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line
@@ -939,12 +948,12 @@ File: ot1ntxtt.fd 2012/04/20 v3.1
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
 (Font)              scaled to size 12.0pt on input line 5.
 )
-[9
+[10
 
 
 ] (appendices/appendices.tex
 Appendix A.
-) [10
+) [11
 
 
 ]
@@ -955,25 +964,25 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EACD47E337785511F911EBECB402680C;1726.
+(rerunfilecheck)             Checksum: BBFD803111236565227049EB1E48C093;1966.
  ) 
 Here is how much of TeX's memory you used:
- 17541 strings out of 467871
- 283360 string characters out of 5418375
+ 17556 strings out of 467871
+ 283681 string characters out of 5418375
  701244 words of memory out of 5000000
- 46087 multiletter control sequences out of 15000+600000
+ 46098 multiletter control sequences out of 15000+600000
  649495 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,327b,532s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,11n,79p,327b,532s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txtt
 .pfb><C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztm
 b.pfb><C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/zt
 mr.pfb>
 Output written on "C:\Users\steve\OneDrive - James Madison University (Dukes)\D
-esktop\Independent Study\DNSSEC-Thesis\_build\main.pdf" (13 pages, 405442 bytes
+esktop\Independent Study\DNSSEC-Thesis\_build\main.pdf" (14 pages, 588699 bytes
 ).
 PDF statistics:
- 216 PDF objects out of 1000 (max. 8388607)
- 42 named destinations out of 1000 (max. 500000)
- 151 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 235 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 172 words of extra memory for PDF output out of 10000 (max. 10000000)
 
