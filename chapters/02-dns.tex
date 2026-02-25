@@ -19,7 +19,7 @@ country is assigned a unique two-character country code. Below is a diagram demo
 
 \begin{figure}[htbp]
   \centering
-  \includegraphics[width=0.8\textwidth]{figures/dns.png}
+  \includegraphics[width=0.8\textwidth]{figures/dns/dns.png}
   \caption{Root Delegation Hierarchy\cite{bind-9}}
   \label{fig:dns}
 \end{figure}
@@ -31,7 +31,7 @@ which is normally omitted when it is written as a domain name, but when it is wr
 
 \begin{figure}[htbp]
   \centering
-  \fbox{\includegraphics[width=0.8\textwidth]{figures/fqdn.png}}
+  \fbox{\includegraphics[width=0.8\textwidth]{figures/dns/fqdn.png}}
   \caption{FDQN example, the dot on the far right making it FQDN\cite{bind-9}}
   \label{fig:fqdn}
 \end{figure}
@@ -57,14 +57,38 @@ for the zone. Like a .com, or for this study, .jmu and .lab. These are typically
 For this project, I have root.jmu or root.lab for the root having responsibility. The next record is the serial number,
 which Bind uses to load different serial versions of the zone. This record has the space to be an unsigned 32 bit number. It should be updated every time there is a change to the db file. Some developers like to use the date it was edited on to help 
 keep track of when it was last edited. Next, the refresh record is a 32 bit time interval before the zone should be refreshed. The next record is the retry record, whish is another 32 bit time interval that would run out before a failed refresh should
-give up. Lastly, the expire record defines another 32 bit time value that gives an upper bound on the time interval that can run before the zone is no longer authoritative. Below is an example of an SOA record for BLANK zone.\cite{rfc1035}
+give up. Lastly, the expire record defines another 32 bit time value that gives an upper bound on the time interval that can run before the zone is no longer authoritative. Below is an example of an SOA record for BLANK zone.\cite{rfc1035} An example
+cane be seen below in \cref{fig:soa}.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{figures/dns/soa_lab.png}}
+  \caption{An example of the SOA record in the parent servers db.lab, representing the start of authority for the zone.}
+  \label{fig:soa}
+\end{figure}
 
 % Add a pic of SOA record.
 
 \subsubsection{A Records}
   A records are address records, "A" for short. These are the records you get when a domain maps to an IP address of a given domain. This is the most fundamental type of DNS record.
 There are also "AAAA" records, which are for IPv6 traffic, but for this study we will only focus on IPv4 IPs. These records enable a user's device to connect with and load a website, 
-or whatever is at the IP address.\cite{a-records} As seen below when querying for an ip at one of my DNS Servers, I am returned with the IP address of that record.
+or whatever is at the IP address.\cite{a-records} As seen below, in \cref{fig:a_dig}, when querying for an ip at one of my DNS Servers, I am returned with the IP address of that record.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{figures/dns/a_dig.png}}
+  \caption{An example of digging for an A record, the short flag used to only give me the ip.}
+  \label{fig:a_dig}
+\end{figure}
+
+Below, \cref{fig:a}, is an example of what these records look like.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{figures/dns/a_record.png}}
+  \caption{An example of A records in the parent servers db.lab, computer.lab and bc.lab}
+  \label{fig:a}
+\end{figure}
 
 % Demostration pic
 
@@ -74,6 +98,13 @@ or whatever is at the IP address.\cite{a-records} As seen below when querying fo
   NS records stand for "Nameserver" records, and indicate which DNS server is authoritative for that domain. Like in the SOA, ns1.lab shows which server is authoritative for the .lab domain.
 Domains can have multiple NS records, like .lab has, which indicate primary and secondary nameservers for domains. For instance, in db.lab, there are multiple NS records, one pointing the the server itself and another 
 pointing to the secondary server for the .jmu.lab domain.\cite{ns-records} See below for an example.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{figures/dns/ns_lab.png}}
+  \caption{An example of NS records in the parent servers db.lab}
+  \label{fig:ns}
+\end{figure}
 
 % Pick of NS and A records maybe
 
