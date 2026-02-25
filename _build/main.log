@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.15)  15 JAN 2026 11:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.15)  24 FEB 2026 20:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -412,7 +412,43 @@ Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
 \TX@cols=\count318
 \TX@ftn=\toks31
 )
-(C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
+(C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2025/07/23 v0.6g Insert pages of external PDF documents (AM)
+
+(C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count319
+\calc@Bcount=\count320
+\calc@Adimen=\dimen259
+\calc@Bdimen=\dimen260
+\calc@Askip=\skip60
+\calc@Bskip=\skip61
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count321
+\calc@Cskip=\skip62
+)
+(C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
+\ESO@tempdima=\dimen261
+\ESO@tempdimb=\dimen262
+)
+\AM@pagewidth=\dimen263
+\AM@pageheight=\dimen264
+\AM@fboxrule=\dimen265
+
+(C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count322
+\AM@pagebox=\box62
+\AM@global@opts=\toks32
+\AM@pagecnt=\count323
+\AM@toc@title=\toks33
+\AM@lof@heading=\toks34
+\c@AM@survey=\count324
+\AM@templatesizebox=\box63
+) (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
 
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
@@ -458,16 +494,16 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count319
+\c@section@level=\count325
 )
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\stringenc.s
 ty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
 )
 )
-\@linkdim=\dimen259
-\Hy@linkcounter=\count320
-\Hy@pagecounter=\count321
+\@linkdim=\dimen266
+\Hy@linkcounter=\count326
+\Hy@pagecounter=\count327
  (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -475,12 +511,13 @@ Now handling font encoding PD1 ...
 ) (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count322
+\Hy@SavedSpaceFactor=\count328
  (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
+Package hyperref Info: Option `colorlinks' set `true' on input line 4066.
 Package hyperref Info: Hyper figures OFF on input line 4195.
 Package hyperref Info: Link nesting OFF on input line 4200.
 Package hyperref Info: Hyper index ON on input line 4203.
@@ -488,14 +525,14 @@ Package hyperref Info: Plain pages OFF on input line 4210.
 Package hyperref Info: Backreferencing OFF on input line 4215.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count323
+\c@Hy@tempcnt=\count329
 
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen260
+\XeTeXLinkMargin=\dimen267
 
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
@@ -505,26 +542,26 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count324
-\Field@Width=\dimen261
-\Fld@charsize=\dimen262
+\Fld@menulength=\count330
+\Field@Width=\dimen268
+\Fld@charsize=\dimen269
 Package hyperref Info: Hyper figures OFF on input line 6078.
 Package hyperref Info: Link nesting OFF on input line 6083.
 Package hyperref Info: Hyper index ON on input line 6086.
 Package hyperref Info: backreferencing OFF on input line 6093.
-Package hyperref Info: Link coloring OFF on input line 6098.
+Package hyperref Info: Link coloring ON on input line 6096.
 Package hyperref Info: Link coloring with OCG OFF on input line 6103.
 Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count325
-\c@Item=\count326
-\c@Hfootnote=\count327
+\Hy@abspage=\count331
+\c@Item=\count332
+\c@Hfootnote=\count333
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hpdftex.def
 File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
-\Fld@listcount=\count328
-\c@bookmark@seq@number=\count329
+\Fld@listcount=\count334
+\c@bookmark@seq@number=\count335
 
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\rerunfil
 echeck.sty
@@ -537,7 +574,7 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 84.
 )
-\Hy@SectionHShift=\skip60
+\Hy@SectionHShift=\skip63
 )
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/cleveref\cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
@@ -562,93 +599,93 @@ Package cleveref Info: no abbreviation of names on input line 7852.
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 
-\f@nch@headwidth=\skip61
-\f@nch@offset@elh=\skip62
-\f@nch@offset@erh=\skip63
-\f@nch@offset@olh=\skip64
-\f@nch@offset@orh=\skip65
-\f@nch@offset@elf=\skip66
-\f@nch@offset@erf=\skip67
-\f@nch@offset@olf=\skip68
-\f@nch@offset@orf=\skip69
-\f@nch@height=\skip70
-\f@nch@footalignment=\skip71
-\f@nch@widthL=\skip72
-\f@nch@widthC=\skip73
-\f@nch@widthR=\skip74
-\@temptokenb=\toks32
+\f@nch@headwidth=\skip64
+\f@nch@offset@elh=\skip65
+\f@nch@offset@erh=\skip66
+\f@nch@offset@olh=\skip67
+\f@nch@offset@orh=\skip68
+\f@nch@offset@elf=\skip69
+\f@nch@offset@erf=\skip70
+\f@nch@offset@olf=\skip71
+\f@nch@offset@orf=\skip72
+\f@nch@height=\skip73
+\f@nch@footalignment=\skip74
+\f@nch@widthL=\skip75
+\f@nch@widthC=\skip76
+\f@nch@widthR=\skip77
+\@temptokenb=\toks35
 )
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box62
-\beforetitleunit=\skip75
-\aftertitleunit=\skip76
-\ttl@plus=\dimen263
-\ttl@minus=\dimen264
-\ttl@toksa=\toks33
-\titlewidth=\dimen265
-\titlewidthlast=\dimen266
-\titlewidthfirst=\dimen267
+\ttl@box=\box64
+\beforetitleunit=\skip78
+\aftertitleunit=\skip79
+\ttl@plus=\dimen270
+\ttl@minus=\dimen271
+\ttl@toksa=\toks36
+\titlewidth=\dimen272
+\titlewidthlast=\dimen273
+\titlewidthfirst=\dimen274
 )
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 55.
+e 64.
 
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 55.
+(Font)              scaled to size 12.0pt on input line 64.
 
 (C:\Users\steve\OneDrive - James Madison University (Dukes)\Desktop\Independent
  Study\DNSSEC-Thesis\_build\main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 55.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 64.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 55.
+ 64.
 
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 64.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-55.
+64.
 
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 64.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 55.
+ 64.
 
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 55.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 64.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 55.
+e 64.
 
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 55.
-LaTeX Font Info:    ... okay on input line 55.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 64.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -688,17 +725,17 @@ LaTeX Font Info:    ... okay on input line 55.
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count330
-\scratchdimen=\dimen268
-\scratchbox=\box63
-\nofMPsegments=\count331
-\nofMParguments=\count332
-\everyMPshowfont=\toks34
-\MPscratchCnt=\count333
-\MPscratchDim=\dimen269
-\MPnumerator=\count334
-\makeMPintoPDFobject=\count335
-\everyMPtoPDFconversion=\toks35
+\scratchcounter=\count336
+\scratchdimen=\dimen275
+\scratchbox=\box65
+\nofMPsegments=\count337
+\nofMParguments=\count338
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count339
+\MPscratchDim=\dimen276
+\MPnumerator=\count340
+\makeMPintoPDFobject=\count341
+\everyMPtoPDFconversion=\toks38
 )
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -710,11 +747,25 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 fg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@mv@tabular=\count336
-\c@mv@boldtabular=\count337
-LaTeX Info: Command `\dddot' is already robust on input line 55.
-LaTeX Info: Command `\ddddot' is already robust on input line 55.
-Package hyperref Info: Link coloring OFF on input line 55.
+\c@mv@tabular=\count342
+\c@mv@boldtabular=\count343
+LaTeX Info: Command `\dddot' is already robust on input line 64.
+LaTeX Info: Command `\ddddot' is already robust on input line 64.
+
+(C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape-nom
+etadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+
+(C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+Package hyperref Info: Link coloring ON on input line 64.
 
 (C:\Users\steve\OneDrive - James Madison University (Dukes)\Desktop\Independent
  Study\DNSSEC-Thesis\_build\main.out)
@@ -734,7 +785,7 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 e/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}])
 (frontmatter/acknowledgements.tex)
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 67.
+(Font)              scaled to size 12.0pt on input line 76.
 
 (C:\Users\steve\OneDrive - James Madison University (Dukes)\Desktop\Independent
  Study\DNSSEC-Thesis\_build\main.toc
@@ -819,7 +870,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.68 \clearpage
+l.77 \clearpage
                 [1
 
 
@@ -834,26 +885,27 @@ Chapter 1.
 
 ]
 Chapter 2.
-<figures/dns.png, id=78, 437.2335pt x 233.07076pt>
+<figures/dns.png, id=98, 437.2335pt x 233.07076pt>
 File: figures/dns.png Graphic file (type png)
 <use figures/dns.png>
-Package pdftex.def Info: figures/dns.png  used on input line 21.
+Package pdftex.def Info: figures/dns.png  used on input line 22.
 (pdftex.def)             Requested size: 346.89732pt x 184.92049pt.
 [2
 
 ]
-<figures/fqdn.png, id=87, 151.767pt x 28.30576pt>
+<figures/fqdn.png, id=107, 151.767pt x 28.30576pt>
 File: figures/fqdn.png Graphic file (type png)
 <use figures/fqdn.png>
-Package pdftex.def Info: figures/fqdn.png  used on input line 33.
+Package pdftex.def Info: figures/fqdn.png  used on input line 34.
 (pdftex.def)             Requested size: 346.89732pt x 64.70578pt.
  [3 <./figures/dns.png> <./figures/fqdn.png>]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 (Font)              scaled to size 14.4pt on input line 45.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 45.
-) (chapters/03-methods.tex)
-(chapters/04-results.tex) (chapters/05-conclusion.tex) [4]
+ [4] [5])
+(chapters/03-methods.tex) (chapters/04-results.tex) (chapters/05-conclusion.tex
+) [6]
 (C:\Users\steve\OneDrive - James Madison University (Dukes)\Desktop\Independent
  Study\DNSSEC-Thesis\_build\main.bbl
 LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line
@@ -865,10 +917,282 @@ File: ot1ntxtt.fd 2012/04/20 v3.1
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
 (Font)              scaled to size 12.0pt on input line 5.
 )
-[5
+[7
 
 
-] (appendices/appendices.tex)
+] (appendices/appendices.tex
+Appendix A.
+
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=154, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf  used on input line 6.
+
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=156, page=1, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 1>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page1 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 1>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page1 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[8
+
+
+]
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 1>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page1 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 1>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page1 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 1>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page1 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+ [9
+
+ <./appendices/PROCEDURE_MANUAL.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=193, page=2, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 2>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page2 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 2>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page2 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 2>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page2 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[10
+
+ <./appendices/PROCEDURE_MANUAL.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=200, page=3, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 3>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page3 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 3>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page3 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 3>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page3 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[11
+
+ <./appendices/PROCEDURE_MANUAL.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=206, page=4, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 4>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page4 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 4>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page4 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 4>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page4 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[12
+
+ <./appendices/PROCEDURE_MANUAL.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=214, page=5, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 5>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page5 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 5>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page5 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 5>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page5 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[13
+
+ <./appendices/PROCEDURE_MANUAL.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=222, page=6, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 6>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page6 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 6>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page6 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 6>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page6 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[14
+
+ <./appendices/PROCEDURE_MANUAL.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=230, page=7, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 7>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page7 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 7>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page7 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 7>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page7 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[15
+
+ <./appendices/PROCEDURE_MANUAL.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=237, page=8, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 8>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page8 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 8>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page8 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 8>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page8 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[16
+
+ <./appendices/PROCEDURE_MANUAL.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=246, page=9, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 9>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page9 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 9>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page9 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 9>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page9 used on input 
+line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[17
+
+ <./appendices/PROCEDURE_MANUAL.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=253, page=10, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 10>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page10 used on input
+ line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 10>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page10 used on input
+ line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 10>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page10 used on input
+ line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[18
+
+ <./appendices/PROCEDURE_MANUAL.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=260, page=11, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 11>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page11 used on input
+ line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 11>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page11 used on input
+ line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 11>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page11 used on input
+ line 6.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[19
+
+ <./appendices/PROCEDURE_MANUAL.pdf>])
 (C:\Users\steve\OneDrive - James Madison University (Dukes)\Desktop\Independent
  Study\DNSSEC-Thesis\_build\main.aux)
  ***********
@@ -876,25 +1200,25 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C50C56AD16142828118C136B0DF751B8;1181.
+(rerunfilecheck)             Checksum: E24E569A533EC4D3BDE81070558BAAA1;1579.
  ) 
 Here is how much of TeX's memory you used:
- 16649 strings out of 467871
- 267292 string characters out of 5418375
- 684241 words of memory out of 5000000
- 45237 multiletter control sequences out of 15000+600000
+ 17550 strings out of 467871
+ 284427 string characters out of 5418375
+ 700244 words of memory out of 5000000
+ 46092 multiletter control sequences out of 15000+600000
  649495 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,79p,282b,524s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,17n,79p,313b,665s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txtt
 .pfb><C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztm
 b.pfb><C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/zt
 mr.pfb>
 Output written on "C:\Users\steve\OneDrive - James Madison University (Dukes)\D
-esktop\Independent Study\DNSSEC-Thesis\_build\main.pdf" (8 pages, 188879 bytes)
-.
+esktop\Independent Study\DNSSEC-Thesis\_build\main.pdf" (22 pages, 812849 bytes
+).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 24 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 294 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 188 words of extra memory for PDF output out of 10000 (max. 10000000)
 

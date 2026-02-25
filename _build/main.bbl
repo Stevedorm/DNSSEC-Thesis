@@ -11,4 +11,21 @@
   2023.
 \newblock Accessed: 2026-1-1.
 
+\bibitem{rfc1035}
+{P. Mockapetris}, ``Domain names - implementation and specification.''
+  \url{https://www.rfc-editor.org/rfc/rfc1035}, 1987.
+\newblock Accessed: 2026-1-1.
+
+\bibitem{a-records}
+{Cloudflare Learning}, ``Dns a record.''
+  \url{https://www.cloudflare.com/learning/dns/dns-records/dns-a-record/},
+  2025.
+\newblock Accessed: 2025-1-20.
+
+\bibitem{ns-records}
+{Cloudflare Learning}, ``Dns ns record.''
+  \url{https://www.cloudflare.com/learning/dns/dns-records/dns-ns-record/},
+  2025.
+\newblock Accessed: 2025-1-20.
+
 \end{thebibliography}

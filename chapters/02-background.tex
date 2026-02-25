@@ -1,6 +1,7 @@
 \chapter{Background}
 
 \section{DNS Research}
+
 Firstly, I think a bit of background about DNS helps to understand why it became what it is today. DNS started 
 as ARPANET, which mapped names to addresses using a host file that was distributed
 to all entities whenever changes occurred. As it may seem, this system became rapidly unsustainable once there
@@ -35,21 +36,77 @@ which is normally omitted when it is written as a domain name, but when it is wr
   \label{fig:fqdn}
 \end{figure}
 
-With this,
-
 These root servers play a critical part of the DNS authoritative infrastructure. There are 13 root servers, which is historically tied with IPv4 data
 that could be packed into a 512-byte UDP message. This data limit is no longer an issue with all root servers supporting IPv4 and IPv6. In addition, almost 
 all the root servers use anycast, with well over 300 instances of the root servers now providing service worldwide. The root servers are the starting point for all name resolution within the DNS.\cite{bind-9}
 
-The bridge between the user and DNS servers is the DNS resolver or name resolution.
-% Section about setting up a DNS server?
-\subsection{DNS Server Setup}
+The bridge between the user and DNS servers is the DNS resolver or name resolution. 
+
+\subsection{DNS Records}
+  These DNS records are the most common records used in building a DNS server. These records are all in db files, which are database files used for each zone defined. For example, the zone ".lab" will have a db.lab file. You can name it whatever, 
+as long as it aligns with the named.conf.local zone path defined for the zone. It is best practice to have the domain name as the db files extension. For both the A and NS records, their line begins with an @ symbol.
+
+\subsubsection{SOA Records}
+  SOA records, or "Start Of Authority" records, show the domain name that the specific db file has authority over. There are several sub records within. The MNAME is the domain name of the name server of the original or primary source of data
+for the zone. Like a .com, or for this study, .jmu and .lab. These are typically preceded with an ns1, which will come into play later with \hyperref[subsubsec:ns]{NS Records} later. The next record is a RNAME, which is the Responsible Person record. 
+For this project, I have root.jmu or root.lab for the root having responsibility. The next record is the serial number,
+which Bind uses to load different serial versions of the zone. This record has the space to be an unsigned 32 bit number. It should be updated every time there is a change to the db file. Some developers like to use the date it was edited on to help 
+keep track of when it was last edited. Next, the refresh record is a 32 bit time interval before the zone should be refreshed. The next record is the retry record, whish is another 32 bit time interval that would run out before a failed refresh should
+give up. Lastly, the expire record defines another 32 bit time value that gives an upper bound on the time interval that can run before the zone is no longer authoritative. Below is an example of an SOA record for BLANK zone.\cite{rfc1035}
+
+% Add a pic of SOA record.
+
+\subsubsection{A Records}
+  A records are address records, "A" for short. These are the records you get when a domain maps to an IP address of a given domain. This is the most fundamental type of DNS record.
+There are also "AAAA" records, which are for IPv6 traffic, but for this study we will only focus on IPv4 IPs. These records enable a user's device to connect with and load a website, 
+or whatever is at the IP address.\cite{a-records} As seen below when querying for an ip at one of my DNS Servers, I am returned with the IP address of that record.
+
+% Demostration pic
+
+\subsubsection{NS Records}
+\phantomsection
+\label{subsubsec:ns}
+  NS records stand for "Nameserver" records, and indicate which DNS server is authoritative for that domain. Like in the SOA, ns1.lab shows which server is authoritative for the .lab domain.
+Domains can have multiple NS records, like .lab has, which indicate primary and secondary nameservers for domains. For instance, in db.lab, there are multiple NS records, one pointing the the server itself and another 
+pointing to the secondary server for the .jmu.lab domain.\cite{ns-records} See below for an example.
+
+% Pick of NS and A records maybe
 
 \subsection{DNS Vulnerabilities}
+    DNS without DNSSEC is very insecure and vulnerable to a plethora of attacks.
+
+\subsubsection{DNS Spoofing/Cache Poisoning}
+
+
+\subsubsection{DNS Tunneling}
+  
+
+\subsubsection{DNS Hijacking}
+
+
+\subsubsection{NXDOMAIN Attack}
+
+% \subsubsection{Phantom Domain Attack}
+
+% \subsubsection{Random Subdomain Attack}
+
+% \subsubsection{Domain Lock-up Attack}
+
+% \subsubsection{Botnet-Based CPE Attack}
+
 
 \section{VM Research}
 % Add this to background/abstract?
 I have never dealt directly with Virtual Machines before, and building a network of them was something I had never really thought about. However, the thought excited me 
 and it seemed like a great opportunity to learn a new skill.
 
-The software I used to set up the testbed network for my DNSSEC program was VMWare,
+The software I used to set up the testbed network for my DNSSEC program was VMWare Workstation. This software made it very easy to set up the virtual machines and network.
+
+\subsection{Bind9}
+
+I installed Bind9 on all of the VMs in the Virtual Network.
+
+\subsection{VM Network}
+
+On VM Workstation, it is very easy and simple to set up a Virtual Network. I made a custom network, isolated from the outside networks. The IP I used
+was 192.168.107.X, with a subnet mask of 255.255.255.0.
