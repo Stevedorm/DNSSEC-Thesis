@@ -9,11 +9,11 @@ Requirements:
 - TeX Live (recommended) or MiKTeX
 - latexmk
 
-Clean:
+Clean - run this command before building to ensure new content is added:
 ```bash
 ./scripts/clean.sh
 ```
-Build:
+Build - make the pdf from the latex files:
 ```bash
 ./scripts/build.sh
 ```
