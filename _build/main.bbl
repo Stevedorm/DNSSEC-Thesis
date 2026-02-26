@@ -20,12 +20,17 @@
 {Cloudflare Learning}, ``Dns a record.''
   \url{https://www.cloudflare.com/learning/dns/dns-records/dns-a-record/},
   2025.
-\newblock Accessed: 2025-1-20.
+\newblock Accessed: 2026-1-20.
 
 \bibitem{ns-records}
 {Cloudflare Learning}, ``Dns ns record.''
   \url{https://www.cloudflare.com/learning/dns/dns-records/dns-ns-record/},
   2025.
-\newblock Accessed: 2025-1-20.
+\newblock Accessed: 2026-1-20.
+
+\bibitem{cache-poisoning}
+{Cloudflare Learning}, ``What is dns cache poisoning? | dns spoofing.''
+  \url{https://www.cloudflare.com/learning/dns/dns-cache-poisoning/}, 2025.
+\newblock Accessed: 2026-2-22.
 
 \end{thebibliography}
