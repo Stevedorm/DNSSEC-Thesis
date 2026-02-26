@@ -9,6 +9,10 @@ Requirements:
 - TeX Live (recommended) or MiKTeX
 - latexmk
 
+Clean:
+```bash
+./scripts/clean.sh
+
 Build:
 ```bash
 ./scripts/build.sh
