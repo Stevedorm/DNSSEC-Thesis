@@ -3,8 +3,9 @@
 \section{Motivation}
     DNS by itself is insecure and vulnerable to attack. With DNSSEC, these vulnerabilities are contained and mitigated.
 
-Test below
-Why DNSSEC matters...\cite{cloudflare-dns}
+    My personal motivation for this study was a hand on security project, proctored by Dr. Aboutabl, who has become one of my personal favorite
+professors here at JMU. His Information Security class helped further my interest for security, and when he mentions this study, I knew I had to seize the opportunity.
+
 
 \section{Problem Statement}
 % DNS by itself is insecure and vulnerable to attack. With DNSSEC, these vulnerabilites are contained and mitigated.
@@ -20,13 +21,14 @@ and it seemed like a great opportunity to learn a new skill. Setting up the firs
 I was able to clone the rest as needed.
 
 The software I used to set up the testbed network for my DNSSEC program was VMWare Workstation. This software made it very easy to set up the virtual machines and network. Having a built in option to create a virtual
-network was very nice. I was also able to connect to the internet and download the necessary tools I needed, like Bind9, VMWare Tools, Wireshark, gcc and more.
+network was very nice. I was also able to connect to the internet and download the necessary tools I needed, like Bind9, VMWare Tools, Wireshark, gcc and more. % Check if openssl library is installed, git/github to pull code from code base.
+I also chose to use git for version control and being able to edit the code on multiple devices if needed.
 
 \section{VM Network}
 
 On VM Workstation, it is very easy and simple to set up a Virtual Network. Under the "Edit" tab in the menu, I was able to create a new vmnet and customize it to my needs. I made a custom network, isolated from the outside networks. The IP I used
 was 192.168.107.X, with a subnet mask of 255.255.255.0. The 192.168 is an IP reserved for local networks, so this was perfect for me to to use. There was an option to enable or disable DHCP service. Enabling it meant that you could let DCHP assign 
-addresses to machines on the network. For me, I wanted to statically and manually assign IPs without and DHCP intervention, so I deselected this option.
+addresses to machines on the network. For me, I wanted to statically and manually assign IPs without and DHCP intervention, so I deselected this option to have more control in my environment.
 
 \section{Bind9}
 

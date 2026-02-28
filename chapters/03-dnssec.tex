@@ -3,14 +3,29 @@
 \section{DNSSEC Research}
 
 \subsection{New DNS Records}
-    With the regular DNS records previously discussed, there are some new records we must take into account. 
+    With the regular DNS records previously discussed, there are some new records that must be taken into account. 
+
+\subsubsection{Resource Record Signature}
+
+The Resource Record Signature, or RRSIG record, is used to verify the answers that are received.
 
 \subsubsection{Zone Signing Key}
 
+The Zone Signing Key, or "ZSK" for short, is the key that is used to sign data from a zone. It signs all records except for RRset that are related to keys. 
+The ZSK has the 256 flag, indicating that it is the ZSK.
+
+The keys follow a public key encryption scheme, with the zone keeping the private key and the 
+
+
 \subsubsection{Key Signing Key}
+
+The Key Signing Key, or "KSK", is used to sign what the ZSK does not sign: key-related RRsets. This keys serves another purpose, as it is the bridge between 
+a parent and a child zone. The flag for the KSK is 257, indicating .
 
 \subsubsection{Delegation Signer}
 
-\subsubsection{Resource Record Signature}
+The Delegation Signer Record, or DS record, is used to
+
+\subsection{Chain Of Trust}
 
 \subsection{DNSSEC Options}
