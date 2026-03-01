@@ -16,11 +16,9 @@ More or less, DNS translates domain names, like www.example.com, to IP addresses
 
 % Reword below
 
-DNS naming system is organized as a tree structure made up of multiple levels and naturally creates a distributed system.
-Each node in the tree is given a label which defines its Domain (its area or zone) of Authority. The topmost node in the tree is the Root Domain; 
-it delegates to Domains at the next level which are generically known as the Top-Level Domains (TLDs). They in turn delegate to Second-Level Domains (SLDs), 
-and so on. The Top-Level Domains (TLDs) include a special group of TLDs called the Country Code Top-Level Domains (ccTLDs), in which every 
-country is assigned a unique two-character country code. Below is a diagram demonstrating this hierarchy \cref{fig:dns}.\cite{bind-9}
+The DNS naming structure is organized hierarchically in a tree-like format. Starting at the root of the tree, there is the Root Domain, which is where real world
+DNS begins. It delegates authority to the Top-Level Domains, or TLDs, which delegate further to Second-Level Domains, or SLDs, and continue onward, spreading out 
+like a tree. Below in \cref{fig:dns} is a diagram from Bind9 demonstrating this hierarchy.\cite{bind-9}
 
 \begin{figure}[htbp]
   \centering
@@ -122,9 +120,19 @@ child server have authority over their own domains, and you can also traverse th
   \label{fig:env}
 \end{figure}
 
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{figures/dns/dig_p_get_c.png}}
+  \caption{Querying the parent for information about the child, the querying the child with that information.}
+  \label{fig:p-c}
+\end{figure}
+
+\FloatBarrier
+
 \subsubsection{DNS Zones}
 In the environment, there are different zones between the two name servers. As seen in \cref{fig:zones}, the parent zone holds .lab, with an extension to
-the child zone, .jmu. To be able to query the child, you need a domain name, followed by .jmu.lab.
+the child zone, .jmu. To be able to query the child, you need a domain name, followed by .jmu.lab. A full example of a valid query would be like this: quad.jmu.lab. 
+Quad is the final piece, and this domain maps to 192.168.107.64. You can query the child server directly and receive responses, or you can query it through the parent server.
 
 \begin{figure}[htbp]
   \centering
@@ -133,29 +141,20 @@ the child zone, .jmu. To be able to query the child, you need a domain name, fol
   \label{fig:zones}
 \end{figure}
 
-\begin{figure}[htbp]
-  \centering
-  \fbox{\includegraphics[width=0.8\textwidth]{figures/dns/dig_p_get_c.png}}
-  \caption{Querying the parent for information about the child, the querying the child with that information.}
-  \label{fig:p-c}
-\end{figure}
-
 
 \subsection{DNS Vulnerabilities}
 
     DNS without DNSSEC is very insecure and vulnerable to a plethora of attacks. Without DNSSEC, queries are readable to any person on the internet. An attacker could easily intercept this traffic and 
-    replace it with malicious content.
+replace it with malicious content. This is where DNSSEC comes into play, helping to mitigate and prevent many attacks from occurring.
 
 \subsubsection{DNS Spoofing/Cache Poisoning}
 
     This is an especially vulnerable part of DNS without DNSSEC. This attack is a textbook man-in-the-middle attack, when the attacked intercepts a query and replaces it with their malicious information. DNS spoofing is when an 
-attacker inserts their malicious address in place of a cached address. They pretend to be a DNS nameserver and forge a reply, and with UDP it makes it even easier for this attack to occur.\cite{cache-poisoning}
-
-\subsubsection{DNS Tunneling}
-
+attacker inserts their malicious address in place of a cached address. This attack is using DNS Hijacking in this instance, to redirect to what the attacker wants them to see. They pretend to be a DNS nameserver and forge a reply, 
+and with UDP it makes it even easier for this attack to occur. Cache poisoning is DNS Spoofing without having to hijack the query. The systems involved with DNS, like servers, computers, and routers can cache DNS lookups for quicker recall.
+An attacker can poison the cache by replacing an entry with a spoofed domain. This spoofed domain gets accessed until the cache gets refreshed and the spoofed site gets replaced.\cite{cache-poisoning}
 
 \subsubsection{DNS Hijacking}
 
-
-\subsubsection{NXDOMAIN Attack}
-
+  DNS Hijacking occurs when an attacker tries to redirect where the client is going with their query. The can perform a man-in-the-middle attack and take the query and replace it with their IP, causing the user's machine
+  to directly communicate with the attacker. They could also give an IP that delivers a malicious payload. These are some of the most basic types of attacks when it comes the DNS hijacking.

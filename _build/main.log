@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.15)  28 FEB 2026 16:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.15)  1 MAR 2026 16:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -448,6 +448,8 @@ File: pppdftex.def 2025/07/23 v0.6g Pdfpages driver for pdfTeX (AM)
 \AM@lof@heading=\toks34
 \c@AM@survey=\count324
 \AM@templatesizebox=\box63
+) (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/placeins\placeins.sty
+Package: placeins 2005/04/18  v 2.2
 ) (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
 
@@ -628,64 +630,64 @@ Package: titlesec 2025/01/04 v2.17 Sectioning titles
 \titlewidthfirst=\dimen274
 )
 LaTeX Font Info:    Trying to load font information for OT1+ntxtlf on input lin
-e 64.
+e 66.
 
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2021/05/24 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 64.
+(Font)              scaled to size 12.0pt on input line 66.
 
 (C:\Users\steve\OneDrive - James Madison University (Dukes)\Desktop\Independent
  Study\DNSSEC-Thesis\_build\main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 64.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 66.
 LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
- 64.
+ 66.
 
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/newtx\omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 66.
 LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
-64.
+66.
 
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/newtx\untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 66.
 LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
- 64.
+ 66.
 
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 64.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 66.
 LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
-e 64.
+e 66.
 
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/newtx\lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 64.
-LaTeX Font Info:    ... okay on input line 64.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -749,8 +751,8 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 \c@mv@tabular=\count342
 \c@mv@boldtabular=\count343
-LaTeX Info: Command `\dddot' is already robust on input line 64.
-LaTeX Info: Command `\ddddot' is already robust on input line 64.
+LaTeX Info: Command `\dddot' is already robust on input line 66.
+LaTeX Info: Command `\ddddot' is already robust on input line 66.
 
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
@@ -765,7 +767,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-Package hyperref Info: Link coloring ON on input line 64.
+Package hyperref Info: Link coloring ON on input line 66.
 
 (C:\Users\steve\OneDrive - James Madison University (Dukes)\Desktop\Independent
  Study\DNSSEC-Thesis\_build\main.out)
@@ -785,7 +787,7 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 e/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}])
 (frontmatter/acknowledgements.tex)
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 76.
+(Font)              scaled to size 12.0pt on input line 78.
 
 (C:\Users\steve\OneDrive - James Madison University (Dukes)\Desktop\Independent
  Study\DNSSEC-Thesis\_build\main.toc
@@ -866,7 +868,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.31 ...}{\numberline {A}Appendix}{14}{appendix.A}
+l.29 ...}{\numberline {A}Appendix}{14}{appendix.A}
                                                   % [1
 
 
@@ -886,66 +888,67 @@ Chapter 1.
 
 ]) (chapters/02-dns.tex [2]
 Chapter 2.
+<figures/dns/dns.png, id=134, 437.2335pt x 233.07076pt>
+File: figures/dns/dns.png Graphic file (type png)
+<use figures/dns/dns.png>
+Package pdftex.def Info: figures/dns/dns.png  used on input line 25.
+(pdftex.def)             Requested size: 346.89732pt x 184.92049pt.
 [3
 
 ]
-<figures/dns/dns.png, id=141, 437.2335pt x 233.07076pt>
-File: figures/dns/dns.png Graphic file (type png)
-<use figures/dns/dns.png>
-Package pdftex.def Info: figures/dns/dns.png  used on input line 27.
-(pdftex.def)             Requested size: 346.89732pt x 184.92049pt.
-<figures/dns/fqdn.png, id=146, 151.767pt x 28.30576pt>
+<figures/dns/fqdn.png, id=147, 151.767pt x 28.30576pt>
 File: figures/dns/fqdn.png Graphic file (type png)
 <use figures/dns/fqdn.png>
-Package pdftex.def Info: figures/dns/fqdn.png  used on input line 41.
+Package pdftex.def Info: figures/dns/fqdn.png  used on input line 39.
 (pdftex.def)             Requested size: 346.89732pt x 64.70578pt.
- [4 <./figures/dns/dns.png> <./figures/dns/fqdn.png>]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 53.
+(Font)              scaled to size 14.4pt on input line 51.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 53.
- [5]
-<figures/dns/soa_lab.png, id=165, 454.69875pt x 102.98476pt>
+(Font)              scaled to size 14.4pt on input line 51.
+ [4 <./figures/dns/dns.png> <./figures/dns/fqdn.png>]
+<figures/dns/soa_lab.png, id=160, 454.69875pt x 102.98476pt>
 File: figures/dns/soa_lab.png Graphic file (type png)
 <use figures/dns/soa_lab.png>
-Package pdftex.def Info: figures/dns/soa_lab.png  used on input line 68.
+Package pdftex.def Info: figures/dns/soa_lab.png  used on input line 66.
 (pdftex.def)             Requested size: 346.89732pt x 78.56935pt.
-<figures/dns/a_dig.png, id=168, 611.886pt x 30.1125pt>
+ [5]
+<figures/dns/a_dig.png, id=170, 611.886pt x 30.1125pt>
 File: figures/dns/a_dig.png Graphic file (type png)
 <use figures/dns/a_dig.png>
-Package pdftex.def Info: figures/dns/a_dig.png  used on input line 82.
+Package pdftex.def Info: figures/dns/a_dig.png  used on input line 80.
 (pdftex.def)             Requested size: 346.89732pt x 17.07193pt.
-<figures/dns/a_record.png, id=170, 348.1005pt x 34.32825pt>
+<figures/dns/a_record.png, id=172, 348.1005pt x 34.32825pt>
 File: figures/dns/a_record.png Graphic file (type png)
 <use figures/dns/a_record.png>
-Package pdftex.def Info: figures/dns/a_record.png  used on input line 91.
+Package pdftex.def Info: figures/dns/a_record.png  used on input line 89.
 (pdftex.def)             Requested size: 346.89732pt x 34.20975pt.
  [6 <./figures/dns/soa_lab.png> <./figures/dns/a_dig.png> <./figures/dns/a_reco
 rd.png>]
 <figures/dns/ns_lab.png, id=185, 358.33875pt x 97.5645pt>
 File: figures/dns/ns_lab.png Graphic file (type png)
 <use figures/dns/ns_lab.png>
-Package pdftex.def Info: figures/dns/ns_lab.png  used on input line 106.
+Package pdftex.def Info: figures/dns/ns_lab.png  used on input line 104.
 (pdftex.def)             Requested size: 346.89732pt x 94.4558pt.
 <figures/dns/env_setup.png, id=188, 298.716pt x 338.4645pt>
 File: figures/dns/env_setup.png Graphic file (type png)
 <use figures/dns/env_setup.png>
-Package pdftex.def Info: figures/dns/env_setup.png  used on input line 120.
+Package pdftex.def Info: figures/dns/env_setup.png  used on input line 118.
 (pdftex.def)             Requested size: 346.89732pt x 393.08907pt.
-<figures/dns/dns_zones_diagram.png, id=190, 269.20575pt x 251.13824pt>
+<figures/dns/dig_p_get_c.png, id=189, 612.48825pt x 217.41225pt>
+File: figures/dns/dig_p_get_c.png Graphic file (type png)
+<use figures/dns/dig_p_get_c.png>
+Package pdftex.def Info: figures/dns/dig_p_get_c.png  used on input line 125.
+(pdftex.def)             Requested size: 346.89732pt x 123.14001pt.
+ [7 <./figures/dns/ns_lab.png>] [8 <./figures/dns/env_setup.png> <./figures/dns
+/dig_p_get_c.png>]
+<figures/dns/dns_zones_diagram.png, id=206, 269.20575pt x 251.13824pt>
 File: figures/dns/dns_zones_diagram.png Graphic file (type png)
 <use figures/dns/dns_zones_diagram.png>
 Package pdftex.def Info: figures/dns/dns_zones_diagram.png  used on input line 
-130.
+139.
 (pdftex.def)             Requested size: 346.89732pt x 323.63629pt.
- [7 <./figures/dns/ns_lab.png>] [8 <./figures/dns/env_setup.png>]
-<figures/dns/dig_p_get_c.png, id=205, 612.48825pt x 217.41225pt>
-File: figures/dns/dig_p_get_c.png Graphic file (type png)
-<use figures/dns/dig_p_get_c.png>
-Package pdftex.def Info: figures/dns/dig_p_get_c.png  used on input line 137.
-(pdftex.def)             Requested size: 346.89732pt x 123.14001pt.
- [9 <./figures/dns/dns_zones_diagram.png>]) (chapters/03-dnssec.tex [10 <./figu
-res/dns/dig_p_get_c.png>]
+ [9 <./figures/dns/dns_zones_diagram.png>]) (chapters/03-dnssec.tex
+[10]
 Chapter 3.
 [11
 
@@ -980,10 +983,10 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 470D79C4EC594232DEC413E4EDDD316D;2382.
  ) 
 Here is how much of TeX's memory you used:
- 17588 strings out of 467871
- 284411 string characters out of 5418375
- 701244 words of memory out of 5000000
- 46120 multiletter control sequences out of 15000+600000
+ 17616 strings out of 467871
+ 285121 string characters out of 5418375
+ 701388 words of memory out of 5000000
+ 46144 multiletter control sequences out of 15000+600000
  649495 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,11n,79p,327b,546s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -992,7 +995,7 @@ Here is how much of TeX's memory you used:
 b.pfb><C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/zt
 mr.pfb>
 Output written on "C:\Users\steve\OneDrive - James Madison University (Dukes)\D
-esktop\Independent Study\DNSSEC-Thesis\_build\main.pdf" (18 pages, 679238 bytes
+esktop\Independent Study\DNSSEC-Thesis\_build\main.pdf" (18 pages, 679020 bytes
 ).
 PDF statistics:
  280 PDF objects out of 1000 (max. 8388607)
