@@ -1,9 +1,9 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{bind-9}
 {BIND9}, ``Introduction to dns and bind 9.''
-  \url{https://bind9.readthedocs.io/en/v9.20.17/chapter1.html#the-domain-name-system-dns},
-  2023.
+  \url{https://bind9.readthedocs.io/en/v9.18.39/chapter1.html#the-domain-name-system-dns},
+  2025.
 \newblock Accessed: 2026-1-1.
 
 \bibitem{cloudflare-dns}
@@ -32,5 +32,33 @@
 {Cloudflare Learning}, ``What is dns cache poisoning? | dns spoofing.''
   \url{https://www.cloudflare.com/learning/dns/dns-cache-poisoning/}, 2025.
 \newblock Accessed: 2026-2-22.
+
+\bibitem{hijacking2}
+{Imperva}, ``What is dns hijacking / redirection attack.''
+  \url{https://www.imperva.com/learn/application-security/dns-hijacking-redirection/},
+  2026.
+\newblock Accessed: 2026-2-26.
+
+\bibitem{dnssec-ubuntu}
+{Ubuntu Server}, ``Installing dns security extensions.''
+  \url{https://documentation.ubuntu.com/server/how-to/networking/install-dnssec/},
+  2026.
+\newblock Accessed: 2026-2-20.
+
+\bibitem{sec-gen-guide}
+{BIND9}, ``Dnssec guide.''
+  \url{https://bind9.readthedocs.io/en/v9.18.39/dnssec-guide.html}, 2025.
+\newblock Accessed: 2026-2-25.
+
+\bibitem{zone-keys}
+{BIND9}, ``Introduction to dns and bind 9.''
+  \url{https://bind9.readthedocs.io/en/v9.18.39/chapter5.html#zone-keys}, 2025.
+\newblock Accessed: 2026-2-25.
+
+\bibitem{trust-anchors}
+{BIND9}, ``Trust anchor.''
+  \url{https://bind9.readthedocs.io/en/v9.18.39/dnssec-guide.html#trust-anchors},
+  2025.
+\newblock Accessed: 2026-2-25.
 
 \end{thebibliography}

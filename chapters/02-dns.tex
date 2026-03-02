@@ -2,7 +2,6 @@
 
 \section{DNS Research}
 
-% Paraphrase all of this.
 
 Firstly, I think a bit of background about DNS helps to understand why it became what it is today. DNS started 
 as ARPANET, which was very inefficient and used a centralized hosts file to map the domain names to IP addresses. When a change
@@ -10,47 +9,34 @@ was made, it had to be redistributed to all of the systems. With number of users
 hard to maintain, which led to DNS today.\cite{bind-9}
 
 In my research about DNS, I learned a lot about what happens behind the scenes with DNS Servers.
-Cloudflare called it, "DNS is the phone book of the internet.", and I think this name is very fitting. \cite{cloudflare-dns} Like a phonebook, you look up a 
+Cloudflare called it, "DNS is the phone book of the internet.", and I think this name is very fitting.\cite{cloudflare-dns} Like a phonebook, you look up a 
 name (domain name) and get someone's phone number (IP address).  All network systems operate with network addresses, such as IPv4 and IPv6. 
 More or less, DNS translates domain names, like www.example.com, to IP addresses, like 134.126.126.99 (jmu.edu), so browsers can load internet resources.
 
-% Reword below
-
 The DNS naming structure is organized hierarchically in a tree-like format. Starting at the root of the tree, there is the Root Domain, which is where real world
 DNS begins. It delegates authority to the Top-Level Domains, or TLDs, which delegate further to Second-Level Domains, or SLDs, and continue onward, spreading out 
-like a tree. Below in \cref{fig:dns} is a diagram from Bind9 demonstrating this hierarchy.\cite{bind-9}
+like a tree. Below in \cref{fig:dns} is a diagram demonstrating this hierarchy.\cite{bind-9}
 
-\begin{figure}[htbp]
-  \centering
-  \includegraphics[width=0.8\textwidth]{figures/dns/dns.png}
-  \caption{Root Delegation Hierarchy\cite{bind-9}}
-  \label{fig:dns}
-\end{figure}
+\begin{center}
+\includegraphics[width=0.4\textwidth]{figures/dns/dns_heirarchy.png}
+\end{center}
 
-% reword
+\captionof{figure}{Root Delegation Hierarchy}
+\label{fig:dns}
 
-A domain is the label of a node in the tree. A domain name uniquely identifies any node in the DNS tree and is written, left to right, by 
-combining all the domain labels (each of which are unique within their parent's zone or domain of authority), with a dot separating each component, 
-up to the root domain. In the above diagram the following are all domain names: example.com, b.com, ac.uk, us, and org. The root has a unique label of "." (dot), 
-which is normally omitted when it is written as a domain name, but when it is written as a Fully Qualified Domain Name (FQDN) the dot must be present.\cite{bind-9} As seen in \cref{fig:fqdn}:
-
-\begin{figure}[htbp]
-  \centering
-  \fbox{\includegraphics[width=0.8\textwidth]{figures/dns/fqdn.png}}
-  \caption{FDQN example, the dot on the far right making it FQDN\cite{bind-9}}
-  \label{fig:fqdn}
-\end{figure}
-
-% Reword below
-
-These root servers play a critical part of the DNS authoritative infrastructure. There are 13 root servers, which is historically tied with IPv4 data
-that could be packed into a 512-byte UDP message. This data limit is no longer an issue with all root servers supporting IPv4 and IPv6. In addition, almost 
-all the root servers use anycast, with well over 300 instances of the root servers now providing service worldwide. The root servers are the starting point for all name resolution within the DNS.\cite{bind-9}
+A domain is the label of a node in the tree. A dot in a domain name means that it must traverse to another layer to get more information. Like in the above example, 
+we start with "example", being at the Second-Level domain, then traverses to ".com" at the Top-Level domain, then finally the root, ".", server. Put it all together and you get 
+example.com., with the end period making the a Fully Qualified Domain Name, or FDQN. This period is usually hidden behind the scenes, and as users we do not use it. Root servers
+is the beginning of all DNS name resolutions, which makes the name root make sense. Like a tree, the DNS tree needs it's roots to work.
+However, it helps to see the root domain being reached in this instance. There are 13 root servers due to historical reasons of how many addresses could be put into a 512 byte 
+UDP message.\cite{bind-9}
 
 
 \subsection{DNS Records}
   These DNS records are the most common records used in building a DNS server. These records are all in db files, which are database files used for each zone defined. For example, the zone ".lab" will have a db.lab file. You can name it whatever, 
 as long as it aligns with the named.conf.local zone path defined for the zone. It is best practice to have the domain name as the db files extension. For both the A and NS records, their line begins with an @ symbol.
+
+<Include a db file here, need an updated pic with new terminal>
 
 \subsubsection{Start Of Authority Records}
   SOA records, or "Start Of Authority" records, show the domain name that the specific db file has authority over. There are several sub records within. The MNAME is the domain name of the name server of the original or primary source of data
@@ -95,6 +81,7 @@ Below, \cref{fig:a}, is an example of what these records look like.
 \subsubsection{Nameserver Records}
 \phantomsection
 \label{subsubsec:ns}
+
   NS records stand for "Nameserver" records, and indicate which DNS server is authoritative for that domain. Like in the SOA, ns1.lab shows which server is authoritative for the .lab domain.
 Domains can have multiple NS records, like .lab has, which indicate primary and secondary nameservers for domains. For instance, in db.lab, there are multiple NS records, one pointing the the server itself and another 
 pointing to the secondary server for the .jmu.lab domain.\cite{ns-records} See \cref{fig:ns} for an example.
@@ -107,11 +94,11 @@ pointing to the secondary server for the .jmu.lab domain.\cite{ns-records} See \
 \end{figure}
 
 
-\subsection{The DNS Environment}
+\section{The DNS Environment}
 There are numerous similarities between DNS with the internet and this testbed study. The bridge between the user and DNS servers is the DNS resolver or name resolution. In the project, the client digs at a server, and gets a response. This is a higher level abstraction, 
 as there are no websites mapped to the IPs on my DNS servers, just more local IPs which could be a website. There is also no official "." or root domain, but my "root" domain is lab., which is also my top level domain. This is seen in \cref{fig:env}.
 In this setup, authority is held in the parent vm and passed downward onto the child server. In real DNS, a recursive resolver is used and traverses the different levels of domains. In this study, both the parent and the
-child server have authority over their own domains, and you can also traverse the tree to query the parent for information on the child server, as seen below in \cref{fig:p-c}.
+child server have authority over their own domains, and you can also traverse the tree to query the parent for information on the child server, as seen below in \cref{fig:p-c}. There are also no IPV6 records, and this is disabled in the configuration of the servers.
 
 \begin{figure}[htbp]
   \centering
@@ -129,7 +116,9 @@ child server have authority over their own domains, and you can also traverse th
 
 \FloatBarrier
 
-\subsubsection{DNS Zones}
+
+
+\subsection{DNS Zones}
 In the environment, there are different zones between the two name servers. As seen in \cref{fig:zones}, the parent zone holds .lab, with an extension to
 the child zone, .jmu. To be able to query the child, you need a domain name, followed by .jmu.lab. A full example of a valid query would be like this: quad.jmu.lab. 
 Quad is the final piece, and this domain maps to 192.168.107.64. You can query the child server directly and receive responses, or you can query it through the parent server.
@@ -142,19 +131,19 @@ Quad is the final piece, and this domain maps to 192.168.107.64. You can query t
 \end{figure}
 
 
-\subsection{DNS Vulnerabilities}
+\section{DNS Vulnerabilities}
 
     DNS without DNSSEC is very insecure and vulnerable to a plethora of attacks. Without DNSSEC, queries are readable to any person on the internet. An attacker could easily intercept this traffic and 
-replace it with malicious content. This is where DNSSEC comes into play, helping to mitigate and prevent many attacks from occurring.
+replace it with malicious content. This is where DNSSEC comes into play, helping to mitigate and prevent many attacks from occurring. It also proves that the information is coming from a trusted, authoritative source.
 
-\subsubsection{DNS Spoofing/Cache Poisoning}
+\subsection{DNS Spoofing/Cache Poisoning}
 
     This is an especially vulnerable part of DNS without DNSSEC. This attack is a textbook man-in-the-middle attack, when the attacked intercepts a query and replaces it with their malicious information. DNS spoofing is when an 
 attacker inserts their malicious address in place of a cached address. This attack is using DNS Hijacking in this instance, to redirect to what the attacker wants them to see. They pretend to be a DNS nameserver and forge a reply, 
 and with UDP it makes it even easier for this attack to occur. Cache poisoning is DNS Spoofing without having to hijack the query. The systems involved with DNS, like servers, computers, and routers can cache DNS lookups for quicker recall.
 An attacker can poison the cache by replacing an entry with a spoofed domain. This spoofed domain gets accessed until the cache gets refreshed and the spoofed site gets replaced.\cite{cache-poisoning}
 
-\subsubsection{DNS Hijacking}
+\subsection{DNS Hijacking}
 
-  DNS Hijacking occurs when an attacker tries to redirect where the client is going with their query. The can perform a man-in-the-middle attack and take the query and replace it with their IP, causing the user's machine
-  to directly communicate with the attacker. They could also give an IP that delivers a malicious payload. These are some of the most basic types of attacks when it comes the DNS hijacking.
+  DNS Hijacking occurs when an attacker tries to redirect where the client is going with their query. The can perform a man-in-the-middle attack and take the query and replace it with their IP, causing the user's machine 
+to directly communicate with the attacker. They could also give an IP that delivers a malicious payload. These are some of the most basic types of attacks when it comes the DNS hijacking.\cite{hijacking2}

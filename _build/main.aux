@@ -10,73 +10,94 @@
 \@writefile{toc}{\contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {1.2}Problem Statement}{1}{section.1.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {1.3}Contributions}{1}{section.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {1.4}VM Research}{1}{section.1.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.4}VM Research}{2}{section.1.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {1.5}VM Network}{2}{section.1.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {1.6}Bind9}{2}{section.1.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.6}Bind9}{3}{section.1.6}\protected@file@percent }
 \citation{bind-9}
 \citation{cloudflare-dns}
 \citation{bind-9}
-\citation{bind-9}
-\citation{bind-9}
-\@writefile{toc}{\contentsline {chapter}{\numberline {2}DNS Setup}{3}{chapter.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}DNS Setup}{4}{chapter.2}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {2.1}DNS Research}{3}{section.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}DNS Research}{4}{section.2.1}\protected@file@percent }
 \citation{bind-9}
-\citation{bind-9}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Root Delegation Hierarchy\cite  {bind-9}}}{4}{figure.2.1}\protected@file@percent }
-\newlabel{fig:dns}{{2.1}{4}{Root Delegation Hierarchy\cite {bind-9}}{figure.2.1}{}}
-\newlabel{fig:dns@cref}{{[figure][1][2]2.1}{[1][3][]4}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces FDQN example, the dot on the far right making it FQDN\cite  {bind-9}}}{4}{figure.2.2}\protected@file@percent }
-\newlabel{fig:fqdn}{{2.2}{4}{FDQN example, the dot on the far right making it FQDN\cite {bind-9}}{figure.2.2}{}}
-\newlabel{fig:fqdn@cref}{{[figure][2][2]2.2}{[1][4][]4}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Root Delegation Hierarchy}}{5}{figure.2.1}\protected@file@percent }
+\newlabel{fig:dns}{{2.1}{5}{Root Delegation Hierarchy}{figure.2.1}{}}
+\newlabel{fig:dns@cref}{{[figure][1][2]2.1}{[1][5][]5}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}DNS Records}{5}{subsection.2.1.1}\protected@file@percent }
 \citation{rfc1035}
 \citation{a-records}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.1}DNS Records}{5}{subsection.2.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Start Of Authority Records}{5}{subsection.2.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Start Of Authority Records}{6}{subsection.2.1.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces An example of the SOA record in the parent servers db.lab, representing the start of authority for the zone.}}{6}{figure.caption.3}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:soa}{{2.2}{6}{An example of the SOA record in the parent servers db.lab, representing the start of authority for the zone}{figure.caption.3}{}}
+\newlabel{fig:soa@cref}{{[figure][2][2]2.2}{[1][6][]6}{}{}{}}
 \citation{ns-records}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces An example of the SOA record in the parent servers db.lab, representing the start of authority for the zone.}}{6}{figure.2.3}\protected@file@percent }
-\newlabel{fig:soa}{{2.3}{6}{An example of the SOA record in the parent servers db.lab, representing the start of authority for the zone}{figure.2.3}{}}
-\newlabel{fig:soa@cref}{{[figure][3][2]2.3}{[1][5][]6}{}{}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Address Records}{6}{figure.2.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces An example of digging for an A record, the short flag used to only give me the ip.}}{6}{figure.2.4}\protected@file@percent }
-\newlabel{fig:a_dig}{{2.4}{6}{An example of digging for an A record, the short flag used to only give me the ip}{figure.2.4}{}}
-\newlabel{fig:a_dig@cref}{{[figure][4][2]2.4}{[1][6][]6}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces An example of A records in the parent servers db.lab, computer.lab and bc.lab}}{6}{figure.2.5}\protected@file@percent }
-\newlabel{fig:a}{{2.5}{6}{An example of A records in the parent servers db.lab, computer.lab and bc.lab}{figure.2.5}{}}
-\newlabel{fig:a@cref}{{[figure][5][2]2.5}{[1][6][]6}{}{}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Nameserver Records}{6}{figure.2.5}\protected@file@percent }
-\newlabel{subsubsec:ns}{{2.1.1}{6}{Nameserver Records}{section*.3}{}}
-\newlabel{subsubsec:ns@cref}{{[subsection][1][2,1]2.1.1}{[1][6][]6}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces An example of NS records in the parent servers db.lab}}{7}{figure.2.6}\protected@file@percent }
-\newlabel{fig:ns}{{2.6}{7}{An example of NS records in the parent servers db.lab}{figure.2.6}{}}
-\newlabel{fig:ns@cref}{{[figure][6][2]2.6}{[1][7][]7}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.2}The DNS Environment}{7}{subsection.2.1.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces This is a diagram of the setup of the virtual environment, with inspiration of the layout coming from Dr.Aboutabl}}{8}{figure.2.7}\protected@file@percent }
-\newlabel{fig:env}{{2.7}{8}{This is a diagram of the setup of the virtual environment, with inspiration of the layout coming from Dr.Aboutabl}{figure.2.7}{}}
-\newlabel{fig:env@cref}{{[figure][7][2]2.7}{[1][7][]8}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Querying the parent for information about the child, the querying the child with that information.}}{8}{figure.2.8}\protected@file@percent }
-\newlabel{fig:p-c}{{2.8}{8}{Querying the parent for information about the child, the querying the child with that information}{figure.2.8}{}}
-\newlabel{fig:p-c@cref}{{[figure][8][2]2.8}{[1][7][]8}{}{}{}}
-\@writefile{toc}{\contentsline {subsubsection}{DNS Zones}{9}{figure.2.8}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces This is a diagram showing the zones and their relationship.}}{9}{figure.2.9}\protected@file@percent }
-\newlabel{fig:zones}{{2.9}{9}{This is a diagram showing the zones and their relationship}{figure.2.9}{}}
-\newlabel{fig:zones@cref}{{[figure][9][2]2.9}{[1][9][]9}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.1.3}DNS Vulnerabilities}{9}{subsection.2.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Address Records}{7}{figure.caption.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces An example of digging for an A record, the short flag used to only give me the ip.}}{7}{figure.caption.4}\protected@file@percent }
+\newlabel{fig:a_dig}{{2.3}{7}{An example of digging for an A record, the short flag used to only give me the ip}{figure.caption.4}{}}
+\newlabel{fig:a_dig@cref}{{[figure][3][2]2.3}{[1][7][]7}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces An example of A records in the parent servers db.lab, computer.lab and bc.lab}}{7}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:a}{{2.4}{7}{An example of A records in the parent servers db.lab, computer.lab and bc.lab}{figure.caption.5}{}}
+\newlabel{fig:a@cref}{{[figure][4][2]2.4}{[1][7][]7}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Nameserver Records}{7}{figure.caption.5}\protected@file@percent }
+\newlabel{subsubsec:ns}{{2.1.1}{7}{Nameserver Records}{section*.6}{}}
+\newlabel{subsubsec:ns@cref}{{[subsection][1][2,1]2.1.1}{[1][7][]7}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces An example of NS records in the parent servers db.lab}}{8}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:ns}{{2.5}{8}{An example of NS records in the parent servers db.lab}{figure.caption.7}{}}
+\newlabel{fig:ns@cref}{{[figure][5][2]2.5}{[1][7][]8}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}The DNS Environment}{8}{section.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces This is a diagram of the setup of the virtual environment, with inspiration of the layout coming from Dr.Aboutabl}}{9}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:env}{{2.6}{9}{This is a diagram of the setup of the virtual environment, with inspiration of the layout coming from Dr.Aboutabl}{figure.caption.8}{}}
+\newlabel{fig:env@cref}{{[figure][6][2]2.6}{[1][8][]9}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Querying the parent for information about the child, the querying the child with that information.}}{9}{figure.caption.9}\protected@file@percent }
+\newlabel{fig:p-c}{{2.7}{9}{Querying the parent for information about the child, the querying the child with that information}{figure.caption.9}{}}
+\newlabel{fig:p-c@cref}{{[figure][7][2]2.7}{[1][8][]9}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}DNS Zones}{10}{subsection.2.2.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces This is a diagram showing the zones and their relationship.}}{10}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:zones}{{2.8}{10}{This is a diagram showing the zones and their relationship}{figure.caption.10}{}}
+\newlabel{fig:zones@cref}{{[figure][8][2]2.8}{[1][10][]10}{}{}{}}
 \citation{cache-poisoning}
-\@writefile{toc}{\contentsline {subsubsection}{DNS Spoofing/Cache Poisoning}{10}{subsection.2.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{DNS Hijacking}{10}{subsection.2.1.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {3}DNSSEC Setup}{11}{chapter.3}\protected@file@percent }
+\citation{hijacking2}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}DNS Vulnerabilities}{11}{section.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}DNS Spoofing/Cache Poisoning}{11}{subsection.2.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}DNS Hijacking}{11}{subsection.2.3.2}\protected@file@percent }
+\citation{dnssec-ubuntu}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}DNSSEC Setup}{12}{chapter.3}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {3.1}DNSSEC Research}{11}{section.3.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}New DNS Records}{11}{subsection.3.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Resource Record Signature}{11}{subsection.3.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Zone Signing Key}{11}{subsection.3.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Key Signing Key}{12}{subsection.3.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{Delegation Signer}{12}{subsection.3.1.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Chain Of Trust}{12}{subsection.3.1.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}DNSSEC Options}{12}{subsection.3.1.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}DNSSEC Research}{12}{section.3.1}\protected@file@percent }
+\citation{sec-gen-guide}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces The new DNSSEC db.lab}}{13}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:dnssec-lab}{{3.1}{13}{The new DNSSEC db.lab}{figure.caption.11}{}}
+\newlabel{fig:dnssec-lab@cref}{{[figure][1][3]3.1}{[1][12][]13}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}New DNS Records}{13}{subsection.3.1.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Resource Record Set}{13}{figure.caption.12}\protected@file@percent }
+\citation{zone-keys}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces A diagram showing a high level view of a DNSSEC query}}{14}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:dnssec-diagram}{{3.2}{14}{A diagram showing a high level view of a DNSSEC query}{figure.caption.12}{}}
+\newlabel{fig:dnssec-diagram@cref}{{[figure][2][3]3.2}{[1][13][]14}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Resource Record Signature}{14}{figure.caption.12}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Zone Signing Key}{14}{figure.caption.12}\protected@file@percent }
+\newlabel{subsubsec:zsk}{{3.1.1}{14}{Zone Signing Key}{section*.13}{}}
+\newlabel{subsubsec:zsk@cref}{{[subsection][1][3,1]3.1.1}{[1][14][]14}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Key Signing Key}{14}{section*.13}\protected@file@percent }
+\newlabel{subsubsec:ksk}{{3.1.1}{14}{Key Signing Key}{section*.14}{}}
+\newlabel{subsubsec:ksk@cref}{{[subsection][1][3,1]3.1.1}{[1][14][]14}{}{}{}}
+\citation{trust-anchors}
+\@writefile{toc}{\contentsline {subsubsection}{Delegation Signer}{15}{section*.14}\protected@file@percent }
+\newlabel{subsubsec:ds}{{3.1.1}{15}{Delegation Signer}{section*.15}{}}
+\newlabel{subsubsec:ds@cref}{{[subsection][1][3,1]3.1.1}{[1][15][]15}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Chain Of Trust}{15}{section.3.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces An Example of my Trust Anchor}}{15}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:anchor}{{3.3}{15}{An Example of my Trust Anchor}{figure.caption.16}{}}
+\newlabel{fig:anchor@cref}{{[figure][3][3]3.3}{[1][15][]15}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}DNSSEC Options}{15}{section.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}DNSSEC Policy}{16}{subsection.3.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces This is what I added to my dnssec policy I created called rsa-policy}}{16}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:pol}{{3.4}{16}{This is what I added to my dnssec policy I created called rsa-policy}{figure.caption.17}{}}
+\newlabel{fig:pol@cref}{{[figure][4][3]3.4}{[1][15][]16}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.2}Signing}{16}{subsection.3.3.2}\protected@file@percent }
 \bibdata{references}
 \bibcite{bind-9}{1}
 \bibcite{cloudflare-dns}{2}
@@ -84,8 +105,13 @@
 \bibcite{a-records}{4}
 \bibcite{ns-records}{5}
 \bibcite{cache-poisoning}{6}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Appendix}{14}{appendix.A}\protected@file@percent }
+\bibcite{hijacking2}{7}
+\bibcite{dnssec-ubuntu}{8}
+\bibcite{sec-gen-guide}{9}
+\bibcite{zone-keys}{10}
+\bibcite{trust-anchors}{11}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Appendix}{18}{appendix.A}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}Procedure Manual}{14}{section.A.1}\protected@file@percent }
-\gdef \@abspage@last{18}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Procedure Manual}{18}{section.A.1}\protected@file@percent }
+\gdef \@abspage@last{22}

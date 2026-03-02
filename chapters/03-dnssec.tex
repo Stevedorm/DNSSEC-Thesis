@@ -1,31 +1,119 @@
 \chapter{DNSSEC Setup}
 
 \section{DNSSEC Research}
+    DNSSEC, or Domain Name System Security Extension, adds a layer of security to the otherwise vulnerable DNS. DNSSEC adds security by using cryptographic signatures
+with public key cryptography, with the private key signing it and the public key verifying. DNSSEC also implements hashing, which helps to add more confusion and making it 
+harder for attackers to know what plain text strings were previously used.
+
+% https://www.sidn.nl/en/news-and-blogs/security-of-dns-isnt-be-assured-unless-dnssec-validation-is-enabled-on-the-end-users-client
+There is an additional flag with dnssec queries, the "ad" flag. This flag is passed along with successful DNSSEC queries, meaning "Authenticated Data". When you query 
+for a domain with dnssec enabled, receiving this flag back instead of a SERVFAIL status means that the data was successfully authenticated.
+
+Below, \cref{fig:dnssec-lab}, is db.lab, but now set for DNSSEC. It changed directories to allow for permission to be more for the owner of the server (me). Originally, 
+DNS configuration and the db files were in /etc/bind/, but now they moved to /var/lib/bind/ to allow for more freedom and not having to deal with bind ownership. Changing 
+the zone configuration to point to the new db file allows the server to write into this directory. As you can see below, there is a good number of changes to the db file.
+Gone are the @ symbols preceding lines, and there is a new minimum time record. At the bottom of the figure, yuo can see a \hyperref[subsubsec:ds]{Delegation Signer} record,
+which came from the child zone. This is an important part of the Chain of trust, allowing the parent to verify the child is the child.\cite{dnssec-ubuntu}
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{figures/dnssec/db_parent.png}}
+  \caption{The new DNSSEC db.lab}
+  \label{fig:dnssec-lab}
+\end{figure}
 
 \subsection{New DNS Records}
-    With the regular DNS records previously discussed, there are some new records that must be taken into account. 
+    With the regular DNS records previously discussed, there are some new records that must be taken into account. Regarding the \hyperref[subsubsec:zsk]{Zone Signing Key} 
+and the \hyperref[subsubsec:ksk]{Key Signing Key}, the algorithms I used for the keys was RSASHA256, this is a good algorithm for encryption and one I am familiar with. The ZSK 
+signs the records from the zone, and the KSK signs the ZSK. The hand shake looks a bit like this, an example of a query for computer.lab, \cref{fig:dnssec-diagram}.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{figures/dnssec/dnssec_query_diagram.png}}
+  \caption{A diagram showing a high level view of a DNSSEC query}
+  \label{fig:dnssec-diagram}
+\end{figure}
+
+\subsubsection{Resource Record Set}
+
+This record is not an explicit record, rather a descriptive word to describe records that are grouped together. For instance, if I query for my parent server for DNSKEYs, 
+I receive the RRSet that is signed, seen below in <figure soon>.
+
+Picture of DNSKEY query here
+% \begin{figure}[htbp]
+%   \centering
+%   \fbox{\includegraphics[width=0.8\textwidth]{figures/dnssec/dnskey_query.png}}
+%   \caption{TBD}
+%   \label{fig:dnskey}
+% \end{figure}
+
 
 \subsubsection{Resource Record Signature}
 
-The Resource Record Signature, or RRSIG record, is used to verify the answers that are received.
+% https://datatracker.ietf.org/doc/html/rfc4034#section-3.1
+
+The Resource Record Signature, or RRSIG record, is used to verify the answers that are received. These are attached to every answer that is sent with DNSSEC. The signatures are used by recursive name 
+servers to verify that the answer to the question is valid. \cite{sec-gen-guide}
+
+Diagram Showing a RRSIG
 
 \subsubsection{Zone Signing Key}
+\phantomsection
+\label{subsubsec:zsk}
 
 The Zone Signing Key, or "ZSK" for short, is the key that is used to sign data from a zone. It signs all records except for RRset that are related to keys. 
 The ZSK has the 256 flag, indicating that it is the ZSK.
 
-The keys follow a public key encryption scheme, with the zone keeping the private key and the 
+The keys follow a public key encryption scheme, with the zone keeping the private key and the public being sent to the user. They use this key to then 
+verify the signature and receive the zone data.\cite{zone-keys}
 
 
 \subsubsection{Key Signing Key}
+\phantomsection
+\label{subsubsec:ksk}
 
 The Key Signing Key, or "KSK", is used to sign what the ZSK does not sign: key-related RRsets. This keys serves another purpose, as it is the bridge between 
-a parent and a child zone. The flag for the KSK is 257, indicating .
+a parent and a child zone. The flag for the KSK is 257, indicating that this key is the KSK. Like the Zone Key, this key also follows the public key encryption 
+scheme. This key pair is meant to protect the ZSK for the zone being queried.
 
 \subsubsection{Delegation Signer}
+\phantomsection
+\label{subsubsec:ds}
 
-The Delegation Signer Record, or DS record, is used to
+The Delegation Signer Record, or DS record, is used to "vouch" for another zone. The parent holds a copy of this in their zone, and when asked to query about 
+the child zone, it can verify that the response comes from the child.
 
-\subsection{Chain Of Trust}
+\section{Chain Of Trust}
 
-\subsection{DNSSEC Options}
+The Chain of Trust is how different levels of servers know they can trust each other. There must be trust through the whole process of the query, 
+otherwise there is a vulnerable spot for intrusion by an attacker.\cite{trust-anchors} An example of a trust anchor is below in \cref{fig:anchor}.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{figures/dnssec/client-trust-anchor.png}}
+  \caption{An Example of my Trust Anchor}
+  \label{fig:anchor}
+\end{figure}
+
+\section{DNSSEC Options}
+
+Section to talk about my dnssec policy, key management, etc.
+
+My client is the validator, with dnssec-validation set to yes. It has a trust anchor that was manually copied from the parent zone.
+
+\subsection{DNSSEC Policy}
+
+I adjusted the settings in the options configuration file, mainly to specify what algorithm to use, but also to set specifics for the keys. This is seen below in \cref{fig:pol}.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{figures/dnssec/dnssec-policy.png}}
+  \caption{This is what I added to my dnssec policy I created called rsa-policy}
+  \label{fig:pol}
+\end{figure}
+
+\subsection{Signing}
+
+Right now, I am using Inline Signing, which automatically generates keys and signs the files. This setting also creates and keeps a separate signed zone file.
+
+NOTE: Still gathering information on this, and seeing if fully manual signing is worth it, because I'm not sure if you can sign RR independently

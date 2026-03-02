@@ -3,28 +3,31 @@
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Problem Statement}{1}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Contributions}{1}{section.1.3}%
-\contentsline {section}{\numberline {1.4}VM Research}{1}{section.1.4}%
+\contentsline {section}{\numberline {1.4}VM Research}{2}{section.1.4}%
 \contentsline {section}{\numberline {1.5}VM Network}{2}{section.1.5}%
-\contentsline {section}{\numberline {1.6}Bind9}{2}{section.1.6}%
-\contentsline {chapter}{\numberline {2}DNS Setup}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}DNS Research}{3}{section.2.1}%
+\contentsline {section}{\numberline {1.6}Bind9}{3}{section.1.6}%
+\contentsline {chapter}{\numberline {2}DNS Setup}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}DNS Research}{4}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}DNS Records}{5}{subsection.2.1.1}%
-\contentsline {subsubsection}{Start Of Authority Records}{5}{subsection.2.1.1}%
-\contentsline {subsubsection}{Address Records}{6}{figure.2.3}%
-\contentsline {subsubsection}{Nameserver Records}{6}{figure.2.5}%
-\contentsline {subsection}{\numberline {2.1.2}The DNS Environment}{7}{subsection.2.1.2}%
-\contentsline {subsubsection}{DNS Zones}{9}{figure.2.8}%
-\contentsline {subsection}{\numberline {2.1.3}DNS Vulnerabilities}{9}{subsection.2.1.3}%
-\contentsline {subsubsection}{DNS Spoofing/Cache Poisoning}{10}{subsection.2.1.3}%
-\contentsline {subsubsection}{DNS Hijacking}{10}{subsection.2.1.3}%
-\contentsline {chapter}{\numberline {3}DNSSEC Setup}{11}{chapter.3}%
-\contentsline {section}{\numberline {3.1}DNSSEC Research}{11}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}New DNS Records}{11}{subsection.3.1.1}%
-\contentsline {subsubsection}{Resource Record Signature}{11}{subsection.3.1.1}%
-\contentsline {subsubsection}{Zone Signing Key}{11}{subsection.3.1.1}%
-\contentsline {subsubsection}{Key Signing Key}{12}{subsection.3.1.1}%
-\contentsline {subsubsection}{Delegation Signer}{12}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Chain Of Trust}{12}{subsection.3.1.2}%
-\contentsline {subsection}{\numberline {3.1.3}DNSSEC Options}{12}{subsection.3.1.3}%
-\contentsline {chapter}{\numberline {A}Appendix}{14}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Procedure Manual}{14}{section.A.1}%
+\contentsline {subsubsection}{Start Of Authority Records}{6}{subsection.2.1.1}%
+\contentsline {subsubsection}{Address Records}{7}{figure.caption.3}%
+\contentsline {subsubsection}{Nameserver Records}{7}{figure.caption.5}%
+\contentsline {section}{\numberline {2.2}The DNS Environment}{8}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}DNS Zones}{10}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}DNS Vulnerabilities}{11}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}DNS Spoofing/Cache Poisoning}{11}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}DNS Hijacking}{11}{subsection.2.3.2}%
+\contentsline {chapter}{\numberline {3}DNSSEC Setup}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}DNSSEC Research}{12}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}New DNS Records}{13}{subsection.3.1.1}%
+\contentsline {subsubsection}{Resource Record Set}{13}{figure.caption.12}%
+\contentsline {subsubsection}{Resource Record Signature}{14}{figure.caption.12}%
+\contentsline {subsubsection}{Zone Signing Key}{14}{figure.caption.12}%
+\contentsline {subsubsection}{Key Signing Key}{14}{section*.13}%
+\contentsline {subsubsection}{Delegation Signer}{15}{section*.14}%
+\contentsline {section}{\numberline {3.2}Chain Of Trust}{15}{section.3.2}%
+\contentsline {section}{\numberline {3.3}DNSSEC Options}{15}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}DNSSEC Policy}{16}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Signing}{16}{subsection.3.3.2}%
+\contentsline {chapter}{\numberline {A}Appendix}{18}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Procedure Manual}{18}{section.A.1}%
