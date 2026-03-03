@@ -63,7 +63,7 @@ or whatever is at the IP address.\cite{a-records} As seen below, in \cref{fig:a_
 
 \begin{figure}[htbp]
   \centering
-  \fbox{\includegraphics[width=0.8\textwidth]{figures/dns/a_dig.png}}
+  \fbox{\includegraphics[width=0.9\textwidth]{figures/dns/a_dig.png}}
   \caption{An example of digging for an A record, the short flag used to only give me the ip.}
   \label{fig:a_dig}
 \end{figure}
@@ -97,15 +97,17 @@ pointing to the secondary server for the .jmu.lab domain.\cite{ns-records} See \
 \section{The DNS Environment}
 There are numerous similarities between DNS with the internet and this testbed study. The bridge between the user and DNS servers is the DNS resolver or name resolution. In the project, the client digs at a server, and gets a response. This is a higher level abstraction, 
 as there are no websites mapped to the IPs on my DNS servers, just more local IPs which could be a website. There is also no official "." or root domain, but my "root" domain is lab., which is also my top level domain. This is seen in \cref{fig:env}.
-In this setup, authority is held in the parent vm and passed downward onto the child server. In real DNS, a recursive resolver is used and traverses the different levels of domains. In this study, both the parent and the
-child server have authority over their own domains, and you can also traverse the tree to query the parent for information on the child server, as seen below in \cref{fig:p-c}. There are also no IPV6 records, and this is disabled in the configuration of the servers.
+In this setup, authority is held in the parent vm and passed downward onto the child server. In real DNS, a recursive resolver is used and traverses the different levels of domains.
 
 \begin{figure}[htbp]
   \centering
-  \fbox{\includegraphics[width=0.8\textwidth]{figures/dns/env_setup.png}}
+  \fbox{\includegraphics[width=0.7\textwidth]{figures/dns/env_diagram.png}}
   \caption{This is a diagram of the setup of the virtual environment, with inspiration of the layout coming from Dr.Aboutabl}
   \label{fig:env}
 \end{figure}
+
+In this study, both the parent and the child server have authority over their own domains, and you can also traverse the tree to query the parent for 
+information on the child server, as seen below in \cref{fig:p-c}. There are also no IPV6 records, and this is disabled in the configuration of the servers.
 
 \begin{figure}[htbp]
   \centering
@@ -125,7 +127,7 @@ Quad is the final piece, and this domain maps to 192.168.107.64. You can query t
 
 \begin{figure}[htbp]
   \centering
-  \fbox{\includegraphics[width=0.8\textwidth]{figures/dns/dns_zones_diagram.png}}
+  \fbox{\includegraphics[width=0.7\textwidth]{figures/dns/dns_zones_diagram.png}}
   \caption{This is a diagram showing the zones and their relationship.}
   \label{fig:zones}
 \end{figure}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.15)  1 MAR 2026 23:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.15)  3 MAR 2026 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -893,7 +893,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.29 ...line {3.3}DNSSEC Options}{15}{section.3.3}
+l.24 ...ce Record Signature}{15}{subsection.3.2.2}
                                                   % [1
 
 
@@ -913,7 +913,7 @@ Chapter 1.
 
 ] [2]) (chapters/02-dns.tex [3]
 Chapter 2.
-<figures/dns/dns_heirarchy.png, id=164, 231.86626pt x 293.29575pt>
+<figures/dns/dns_heirarchy.png, id=189, 231.86626pt x 293.29575pt>
 File: figures/dns/dns_heirarchy.png Graphic file (type png)
 <use figures/dns/dns_heirarchy.png>
 Package pdftex.def Info: figures/dns/dns_heirarchy.png  used on input line 21.
@@ -936,79 +936,102 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 (Font)              scaled to size 14.4pt on input line 35.
 [5 <./figures/dns/dns_heirarchy.png>]
-<figures/dns/soa_lab.png, id=182, 454.69875pt x 102.98476pt>
+<figures/dns/soa_lab.png, id=207, 454.69875pt x 102.98476pt>
 File: figures/dns/soa_lab.png Graphic file (type png)
 <use figures/dns/soa_lab.png>
 Package pdftex.def Info: figures/dns/soa_lab.png  used on input line 52.
 (pdftex.def)             Requested size: 346.89732pt x 78.56935pt.
  [6 <./figures/dns/soa_lab.png>]
-<figures/dns/a_dig.png, id=193, 611.886pt x 30.1125pt>
+<figures/dns/a_dig.png, id=218, 611.886pt x 30.1125pt>
 File: figures/dns/a_dig.png Graphic file (type png)
 <use figures/dns/a_dig.png>
 Package pdftex.def Info: figures/dns/a_dig.png  used on input line 66.
-(pdftex.def)             Requested size: 346.89732pt x 17.07193pt.
-<figures/dns/a_record.png, id=195, 348.1005pt x 34.32825pt>
+(pdftex.def)             Requested size: 390.25536pt x 19.20575pt.
+<figures/dns/a_record.png, id=220, 348.1005pt x 34.32825pt>
 File: figures/dns/a_record.png Graphic file (type png)
 <use figures/dns/a_record.png>
 Package pdftex.def Info: figures/dns/a_record.png  used on input line 75.
 (pdftex.def)             Requested size: 346.89732pt x 34.20975pt.
-<figures/dns/ns_lab.png, id=198, 358.33875pt x 97.5645pt>
+<figures/dns/ns_lab.png, id=223, 358.33875pt x 97.5645pt>
 File: figures/dns/ns_lab.png Graphic file (type png)
 <use figures/dns/ns_lab.png>
 Package pdftex.def Info: figures/dns/ns_lab.png  used on input line 91.
 (pdftex.def)             Requested size: 346.89732pt x 94.4558pt.
  [7 <./figures/dns/a_dig.png> <./figures/dns/a_record.png>]
-<figures/dns/env_setup.png, id=212, 298.716pt x 338.4645pt>
-File: figures/dns/env_setup.png Graphic file (type png)
-<use figures/dns/env_setup.png>
-Package pdftex.def Info: figures/dns/env_setup.png  used on input line 105.
-(pdftex.def)             Requested size: 346.89732pt x 393.08907pt.
-<figures/dns/dig_p_get_c.png, id=213, 612.48825pt x 217.41225pt>
+<figures/dns/env_diagram.png, id=236, 292.6935pt x 334.851pt>
+File: figures/dns/env_diagram.png Graphic file (type png)
+<use figures/dns/env_diagram.png>
+Package pdftex.def Info: figures/dns/env_diagram.png  used on input line 104.
+(pdftex.def)             Requested size: 303.53267pt x 347.25581pt.
+<figures/dns/dig_p_get_c.png, id=238, 612.48825pt x 217.41225pt>
 File: figures/dns/dig_p_get_c.png Graphic file (type png)
 <use figures/dns/dig_p_get_c.png>
-Package pdftex.def Info: figures/dns/dig_p_get_c.png  used on input line 112.
+Package pdftex.def Info: figures/dns/dig_p_get_c.png  used on input line 114.
 (pdftex.def)             Requested size: 346.89732pt x 123.14001pt.
- [8 <./figures/dns/ns_lab.png>] [9 <./figures/dns/env_setup.png> <./figures/dns
-/dig_p_get_c.png>]
-<figures/dns/dns_zones_diagram.png, id=229, 269.20575pt x 251.13824pt>
+ [8 <./figures/dns/ns_lab.png>] [9 <./figures/dns/env_diagram.png> <./figures/d
+ns/dig_p_get_c.png>]
+<figures/dns/dns_zones_diagram.png, id=254, 269.20575pt x 251.13824pt>
 File: figures/dns/dns_zones_diagram.png Graphic file (type png)
 <use figures/dns/dns_zones_diagram.png>
 Package pdftex.def Info: figures/dns/dns_zones_diagram.png  used on input line 
-128.
-(pdftex.def)             Requested size: 346.89732pt x 323.63629pt.
+130.
+(pdftex.def)             Requested size: 303.53267pt x 283.17744pt.
  [10 <./figures/dns/dns_zones_diagram.png>]) (chapters/03-dnssec.tex [11]
 Chapter 3.
-<figures/dnssec/db_parent.png, id=247, 596.82974pt x 284.262pt>
-File: figures/dnssec/db_parent.png Graphic file (type png)
-<use figures/dnssec/db_parent.png>
-Package pdftex.def Info: figures/dnssec/db_parent.png  used on input line 20.
-(pdftex.def)             Requested size: 346.89732pt x 165.2234pt.
 [12
 
 ]
-<figures/dnssec/dnssec_query_diagram.png, id=257, 404.712pt x 196.93575pt>
-File: figures/dnssec/dnssec_query_diagram.png Graphic file (type png)
-<use figures/dnssec/dnssec_query_diagram.png>
-Package pdftex.def Info: figures/dnssec/dnssec_query_diagram.png  used on input
- line 32.
-(pdftex.def)             Requested size: 346.89732pt x 168.81151pt.
- [13 <./figures/dnssec/db_parent.png>] [14 <./figures/dnssec/dnssec_query_diagr
-am.png>]
-<figures/dnssec/client-trust-anchor.png, id=278, 612.48825pt x 112.62074pt>
+<figures/dnssec/db_parent.png, id=277, 596.82974pt x 284.262pt>
+File: figures/dnssec/db_parent.png Graphic file (type png)
+<use figures/dnssec/db_parent.png>
+Package pdftex.def Info: figures/dnssec/db_parent.png  used on input line 22.
+(pdftex.def)             Requested size: 346.89732pt x 165.2234pt.
+<figures/dnssec/dnssec_q_diagram.png, id=281, 180.675pt x 146.34676pt>
+File: figures/dnssec/dnssec_q_diagram.png Graphic file (type png)
+<use figures/dnssec/dnssec_q_diagram.png>
+Package pdftex.def Info: figures/dnssec/dnssec_q_diagram.png  used on input lin
+e 34.
+(pdftex.def)             Requested size: 260.17465pt x 210.76147pt.
+<figures/dnssec/DNSKEY_q_diagram.png, id=283, 233.07076pt x 158.39175pt>
+File: figures/dnssec/DNSKEY_q_diagram.png Graphic file (type png)
+<use figures/dnssec/DNSKEY_q_diagram.png>
+Package pdftex.def Info: figures/dnssec/DNSKEY_q_diagram.png  used on input lin
+e 49.
+(pdftex.def)             Requested size: 260.17465pt x 176.81508pt.
+ [13 <./figures/dnssec/db_parent.png>] [14 <./figures/dnssec/dnssec_q_diagram.p
+ng> <./figures/dnssec/DNSKEY_q_diagram.png>]
+<figures/dnssec/rrsig_query.png, id=303, 721.19438pt x 479.54156pt>
+File: figures/dnssec/rrsig_query.png Graphic file (type png)
+<use figures/dnssec/rrsig_query.png>
+Package pdftex.def Info: figures/dnssec/rrsig_query.png  used on input line 63.
+
+(pdftex.def)             Requested size: 346.89732pt x 230.66026pt.
+
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 67.
+See the caption package documentation for explanation.
+
+File: figures/dnssec/DNSKEY_q_diagram.png Graphic file (type png)
+<use figures/dnssec/DNSKEY_q_diagram.png>
+Package pdftex.def Info: figures/dnssec/DNSKEY_q_diagram.png  used on input lin
+e 79.
+(pdftex.def)             Requested size: 346.89732pt x 235.75262pt.
+[15 <./figures/dnssec/rrsig_query.png>] [16]
+<figures/dnssec/client-trust-anchor.png, id=327, 612.48825pt x 112.62074pt>
 File: figures/dnssec/client-trust-anchor.png Graphic file (type png)
 <use figures/dnssec/client-trust-anchor.png>
 Package pdftex.def Info: figures/dnssec/client-trust-anchor.png  used on input 
-line 93.
+line 119.
 (pdftex.def)             Requested size: 346.89732pt x 63.7872pt.
-<figures/dnssec/dnssec-policy.png, id=280, 449.88075pt x 100.57574pt>
+<figures/dnssec/dnssec-policy.png, id=329, 449.88075pt x 100.57574pt>
 File: figures/dnssec/dnssec-policy.png Graphic file (type png)
 <use figures/dnssec/dnssec-policy.png>
 Package pdftex.def Info: figures/dnssec/dnssec-policy.png  used on input line 1
-10.
+36.
 (pdftex.def)             Requested size: 346.89732pt x 77.5525pt.
- [15 <./figures/dnssec/client-trust-anchor.png>])
-(chapters/04-results.tex) (chapters/05-conclusion.tex) [16 <./figures/dnssec/dn
-ssec-policy.png>]
+ [17 <./figures/dnssec/client-trust-anchor.png>]) (chapters/04-results.tex) (ch
+apters/05-conclusion.tex) [18 <./figures/dnssec/dnssec-policy.png>]
 (C:\Users\steve\OneDrive - James Madison University (Dukes)\Desktop\Independent
  Study\DNSSEC-Thesis\_build\main.bbl
 LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line
@@ -1026,17 +1049,17 @@ Underfull \hbox (badness 4205) in paragraph at lines 49--52
  []
 
 
-Underfull \hbox (badness 6658) in paragraph at lines 59--63
+Underfull \hbox (badness 6658) in paragraph at lines 64--68
 []\OT1/minntx/m/n/12 BIND9, ``Trust an-chor.'' [][]$\OT1/ntxtt/m/n/12 https : /
  / bind9 . readthedocs . io / en / v9 . 18 . 39 /
  []
 
-) [17
+) [19
 
 
 ] (appendices/appendices.tex
 Appendix A.
-) [18
+) [20
 
 
 ]
@@ -1047,25 +1070,25 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 2D66BF3440799429A209DCDFAAD9D2AC;3029.
+(rerunfilecheck)             Checksum: A69BD2D4AEB44ED5570D5B624CE73733;3875.
  ) 
 Here is how much of TeX's memory you used:
- 19050 strings out of 467871
- 313562 string characters out of 5418375
- 728016 words of memory out of 5000000
- 47549 multiletter control sequences out of 15000+600000
+ 19087 strings out of 467871
+ 314415 string characters out of 5418375
+ 729016 words of memory out of 5000000
+ 47575 multiletter control sequences out of 15000+600000
  649495 words of font info for 81 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,117p,327b,561s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,117p,327b,561s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/txtt
 .pfb><C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/ztm
 b.pfb><C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx/zt
 mr.pfb>
 Output written on "C:\Users\steve\OneDrive - James Madison University (Dukes)\D
-esktop\Independent Study\DNSSEC-Thesis\_build\main.pdf" (22 pages, 1176330 byte
+esktop\Independent Study\DNSSEC-Thesis\_build\main.pdf" (24 pages, 1283367 byte
 s).
 PDF statistics:
- 361 PDF objects out of 1000 (max. 8388607)
- 76 named destinations out of 1000 (max. 500000)
- 261 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 413 PDF objects out of 1000 (max. 8388607)
+ 87 named destinations out of 1000 (max. 500000)
+ 311 words of extra memory for PDF output out of 10000 (max. 10000000)
 

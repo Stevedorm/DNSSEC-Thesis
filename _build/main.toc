@@ -14,20 +14,22 @@
 \contentsline {subsubsection}{Nameserver Records}{7}{figure.caption.5}%
 \contentsline {section}{\numberline {2.2}The DNS Environment}{8}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}DNS Zones}{10}{subsection.2.2.1}%
-\contentsline {section}{\numberline {2.3}DNS Vulnerabilities}{11}{section.2.3}%
+\contentsline {section}{\numberline {2.3}DNS Vulnerabilities}{10}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}DNS Spoofing/Cache Poisoning}{11}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}DNS Hijacking}{11}{subsection.2.3.2}%
 \contentsline {chapter}{\numberline {3}DNSSEC Setup}{12}{chapter.3}%
 \contentsline {section}{\numberline {3.1}DNSSEC Research}{12}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}New DNS Records}{13}{subsection.3.1.1}%
-\contentsline {subsubsection}{Resource Record Set}{13}{figure.caption.12}%
-\contentsline {subsubsection}{Resource Record Signature}{14}{figure.caption.12}%
-\contentsline {subsubsection}{Zone Signing Key}{14}{figure.caption.12}%
-\contentsline {subsubsection}{Key Signing Key}{14}{section*.13}%
-\contentsline {subsubsection}{Delegation Signer}{15}{section*.14}%
-\contentsline {section}{\numberline {3.2}Chain Of Trust}{15}{section.3.2}%
-\contentsline {section}{\numberline {3.3}DNSSEC Options}{15}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}DNSSEC Policy}{16}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Signing}{16}{subsection.3.3.2}%
-\contentsline {chapter}{\numberline {A}Appendix}{18}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Procedure Manual}{18}{section.A.1}%
+\contentsline {section}{\numberline {3.2}New DNS Records}{13}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Resource Record Set}{13}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Resource Record Signature}{15}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}DNSKEYs In General}{15}{subsection.3.2.3}%
+\contentsline {subsubsection}{Zone Signing Key}{16}{figure.caption.14}%
+\contentsline {subsubsection}{Key Signing Key}{16}{section*.15}%
+\contentsline {subsection}{\numberline {3.2.4}Delegation Signer}{17}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Chain Of Trust}{17}{section.3.3}%
+\contentsline {section}{\numberline {3.4}DNSSEC Options}{17}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}DNSSEC Policy}{17}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Signing}{18}{subsection.3.4.2}%
+\contentsline {section}{\numberline {3.5}DNSSEC In The Environment}{18}{section.3.5}%
+\contentsline {chapter}{\numberline {A}Appendix}{20}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Procedure Manual}{20}{section.A.1}%

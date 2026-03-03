@@ -50,6 +50,11 @@
   \url{https://bind9.readthedocs.io/en/v9.18.39/dnssec-guide.html}, 2025.
 \newblock Accessed: 2026-2-25.
 
+\bibitem{rfc4034}
+{R. Arends, et. al}, ``Resource records for the dns security extensions.''
+  \url{https://datatracker.ietf.org/doc/html/rfc4034}, 2005.
+\newblock Accessed: 2026-2-23.
+
 \bibitem{zone-keys}
 {BIND9}, ``Introduction to dns and bind 9.''
   \url{https://bind9.readthedocs.io/en/v9.18.39/chapter5.html#zone-keys}, 2025.
