@@ -37,6 +37,19 @@
 ]{hyperref}
 \usepackage[nameinlink,noabbrev]{cleveref}
 
+% Reduce float-only pages
+\renewcommand{\floatpagefraction}{0.9} % require 90% full to make a float page
+\renewcommand{\textfraction}{0.05}     % allow little text with floats
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+
+% If a float page happens anyway, don't center it vertically
+\makeatletter
+\setlength{\@fptop}{0pt}
+\setlength{\@fpsep}{12pt}
+\setlength{\@fpbot}{0pt}
+\makeatother
+
 % --- Page numbering (JMU: roman bottom-center front matter; arabic top-right text) ---
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -94,7 +107,7 @@
 \input{chapters/01-intro}
 \input{chapters/02-dns}
 \input{chapters/03-dnssec}
-\input{chapters/04-results}
+\input{chapters/04-algorithms}
 \input{chapters/05-conclusion}
 
 \clearpage

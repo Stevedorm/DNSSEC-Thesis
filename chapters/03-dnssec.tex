@@ -3,7 +3,8 @@
 \section{DNSSEC Research}
     DNSSEC, or Domain Name System Security Extension, adds a layer of security to the otherwise vulnerable DNS. DNSSEC adds security by using cryptographic signatures
 with public key cryptography, with the private key signing it and the public key verifying. DNSSEC also implements hashing, which helps to add more confusion and making it 
-harder for attackers to know what plain text strings were previously used.
+harder for attackers to know what plain text strings were previously used. It also adds data integrity and and authentication to the data, showing whether it was tampered 
+with and the signing provides the authentication.
 
 % https://www.sidn.nl/en/news-and-blogs/security-of-dns-isnt-be-assured-unless-dnssec-validation-is-enabled-on-the-end-users-client
 There is an additional flag with dnssec queries, the "ad" flag. This flag is passed along with successful DNSSEC queries, meaning "Authenticated Data". When you query 
@@ -14,7 +15,8 @@ will write code to validate these records.
 Below, \cref{fig:dnssec-lab}, is db.lab, but now set for DNSSEC. It changed directories to allow for permission to be more for the owner of the server (me). Originally, 
 DNS configuration and the db files were in /etc/bind/, but now they moved to /var/lib/bind/ to allow for more freedom and not having to deal with bind ownership. Changing 
 the zone configuration to point to the new db file allows the server to write into this directory. As you can see below, there is a good number of changes to the db file.
-Gone are the @ symbols preceding lines, and there is a new minimum time record. At the bottom of the figure, yuo can see a \hyperref[subsec:ds]{Delegation Signer} record,
+Gone are the @ symbols preceding lines, and there is a new minimum time record. There is still a SOA and NS and A records, which have minimally changed from regular DNS. 
+At the bottom of the figure, yuo can see a \hyperref[subsec:ds]{Delegation Signer} record,
 which came from the child zone. This is an important part of the Chain of trust, allowing the parent to verify the child is the child.\cite{dnssec-ubuntu}
 
 \begin{figure}[htbp]
@@ -32,15 +34,15 @@ signs the records from the zone, and the KSK signs the ZSK. The hand shake looks
 \begin{figure}[htbp]
   \centering
   \fbox{\includegraphics[width=0.6\textwidth]{figures/dnssec/dnssec_q_diagram.png}}
-  \caption{A diagram showing a high level view of a DNSSEC query}
+  \caption{A diagram showing a high level view of a DNSSEC query, digging for an Address Record.}
   \label{fig:dnssec-diagram}
 \end{figure}
 
 \subsection{Resource Record Set}
 
 This record is not an explicit record, rather a descriptive word to describe records that are grouped together. For instance, if I query for my parent server for DNSKEYs, 
-I receive the RRSet that is signed, seen below in \cref{fig:dnskey_diagram}. These keys are signed together as a set by the Key Signing Key, which name is pretty explanatory for 
-what it's purpose is.
+I receive the RRSet that is signed, seen below in \cref{fig:dnskey_diagram}. These keys are signed together as a set by the Key Signing Key, which the name is pretty explanatory for 
+what it's purpose is. \cite{rfc4034}
 
 
 
@@ -61,10 +63,10 @@ servers to verify that the answer to the question is valid. \cite{sec-gen-guide}
 
 \begin{center}
 \includegraphics[width=0.8\textwidth]{figures/dnssec/rrsig_query.png}
-\label{fig:a-rrsig}
 \end{center}
 
-\captionof{figure}{Test}
+\captionof{figure}{Address record with a RRSIG from the ZSK}
+\label{fig:a-rrsig}
 
 \subsection{DNSKEYs In General}
 
@@ -76,7 +78,7 @@ The general format for these RRs is as fo\cite{rfc4034} \cref{fig:dnskey}
 
 \begin{figure}[htbp]
   \centering
-  \fbox{\includegraphics[width=0.8\textwidth]{figures/dnssec/DNSKEY_q_diagram.png}}
+  \fbox{\includegraphics[width=0.8\textwidth]{figures/dnssec/dnskey_query.png}}
   \caption{This query shows a dig at the parent for the DNSKEYs}
   \label{fig:dnskey}
 \end{figure}
@@ -145,3 +147,7 @@ Right now, I am using Inline Signing, which automatically generates keys and sig
 NOTE: Still gathering information on this, and seeing if fully manual signing is worth it, because I'm not sure if you can sign RR independently
 
 \section{DNSSEC In The Environment}
+
+With DNSSEC on the internet, there is normally a validating resolver separate from the client machine that authenticates and validates the answers 
+from the server before the client gets the response back. Normally, this is done recursively. For this study, there is no recursion and instead the answers 
+will be manually validated.

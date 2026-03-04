@@ -34,9 +34,15 @@ UDP message.\cite{bind-9}
 
 \subsection{DNS Records}
   These DNS records are the most common records used in building a DNS server. These records are all in db files, which are database files used for each zone defined. For example, the zone ".lab" will have a db.lab file. You can name it whatever, 
-as long as it aligns with the named.conf.local zone path defined for the zone. It is best practice to have the domain name as the db files extension. For both the A and NS records, their line begins with an @ symbol.
+as long as it aligns with the named.conf.local zone path defined for the zone. It is best practice to have the domain name as the db files extension. For both the A and NS records, their line begins with an @ symbol. Below is an example of my db.lab 
+file for the lab zone on VM1.
 
-<Include a db file here, need an updated pic with new terminal>
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{figures/dns/db_lab-bind.png}}
+  \caption{The db.lab file for the lab zone.}
+  \label{fig:db}
+\end{figure}
 
 \subsubsection{Start Of Authority Records}
   SOA records, or "Start Of Authority" records, show the domain name that the specific db file has authority over. There are several sub records within. The MNAME is the domain name of the name server of the original or primary source of data
@@ -99,12 +105,16 @@ There are numerous similarities between DNS with the internet and this testbed s
 as there are no websites mapped to the IPs on my DNS servers, just more local IPs which could be a website. There is also no official "." or root domain, but my "root" domain is lab., which is also my top level domain. This is seen in \cref{fig:env}.
 In this setup, authority is held in the parent vm and passed downward onto the child server. In real DNS, a recursive resolver is used and traverses the different levels of domains.
 
-\begin{figure}[htbp]
+% \FloatBarrier
+
+\begin{figure}[!t]
   \centering
-  \fbox{\includegraphics[width=0.7\textwidth]{figures/dns/env_diagram.png}}
+  \includegraphics[width=0.6\textwidth]{figures/dns/env_diagram.png}
   \caption{This is a diagram of the setup of the virtual environment, with inspiration of the layout coming from Dr.Aboutabl}
   \label{fig:env}
 \end{figure}
+
+\FloatBarrier
 
 In this study, both the parent and the child server have authority over their own domains, and you can also traverse the tree to query the parent for 
 information on the child server, as seen below in \cref{fig:p-c}. There are also no IPV6 records, and this is disabled in the configuration of the servers.
@@ -116,7 +126,6 @@ information on the child server, as seen below in \cref{fig:p-c}. There are also
   \label{fig:p-c}
 \end{figure}
 
-\FloatBarrier
 
 
 
