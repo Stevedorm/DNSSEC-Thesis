@@ -1,6 +1,6 @@
-\chapter{DNS Setup}
+\chapter{Introduction to the Domain Naming System}
 
-\section{DNS Research}
+\section{DNS Background}
 
 
 Firstly, I think a bit of background about DNS helps to understand why it became what it is today. DNS started 
@@ -32,7 +32,7 @@ However, it helps to see the root domain being reached in this instance. There a
 UDP message.\cite{bind-9}
 
 
-\subsection{DNS Records}
+\subsection{DNS Resource Records}
   These DNS records are the most common records used in building a DNS server. These records are all in db files, which are database files used for each zone defined. For example, the zone ".lab" will have a db.lab file. You can name it whatever, 
 as long as it aligns with the named.conf.local zone path defined for the zone. It is best practice to have the domain name as the db files extension. For both the A and NS records, their line begins with an @ symbol. Below is an example of my db.lab 
 file for the lab zone on VM1.
@@ -116,6 +116,18 @@ In this setup, authority is held in the parent vm and passed downward onto the c
 
 \FloatBarrier
 
+\subsection{Environment Zones}
+In the environment, there are different zones between the two name servers. As seen in \cref{fig:zones}, the parent zone holds .lab, with an extension to
+the child zone, .jmu. To be able to query the child, you need a domain name, followed by .jmu.lab. A full example of a valid query would be like this: quad.jmu.lab. 
+Quad is the final piece, and this domain maps to 192.168.107.64. You can query the child server directly and receive responses, or you can query it through the parent server.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.7\textwidth]{figures/dns/dns_zones_diagram.png}}
+  \caption{This is a diagram showing the zones and their relationship.}
+  \label{fig:zones}
+\end{figure}
+\FloatBarrier
 In this study, both the parent and the child server have authority over their own domains, and you can also traverse the tree to query the parent for 
 information on the child server, as seen below in \cref{fig:p-c}. There are also no IPV6 records, and this is disabled in the configuration of the servers.
 
@@ -129,18 +141,7 @@ information on the child server, as seen below in \cref{fig:p-c}. There are also
 
 
 
-\subsection{DNS Zones}
-In the environment, there are different zones between the two name servers. As seen in \cref{fig:zones}, the parent zone holds .lab, with an extension to
-the child zone, .jmu. To be able to query the child, you need a domain name, followed by .jmu.lab. A full example of a valid query would be like this: quad.jmu.lab. 
-Quad is the final piece, and this domain maps to 192.168.107.64. You can query the child server directly and receive responses, or you can query it through the parent server.
-
-\begin{figure}[htbp]
-  \centering
-  \fbox{\includegraphics[width=0.7\textwidth]{figures/dns/dns_zones_diagram.png}}
-  \caption{This is a diagram showing the zones and their relationship.}
-  \label{fig:zones}
-\end{figure}
-
+% Do more research in this area, read papers and beef it up.
 
 \section{DNS Vulnerabilities}
 
