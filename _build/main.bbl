@@ -55,15 +55,15 @@
   \url{https://bind9.readthedocs.io/en/v9.18.39/dnssec-guide.html}, 2025.
 \newblock Accessed: 2026-2-25.
 
-\bibitem{zone-keys}
-{BIND9}, ``Introduction to dns and bind 9.''
-  \url{https://bind9.readthedocs.io/en/v9.18.39/chapter5.html#zone-keys}, 2025.
-\newblock Accessed: 2026-2-25.
-
 \bibitem{trust-anchors}
 {BIND9}, ``Trust anchor.''
   \url{https://bind9.readthedocs.io/en/v9.18.39/dnssec-guide.html#trust-anchors},
   2025.
 \newblock Accessed: 2026-2-25.
+
+\bibitem{trust-chain}
+{dnsimple}, ``The dnssec chain of trust.''
+  \url{https://support.dnsimple.com/articles/dnssec-chain-of-trust/}, 2026.
+\newblock Accessed: 2026-2-28.
 
 \end{thebibliography}

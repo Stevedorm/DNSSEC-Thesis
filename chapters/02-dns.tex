@@ -155,6 +155,9 @@ attacker inserts their malicious address in place of a cached address. This atta
 and with UDP it makes it even easier for this attack to occur. Cache poisoning is DNS Spoofing without having to hijack the query. The systems involved with DNS, like servers, computers, and routers can cache DNS lookups for quicker recall.
 An attacker can poison the cache by replacing an entry with a spoofed domain. This spoofed domain gets accessed until the cache gets refreshed and the spoofed site gets replaced.\cite{cache-poisoning}
 
+Acording to the article, cache poisoning is when the attacker injects bad data into a recursive nameservers cache, which leads to it distributing this data without knowing and the client does not know either. The host names are legit, 
+but the server they are visiting cannot be trusted and is bad.
+
 \subsection{DNS Hijacking}
 
   DNS Hijacking occurs when an attacker tries to redirect where the client is going with their query. The can perform a man-in-the-middle attack and take the query and replace it with their IP, causing the user's machine 
