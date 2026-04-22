@@ -1,6 +1,6 @@
 Add more to Chapter 2 - DNS Vulnerabilities/Attacks.
 
-Add more to Chpter 3 - Corrupting
+Add more to Chapter 3 - Corrupting, Canonical ordering, Canonical Diagram, RRSIG diagrams,
 
 PROOF READ CONTENT IN GENERAL
 
