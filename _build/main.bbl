@@ -33,6 +33,11 @@
   \url{https://www.cloudflare.com/learning/dns/dns-cache-poisoning/}, 2025.
 \newblock Accessed: 2026-2-22.
 
+\bibitem{spoof-article}
+{Stephen J. Friedl}, ``An illustrated guide to dns cache poisoning.''
+  \url{http://unixwiz.net/techtips/iguide-kaminsky-dns-vuln.html}, 2008.
+\newblock Accessed: 2026-3-4.
+
 \bibitem{hijacking2}
 {Imperva}, ``What is dns hijacking / redirection attack.''
   \url{https://www.imperva.com/learn/application-security/dns-hijacking-redirection/},
@@ -65,5 +70,10 @@
 {dnsimple}, ``The dnssec chain of trust.''
   \url{https://support.dnsimple.com/articles/dnssec-chain-of-trust/}, 2026.
 \newblock Accessed: 2026-2-28.
+
+\bibitem{key-rollover}
+{Vicky Risk, Suzanne Goldlust}, ``Automatic dnssec zone signing key rollover
+  explained.'' \url{https://kb.isc.org/docs/aa-00822}, 2021.
+\newblock Accessed: 2026-4-20.
 
 \end{thebibliography}

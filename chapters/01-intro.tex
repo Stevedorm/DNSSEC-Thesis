@@ -3,7 +3,7 @@
 \section{Motivation}
     DNS by itself is insecure and vulnerable to attack. With DNSSEC, these vulnerabilities are contained and mitigated.
 
-    My personal motivation for this study was a hand on security project, proctored by Dr. Aboutabl, who has become one of my personal favorite
+    My personal motivation for this study was a hand on security project, advised by Dr. Aboutabl, who has become one of my personal favorite
 professors here at JMU. His Information Security class helped further my interest for security, and when he mentioned this study, I knew I had to seize the opportunity.
 
 
@@ -16,7 +16,14 @@ also be looking at the performance of DNSSEC, and how it compares to DNS.
 % DNS by itself is insecure and vulnerable to attack. With DNSSEC, these vulnerabilites are contained and mitigated.
 
 \section{Contributions}
-What did I contribute?
+
+I contributed the research and implementation of the DNS testbed environment, the algorithms and data structures used in DNSSEC, and the performance 
+analysis of DNSSEC. I also contributed to the writing of this thesis, and the presentation of the results. I also manually wrote the code to generate 
+signatures and validate them, which is a good way to test the validation process, because I can control the data that is being signed and verified. Not 
+only that, but I am also creating the signature myself to prove that the received signature is valid as well.
+
+Dr. Mohamed Aboutabl, my advisor, contributed in providing inspiration when I was stuck, and providing guidance on how to approach the project. He also 
+provided feedback on the writing of this thesis, and the presentation of the results.
 
 
 
@@ -38,5 +45,5 @@ addresses to machines on the network. For me, I wanted to statically and manuall
 
 \section{Bind9}
 
-I installed Bind9 on all of the VMs in the Virtual Network. The version I installed was 9.18.39 (check). I decided on Bind9 because it was a good option to be used on Ubuntu machines and gave me the control I wanted.
+I installed Bind9 on all of the VMs in the Virtual Network. The version I installed was 9.18.39. I decided on Bind9 because it was a good option to be used on Ubuntu machines and gave me the control I wanted.
 
