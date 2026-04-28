@@ -5,3 +5,12 @@ Add more to Chapter 3 - Corrupting, Canonical ordering, Canonical Diagram, RRSIG
 PROOF READ CONTENT IN GENERAL
 
 Add more content to later chapters
+
+REVIEW:
+    DNS Vulnerabilities and Attack
+    DNS Corruption
+    NSEC Records
+    Canonicalization
+    Key Rollover
+    ALGOS
+    PROG
