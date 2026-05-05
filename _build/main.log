@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.15)  27 APR 2026 13:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.15)  5 MAY 2026 00:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -913,100 +913,100 @@ Chapter 1.
 
 ] [2]) (chapters/02-dns.tex [3]
 Chapter 2.
-<figures/dns/dns_heirarchy.png, id=309, 231.86626pt x 293.29575pt>
+<figures/dns/dns_heirarchy.png, id=319, 231.86626pt x 293.29575pt>
 File: figures/dns/dns_heirarchy.png Graphic file (type png)
 <use figures/dns/dns_heirarchy.png>
-Package pdftex.def Info: figures/dns/dns_heirarchy.png  used on input line 21.
+Package pdftex.def Info: figures/dns/dns_heirarchy.png  used on input line 20.
 (pdftex.def)             Requested size: 173.44534pt x 219.4029pt.
 [4
 
 ]
 
 Package caption Warning: \setcaptiontype
-(caption)                outside box or environment on input line 24.
+(caption)                outside box or environment on input line 23.
 See the caption package documentation for explanation.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 24.
+(caption)                particular \caption on input line 23.
 See the caption package documentation for explanation.
 
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 35.
+(Font)              scaled to size 14.4pt on input line 34.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 35.
+(Font)              scaled to size 14.4pt on input line 34.
 [5 <./figures/dns/dns_heirarchy.png>]
-<figures/dns/db_lab-bind.png, id=324, 464.4853pt x 328.97906pt>
+<figures/dns/db_lab-bind.png, id=334, 464.4853pt x 328.97906pt>
 File: figures/dns/db_lab-bind.png Graphic file (type png)
 <use figures/dns/db_lab-bind.png>
-Package pdftex.def Info: figures/dns/db_lab-bind.png  used on input line 42.
+Package pdftex.def Info: figures/dns/db_lab-bind.png  used on input line 41.
 (pdftex.def)             Requested size: 346.89732pt x 245.6996pt.
  [6 <./figures/dns/db_lab-bind.png>]
-<figures/dns/soa_lab.png, id=335, 454.69875pt x 102.98476pt>
+<figures/dns/soa_lab.png, id=345, 454.69875pt x 102.98476pt>
 File: figures/dns/soa_lab.png Graphic file (type png)
 <use figures/dns/soa_lab.png>
-Package pdftex.def Info: figures/dns/soa_lab.png  used on input line 58.
+Package pdftex.def Info: figures/dns/soa_lab.png  used on input line 56.
 (pdftex.def)             Requested size: 346.89732pt x 78.56935pt.
-<figures/dns/a_dig.png, id=338, 611.886pt x 30.1125pt>
+<figures/dns/a_dig.png, id=348, 611.886pt x 30.1125pt>
 File: figures/dns/a_dig.png Graphic file (type png)
 <use figures/dns/a_dig.png>
-Package pdftex.def Info: figures/dns/a_dig.png  used on input line 72.
+Package pdftex.def Info: figures/dns/a_dig.png  used on input line 70.
 (pdftex.def)             Requested size: 390.25536pt x 19.20575pt.
-<figures/dns/a_record.png, id=340, 348.1005pt x 34.32825pt>
+<figures/dns/a_record.png, id=350, 348.1005pt x 34.32825pt>
 File: figures/dns/a_record.png Graphic file (type png)
 <use figures/dns/a_record.png>
-Package pdftex.def Info: figures/dns/a_record.png  used on input line 81.
+Package pdftex.def Info: figures/dns/a_record.png  used on input line 79.
 (pdftex.def)             Requested size: 346.89732pt x 34.20975pt.
 
 [7 <./figures/dns/soa_lab.png> <./figures/dns/a_dig.png> <./figures/dns/a_recor
 d.png>]
-<figures/dns/ns_lab.png, id=355, 358.33875pt x 97.5645pt>
+<figures/dns/ns_lab.png, id=365, 358.33875pt x 97.5645pt>
 File: figures/dns/ns_lab.png Graphic file (type png)
 <use figures/dns/ns_lab.png>
-Package pdftex.def Info: figures/dns/ns_lab.png  used on input line 97.
+Package pdftex.def Info: figures/dns/ns_lab.png  used on input line 95.
 (pdftex.def)             Requested size: 346.89732pt x 94.4558pt.
-<figures/dns/env.png, id=357, 286.06876pt x 325.81725pt>
+<figures/dns/env.png, id=367, 286.06876pt x 325.81725pt>
 File: figures/dns/env.png Graphic file (type png)
 <use figures/dns/env.png>
-Package pdftex.def Info: figures/dns/env.png  used on input line 112.
+Package pdftex.def Info: figures/dns/env.png  used on input line 110.
 (pdftex.def)             Requested size: 260.17465pt x 296.33008pt.
  [8 <./figures/dns/ns_lab.png>]
-<figures/dns/zones.png, id=368, 280.6485pt x 211.38976pt>
+<figures/dns/zones.png, id=378, 254.1495pt x 184.89075pt>
 File: figures/dns/zones.png Graphic file (type png)
 <use figures/dns/zones.png>
-Package pdftex.def Info: figures/dns/zones.png  used on input line 126.
-(pdftex.def)             Requested size: 303.53267pt x 228.64264pt.
+Package pdftex.def Info: figures/dns/zones.png  used on input line 124.
+(pdftex.def)             Requested size: 303.53267pt x 220.83519pt.
  [9 <./figures/dns/env.png>]
-<figures/dns/dig_p_get_c.png, id=376, 612.48825pt x 217.41225pt>
+<figures/dns/dig_p_get_c.png, id=386, 612.48825pt x 217.41225pt>
 File: figures/dns/dig_p_get_c.png Graphic file (type png)
 <use figures/dns/dig_p_get_c.png>
-Package pdftex.def Info: figures/dns/dig_p_get_c.png  used on input line 137.
+Package pdftex.def Info: figures/dns/dig_p_get_c.png  used on input line 135.
 (pdftex.def)             Requested size: 346.89732pt x 123.14001pt.
  [10 <./figures/dns/zones.png> <./figures/dns/dig_p_get_c.png>] [11]
-<figures/dns/dns-spoof.png, id=392, 461.92575pt x 280.6485pt>
+<figures/dns/dns-spoof.png, id=402, 461.92575pt x 280.6485pt>
 File: figures/dns/dns-spoof.png Graphic file (type png)
 <use figures/dns/dns-spoof.png>
-Package pdftex.def Info: figures/dns/dns-spoof.png  used on input line 180.
+Package pdftex.def Info: figures/dns/dns-spoof.png  used on input line 178.
 (pdftex.def)             Requested size: 346.89732pt x 210.7685pt.
  [12 <./figures/dns/dns-spoof.png>]
-<figures/dns/dns-hijack.png, id=406, 396.2805pt x 283.0575pt>
+<figures/dns/dns-hijack.png, id=416, 396.2805pt x 283.0575pt>
 File: figures/dns/dns-hijack.png Graphic file (type png)
 <use figures/dns/dns-hijack.png>
-Package pdftex.def Info: figures/dns/dns-hijack.png  used on input line 215.
+Package pdftex.def Info: figures/dns/dns-hijack.png  used on input line 213.
 (pdftex.def)             Requested size: 346.89732pt x 247.79994pt.
  [13]
-<figures/attacks/updated attack zone.png, id=417, 380.622pt x 297.5115pt>
+<figures/attacks/updated attack zone.png, id=427, 380.622pt x 297.5115pt>
 File: figures/attacks/updated attack zone.png Graphic file (type png)
 <use figures/attacks/updated attack zone.png>
 Package pdftex.def Info: figures/attacks/updated attack zone.png  used on input
- line 236.
+ line 234.
 (pdftex.def)             Requested size: 260.17465pt x 203.3765pt.
  [14 <./figures/dns/dns-hijack.png>]
-<figures/attacks/successful-injection.png, id=428, 603.0028pt x 300.3722pt>
+<figures/attacks/successful-injection.png, id=438, 603.0028pt x 300.3722pt>
 File: figures/attacks/successful-injection.png Graphic file (type png)
 <use figures/attacks/successful-injection.png>
 Package pdftex.def Info: figures/attacks/successful-injection.png  used on inpu
-t line 247.
+t line 245.
 (pdftex.def)             Requested size: 346.89732pt x 172.79515pt.
 ) (chapters/03-dnssec.tex
 [15 <./figures/attacks/updated attack zone.png>]
@@ -1017,241 +1017,278 @@ Chapter 3.
 [17
 
 ]
-<figures/dnssec/db_parent.png, id=450, 596.82974pt x 284.262pt>
+<figures/dnssec/db_parent.png, id=460, 596.82974pt x 284.262pt>
 File: figures/dnssec/db_parent.png Graphic file (type png)
 <use figures/dnssec/db_parent.png>
 Package pdftex.def Info: figures/dnssec/db_parent.png  used on input line 28.
 (pdftex.def)             Requested size: 346.89732pt x 165.2234pt.
-<figures/dnssec/dnssec_q_diagram.png, id=454, 180.675pt x 146.34676pt>
+<figures/dnssec/dnssec_q_diagram.png, id=464, 180.675pt x 146.34676pt>
 File: figures/dnssec/dnssec_q_diagram.png Graphic file (type png)
 <use figures/dnssec/dnssec_q_diagram.png>
 Package pdftex.def Info: figures/dnssec/dnssec_q_diagram.png  used on input lin
 e 42.
 (pdftex.def)             Requested size: 260.17465pt x 210.76147pt.
  [18 <./figures/dnssec/db_parent.png>]
-<figures/dnssec/dnskey_q.png, id=466, 342.078pt x 160.80075pt>
+<figures/dnssec/dnskey_q.png, id=477, 342.078pt x 160.80075pt>
 File: figures/dnssec/dnskey_q.png Graphic file (type png)
 <use figures/dnssec/dnskey_q.png>
 Package pdftex.def Info: figures/dnssec/dnskey_q.png  used on input line 55.
 (pdftex.def)             Requested size: 260.17465pt x 122.30551pt.
  [19 <./figures/dnssec/dnssec_q_diagram.png> <./figures/dnssec/dnskey_q.png>]
-<figures/dnssec/a_dnssec_query.png, id=477, 518.53725pt x 187.902pt>
+<figures/dnssec/a_dnssec_query.png, id=487, 518.53725pt x 187.902pt>
 File: figures/dnssec/a_dnssec_query.png Graphic file (type png)
 <use figures/dnssec/a_dnssec_query.png>
 Package pdftex.def Info: figures/dnssec/a_dnssec_query.png  used on input line 
-70.
+73.
 (pdftex.def)             Requested size: 260.17465pt x 94.27762pt.
-<figures/dnssec/rrsig_query.png, id=480, 721.19438pt x 479.54156pt>
+<figures/dnssec/rrsig_query.png, id=490, 721.19438pt x 479.54156pt>
 File: figures/dnssec/rrsig_query.png Graphic file (type png)
 <use figures/dnssec/rrsig_query.png>
-Package pdftex.def Info: figures/dnssec/rrsig_query.png  used on input line 85.
+Package pdftex.def Info: figures/dnssec/rrsig_query.png  used on input line 88.
 
 (pdftex.def)             Requested size: 346.89732pt x 230.66026pt.
-
-
-Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 88.
-See the caption package documentation for explanation.
-
-[20 <./figures/dnssec/a_dnssec_query.png> <./figures/dnssec/rrsig_query.png>]
-<figures/algos/rrsig_metadata.png, id=492, 435.42674pt x 269.808pt>
-File: figures/algos/rrsig_metadata.png Graphic file (type png)
-<use figures/algos/rrsig_metadata.png>
-Package pdftex.def Info: figures/algos/rrsig_metadata.png  used on input line 1
-03.
-(pdftex.def)             Requested size: 346.89732pt x 214.95743pt.
-
+ [20 <./figures/dnssec/a_dnssec_query.png>]
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 106.
+(caption)                particular \caption on input line 91.
 See the caption package documentation for explanation.
 
-[21 <./figures/algos/rrsig_metadata.png>]
-<figures/dnssec/dnskey_query.png, id=503, 910.90312pt x 536.75531pt>
+<figures/algos/rrsig-metadata.png, id=501, 426.393pt x 287.8755pt>
+File: figures/algos/rrsig-metadata.png Graphic file (type png)
+<use figures/algos/rrsig-metadata.png>
+Package pdftex.def Info: figures/algos/rrsig-metadata.png  used on input line 1
+06.
+(pdftex.def)             Requested size: 346.89732pt x 234.21013pt.
+[21 <./figures/dnssec/rrsig_query.png>]
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 109.
+See the caption package documentation for explanation.
+
+<figures/dnssec/dnskey_query.png, id=512, 910.90312pt x 536.75531pt>
 File: figures/dnssec/dnskey_query.png Graphic file (type png)
 <use figures/dnssec/dnskey_query.png>
 Package pdftex.def Info: figures/dnssec/dnskey_query.png  used on input line 12
-5.
+8.
 (pdftex.def)             Requested size: 346.89732pt x 204.41139pt.
 LaTeX Font Info:    Trying to load font information for OT1+ntxtt on input line
- 130.
-
+ 133.
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ot1ntxtt.fd
 File: ot1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `OT1/ntxtt/m/n' will be
-(Font)              scaled to size 12.0pt on input line 130.
+(Font)              scaled to size 12.0pt on input line 133.
 
-[22 <./figures/dnssec/dnskey_query.png>] [23]
-<figures/dnssec/ds-command.png, id=521, 605.26125pt x 66.2475pt>
+[22 <./figures/algos/rrsig-metadata.png>] [23 <./figures/dnssec/dnskey_query.pn
+g>]
+<figures/dnssec/ds-command.png, id=531, 605.26125pt x 66.2475pt>
 File: figures/dnssec/ds-command.png Graphic file (type png)
 <use figures/dnssec/ds-command.png>
-Package pdftex.def Info: figures/dnssec/ds-command.png  used on input line 171.
+Package pdftex.def Info: figures/dnssec/ds-command.png  used on input line 174.
 
 (pdftex.def)             Requested size: 346.89732pt x 37.96867pt.
-<figures/dnssec/ds.png, id=522, 674.52pt x 57.96657pt>
+<figures/dnssec/ds.png, id=532, 674.52pt x 57.96657pt>
 File: figures/dnssec/ds.png Graphic file (type png)
 <use figures/dnssec/ds.png>
-Package pdftex.def Info: figures/dnssec/ds.png  used on input line 172.
+Package pdftex.def Info: figures/dnssec/ds.png  used on input line 175.
 (pdftex.def)             Requested size: 346.89732pt x 29.81198pt.
-<figures/dnssec/client-trust-anchor.png, id=527, 612.48825pt x 112.62074pt>
+ [24 <./figures/dnssec/ds-command.png> <./figures/dnssec/ds.png>]
+<figures/dnssec/nsec-record.png, id=542, 606.76688pt x 245.41687pt>
+File: figures/dnssec/nsec-record.png Graphic file (type png)
+<use figures/dnssec/nsec-record.png>
+Package pdftex.def Info: figures/dnssec/nsec-record.png  used on input line 190
+.
+(pdftex.def)             Requested size: 346.89732pt x 140.30847pt.
+ [25 <./figures/dnssec/nsec-record.png>]
+<figures/dnssec/client-trust-anchor.png, id=557, 612.48825pt x 112.62074pt>
 File: figures/dnssec/client-trust-anchor.png Graphic file (type png)
 <use figures/dnssec/client-trust-anchor.png>
 Package pdftex.def Info: figures/dnssec/client-trust-anchor.png  used on input 
-line 193.
+line 209.
 (pdftex.def)             Requested size: 346.89732pt x 63.7872pt.
- [24 <./figures/dnssec/ds-command.png> <./figures/dnssec/ds.png>]
-<figures/dnssec/key-rollover/2sig-arecord.png, id=543, 567.62062pt x 229.60782p
+<figures/dnssec/key-rollover/2sig-arecord.png, id=564, 567.62062pt x 229.60782p
 t>
 File: figures/dnssec/key-rollover/2sig-arecord.png Graphic file (type png)
 <use figures/dnssec/key-rollover/2sig-arecord.png>
 Package pdftex.def Info: figures/dnssec/key-rollover/2sig-arecord.png  used on 
-input line 218.
+input line 234.
 (pdftex.def)             Requested size: 303.53267pt x 122.78465pt.
-<figures/dnssec/key-rollover/dnskey-q.png, id=544, 907.13907pt x 155.07938pt>
+<figures/dnssec/key-rollover/dnskey-q.png, id=565, 907.13907pt x 155.07938pt>
 File: figures/dnssec/key-rollover/dnskey-q.png Graphic file (type png)
 <use figures/dnssec/key-rollover/dnskey-q.png>
 Package pdftex.def Info: figures/dnssec/key-rollover/dnskey-q.png  used on inpu
-t line 225.
+t line 241.
 (pdftex.def)             Requested size: 390.25536pt x 66.71594pt.
- [25 <./figures/dnssec/client-trust-anchor.png>]
+ [26 <./figures/dnssec/client-trust-anchor.png>]
 LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
-e 235.
+e 251.
+
 (C:\Users\steve\AppData\Local\Programs\MiKTeX\tex/latex/newtx\ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 12.0pt on input line 235.
+(Font)              scaled to size 12.0pt on input line 251.
 
-[26{C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1
+[27{C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1
 .enc} <./figures/dnssec/key-rollover/2sig-arecord.png> <./figures/dnssec/key-ro
 llover/dnskey-q.png>]
-<figures/dnssec/key-rollover/dnssec-status-old-key-lab.png, id=566, 615.80063pt
+<figures/dnssec/key-rollover/dnssec-status-old-key-lab.png, id=587, 615.80063pt
  x 528.47438pt>
 File: figures/dnssec/key-rollover/dnssec-status-old-key-lab.png Graphic file (t
 ype png)
 <use figures/dnssec/key-rollover/dnssec-status-old-key-lab.png>
 Package pdftex.def Info: figures/dnssec/key-rollover/dnssec-status-old-key-lab.
-png  used on input line 244.
+png  used on input line 261.
 (pdftex.def)             Requested size: 303.53267pt x 260.4949pt.
-<figures/dnssec/key-rollover/view-dnssec-keys-rollover.png, id=568, 551.05875pt
+<figures/dnssec/key-rollover/view-dnssec-keys-rollover.png, id=589, 551.05875pt
  x 367.3725pt>
 File: figures/dnssec/key-rollover/view-dnssec-keys-rollover.png Graphic file (t
 ype png)
 <use figures/dnssec/key-rollover/view-dnssec-keys-rollover.png>
 Package pdftex.def Info: figures/dnssec/key-rollover/view-dnssec-keys-rollover.
-png  used on input line 254.
+png  used on input line 274.
 (pdftex.def)             Requested size: 303.53267pt x 202.3638pt.
- [27 <./figures/dnssec/key-rollover/dnssec-status-old-key-lab.png>]
-<figures/dnssec/dnssec-policy.png, id=577, 449.88075pt x 100.57574pt>
-File: figures/dnssec/dnssec-policy.png Graphic file (type png)
-<use figures/dnssec/dnssec-policy.png>
-Package pdftex.def Info: figures/dnssec/dnssec-policy.png  used on input line 2
-76.
-(pdftex.def)             Requested size: 303.53267pt x 67.85806pt.
- [28 <./figures/dnssec/key-rollover/view-dnssec-keys-rollover.png> <./figures/d
-nssec/dnssec-policy.png>]
-<figures/dnssec/final-chain.png, id=586, 434.8245pt x 305.34074pt>
+ [28 <./figures/dnssec/key-rollover/dnssec-status-old-key-lab.png>]
+<figures/dnssec/key-rollover/purge-dnssec-policy.png, id=598, 459.96844pt x 118
+.19156pt>
+File: figures/dnssec/key-rollover/purge-dnssec-policy.png Graphic file (type pn
+g)
+<use figures/dnssec/key-rollover/purge-dnssec-policy.png>
+Package pdftex.def Info: figures/dnssec/key-rollover/purge-dnssec-policy.png  u
+sed on input line 297.
+(pdftex.def)             Requested size: 303.53267pt x 77.99945pt.
+ [29 <./figures/dnssec/key-rollover/view-dnssec-keys-rollover.png> <./figures/d
+nssec/key-rollover/purge-dnssec-policy.png>]
+<figures/dnssec/final-chain.png, id=607, 434.8245pt x 305.34074pt>
 File: figures/dnssec/final-chain.png Graphic file (type png)
 <use figures/dnssec/final-chain.png>
-Package pdftex.def Info: figures/dnssec/final-chain.png  used on input line 302
+Package pdftex.def Info: figures/dnssec/final-chain.png  used on input line 328
 .
 (pdftex.def)             Requested size: 303.53267pt x 213.15001pt.
- [29 <./figures/dnssec/final-chain.png>]
-<figures/attacks/manual-signing-copy.png, id=594, 604.50844pt x 132.495pt>
+ [30]
+<figures/attacks/manual-signing-copy.png, id=614, 604.50844pt x 132.495pt>
 File: figures/attacks/manual-signing-copy.png Graphic file (type png)
 <use figures/attacks/manual-signing-copy.png>
 Package pdftex.def Info: figures/attacks/manual-signing-copy.png  used on input
- line 320.
+ line 346.
 (pdftex.def)             Requested size: 346.89732pt x 76.0324pt.
-<figures/attacks/delv-valid-A.png, id=596, 604.50844pt x 130.98938pt>
+ [31 <./figures/dnssec/final-chain.png> <./figures/attacks/manual-signing-copy.
+png>]
+<figures/attacks/delv-valid-A.png, id=623, 604.50844pt x 130.98938pt>
 File: figures/attacks/delv-valid-A.png Graphic file (type png)
 <use figures/attacks/delv-valid-A.png>
 Package pdftex.def Info: figures/attacks/delv-valid-A.png  used on input line 3
-31.
+57.
 (pdftex.def)             Requested size: 346.89732pt x 75.16838pt.
-
-[30 <./figures/attacks/manual-signing-copy.png> <./figures/attacks/delv-valid-A
-.png>]
-<figures/attacks/delv-injection.png, id=606, 609.77812pt x 116.68594pt>
+<figures/attacks/delv-injection.png, id=625, 609.77812pt x 116.68594pt>
 File: figures/attacks/delv-injection.png Graphic file (type png)
 <use figures/attacks/delv-injection.png>
 Package pdftex.def Info: figures/attacks/delv-injection.png  used on input line
- 341.
+ 367.
 (pdftex.def)             Requested size: 346.89732pt x 66.38347pt.
-<figures/attacks/good-corrupt-rrsig-output.png, id=608, 602.25pt x 114.4275pt>
+<figures/attacks/good-corrupt-rrsig-output.png, id=627, 602.25pt x 114.4275pt>
 File: figures/attacks/good-corrupt-rrsig-output.png Graphic file (type png)
 <use figures/attacks/good-corrupt-rrsig-output.png>
 Package pdftex.def Info: figures/attacks/good-corrupt-rrsig-output.png  used on
- input line 354.
+ input line 380.
 (pdftex.def)             Requested size: 346.89732pt x 65.91228pt.
-<figures/attacks/corrupt key test.png, id=610, 603.75563pt x 100.87688pt>
+ [32 <./figures/attacks/delv-valid-A.png> <./figures/attacks/delv-injection.png
+>]
+<figures/attacks/corrupt key test.png, id=639, 603.75563pt x 100.87688pt>
 File: figures/attacks/corrupt key test.png Graphic file (type png)
 <use figures/attacks/corrupt key test.png>
 Package pdftex.def Info: figures/attacks/corrupt key test.png  used on input li
-ne 365.
+ne 391.
 (pdftex.def)             Requested size: 346.89732pt x 57.96065pt.
- [31 <./figures/attacks/delv-injection.png> <./figures/attacks/good-corrupt-rrs
-ig-output.png>]) (chapters/04-algorithms.tex [32 <./figures/attacks/corrupt key
- test.png>]
+)
+(chapters/04-algorithms.tex [33 <./figures/attacks/good-corrupt-rrsig-output.pn
+g> <./figures/attacks/corrupt key test.png>]
 Chapter 4.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 8.8pt on input line 22.
-[33
+(Font)              scaled to size 8.8pt on input line 35.
+[34
 
-] [34]) (chapters/05-prog.tex [35]
+] [35] [36]
+File: figures/algos/rrsig-metadata.png Graphic file (type png)
+<use figures/algos/rrsig-metadata.png>
+Package pdftex.def Info: figures/algos/rrsig-metadata.png  used on input line 1
+11.
+(pdftex.def)             Requested size: 346.89732pt x 234.21013pt.
+) (chapters/05-prog.tex [37] [38]
 Chapter 5.
-[36
+[39
 
 ]
-<code/b64-code.png, id=649, 356.532pt x 501.072pt>
+<code/b64-code.png, id=683, 446.8695pt x 558.28575pt>
 File: code/b64-code.png Graphic file (type png)
 <use code/b64-code.png>
 Package pdftex.def Info: code/b64-code.png  used on input line 46.
-(pdftex.def)             Requested size: 346.89732pt x 487.5684pt.
- [37]
-<code/just_hash.png, id=656, 305.34074pt x 99.9735pt>
+(pdftex.def)             Requested size: 346.89732pt x 433.40811pt.
+ [40]
+<code/just_hash.png, id=690, 299.9205pt x 120.45pt>
 File: code/just_hash.png Graphic file (type png)
 <use code/just_hash.png>
 Package pdftex.def Info: code/just_hash.png  used on input line 67.
-(pdftex.def)             Requested size: 346.89732pt x 113.58958pt.
- [38 <./code/b64-code.png>]
-<code/gen_sig_code.png, id=666, 440.847pt x 260.77425pt>
-File: code/gen_sig_code.png Graphic file (type png)
-<use code/gen_sig_code.png>
-Package pdftex.def Info: code/gen_sig_code.png  used on input line 80.
-(pdftex.def)             Requested size: 346.89732pt x 205.19766pt.
- [39 <./code/just_hash.png> <./code/gen_sig_code.png>]
-<code/sig_verify.png, id=675, 504.08325pt x 346.896pt>
-File: code/sig_verify.png Graphic file (type png)
-<use code/sig_verify.png>
-Package pdftex.def Info: code/sig_verify.png  used on input line 95.
-(pdftex.def)             Requested size: 346.89732pt x 238.73389pt.
-<code/A_valid_code_ouput.png, id=676, 446.8695pt x 419.76825pt>
-File: code/A_valid_code_ouput.png Graphic file (type png)
-<use code/A_valid_code_ouput.png>
-Package pdftex.def Info: code/A_valid_code_ouput.png  used on input line 106.
-(pdftex.def)             Requested size: 303.53267pt x 285.13757pt.
-<code/ns_valid_output_code.png, id=677, 448.67625pt x 416.757pt>
-File: code/ns_valid_output_code.png Graphic file (type png)
-<use code/ns_valid_output_code.png>
-Package pdftex.def Info: code/ns_valid_output_code.png  used on input line 115.
+(pdftex.def)             Requested size: 346.89732pt x 139.32141pt.
+ [41 <./code/b64-code.png>]
+<code/gen-sig-code.png, id=699, 466.74374pt x 404.712pt>
+File: code/gen-sig-code.png Graphic file (type png)
+<use code/gen-sig-code.png>
+Package pdftex.def Info: code/gen-sig-code.png  used on input line 80.
+(pdftex.def)             Requested size: 346.89732pt x 300.80373pt.
 
-(pdftex.def)             Requested size: 303.53267pt x 281.94746pt.
 
-Underfull \hbox (badness 1281) in paragraph at lines 120--120
-|[]\OT1/ntxtlf/b/n/17.28 Generating and Val-i-dat-ing an DNSKEY RRSIG
+LaTeX Warning: Reference `fig:verification-code' on page 1 undefined on input l
+ine 88.
+
+<code/gen-sig-verify.png, id=700, 492.03825pt x 304.13625pt>
+File: code/gen-sig-verify.png Graphic file (type png)
+<use code/gen-sig-verify.png>
+Package pdftex.def Info: code/gen-sig-verify.png  used on input line 95.
+(pdftex.def)             Requested size: 346.89732pt x 214.42072pt.
+<code/existing-verify-code.png, id=701, 587.19376pt x 364.9635pt>
+File: code/existing-verify-code.png Graphic file (type png)
+<use code/existing-verify-code.png>
+Package pdftex.def Info: code/existing-verify-code.png  used on input line 102.
+
+(pdftex.def)             Requested size: 346.89732pt x 215.61061pt.
+
+Underfull \hbox (badness 1226) in paragraph at lines 109--109
+|[]\OT1/ntxtlf/b/n/17.28 Generating and Val-i-dat-ing an Ad-dress Re-source
  []
 
-File: code/ns_valid_output_code.png Graphic file (type png)
-<use code/ns_valid_output_code.png>
-Package pdftex.def Info: code/ns_valid_output_code.png  used on input line 124.
-
-(pdftex.def)             Requested size: 303.53267pt x 281.94746pt.
-[40 <./code/sig_verify.png>]
+[42 <./code/just_hash.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [41 <./code/A_valid_code_ouput.png> <./code/ns_valid_output_code.png>]) [42]
+ [43 <./code/gen-sig-code.png> <./code/gen-sig-verify.png>]
+<code/A_valid_code_ouput.png, id=715, 446.8695pt x 419.76825pt>
+File: code/A_valid_code_ouput.png Graphic file (type png)
+<use code/A_valid_code_ouput.png>
+Package pdftex.def Info: code/A_valid_code_ouput.png  used on input line 116.
+(pdftex.def)             Requested size: 303.53267pt x 285.13757pt.
+ [44 <./code/existing-verify-code.png>]
+<code/ns_valid_output_code.png, id=723, 448.67625pt x 416.757pt>
+File: code/ns_valid_output_code.png Graphic file (type png)
+<use code/ns_valid_output_code.png>
+Package pdftex.def Info: code/ns_valid_output_code.png  used on input line 130.
+
+(pdftex.def)             Requested size: 303.53267pt x 281.94746pt.
+ [45 <./code/A_valid_code_ouput.png>]
+File: code/ns_valid_output_code.png Graphic file (type png)
+<use code/ns_valid_output_code.png>
+Package pdftex.def Info: code/ns_valid_output_code.png  used on input line 145.
+
+(pdftex.def)             Requested size: 303.53267pt x 281.94746pt.
+ [46 <./code/ns_valid_output_code.png>]
+File: code/ns_valid_output_code.png Graphic file (type png)
+<use code/ns_valid_output_code.png>
+Package pdftex.def Info: code/ns_valid_output_code.png  used on input line 159.
+
+(pdftex.def)             Requested size: 303.53267pt x 281.94746pt.
+ [47])
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [48]
 (C:\Users\steve\OneDrive - James Madison University (Dukes)\Desktop\Independent
  Study\DNSSEC-Thesis\_build\main.bbl
 Underfull \hbox (badness 4205) in paragraph at lines 59--62
@@ -1260,27 +1297,27 @@ Underfull \hbox (badness 4205) in paragraph at lines 59--62
  []
 
 
-Underfull \hbox (badness 6658) in paragraph at lines 64--68
+Underfull \hbox (badness 6658) in paragraph at lines 69--73
 []\OT1/minntx/m/n/12 BIND9, ``Trust an-chor.'' [][]$\OT1/ntxtt/m/n/12 https : /
  / bind9 . readthedocs . io / en / v9 . 18 . 39 /
  []
 
+[49
 
-Underfull \hbox (badness 1668) in paragraph at lines 70--73
+
+]
+Underfull \hbox (badness 1668) in paragraph at lines 75--78
 []\OT1/minntx/m/n/12 dnsimple, ``The dnssec chain of trust.'' [][]$\OT1/ntxtt/m
 /n/12 https : / / support . dnsimple . com /
  []
 
-[43
-
-
-]) [44] (appendices/appendices.tex
+) [50] (appendices/appendices.tex
 Appendix A.
 
 
 pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=734, 614.295pt x 794.97pt>
+<appendices/PROCEDURE_MANUAL.pdf, id=787, 614.295pt x 794.97pt>
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
 <use appendices/PROCEDURE_MANUAL.pdf>
 Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf  used on input line 9.
@@ -1294,7 +1331,7 @@ usion: found PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=736, page=1, 614.295pt x 794.97pt>
+<appendices/PROCEDURE_MANUAL.pdf, id=789, page=1, 614.295pt x 794.97pt>
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
 <use appendices/PROCEDURE_MANUAL.pdf, page 1>
 Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page1 used on input 
@@ -1305,7 +1342,7 @@ File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page1 used on input 
 line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[45
+[51
 
 
 ]
@@ -1324,13 +1361,13 @@ File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
 Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page1 used on input 
 line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
- [46
+ [52
 
  <./appendices/PROCEDURE_MANUAL.pdf>]
 
 pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=773, page=2, 614.295pt x 794.97pt>
+<appendices/PROCEDURE_MANUAL.pdf, id=826, page=2, 614.295pt x 794.97pt>
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
 <use appendices/PROCEDURE_MANUAL.pdf, page 2>
 Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page2 used on input 
@@ -1344,138 +1381,6 @@ line 9.
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
 <use appendices/PROCEDURE_MANUAL.pdf, page 2>
 Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page2 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[47
-
- <./appendices/PROCEDURE_MANUAL.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=779, page=3, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 3>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page3 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 3>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page3 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 3>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page3 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[48
-
- <./appendices/PROCEDURE_MANUAL.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=785, page=4, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 4>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page4 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 4>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page4 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 4>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page4 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[49
-
- <./appendices/PROCEDURE_MANUAL.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=793, page=5, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 5>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page5 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 5>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page5 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 5>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page5 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[50
-
- <./appendices/PROCEDURE_MANUAL.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=802, page=6, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 6>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page6 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 6>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page6 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 6>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page6 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[51
-
- <./appendices/PROCEDURE_MANUAL.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=810, page=7, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 7>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page7 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 7>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page7 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 7>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page7 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-[52
-
- <./appendices/PROCEDURE_MANUAL.pdf>]
-
-pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
-usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=817, page=8, 614.295pt x 794.97pt>
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 8>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page8 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 8>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page8 used on input 
-line 9.
-(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
-File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 8>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page8 used on input 
 line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 [53
@@ -1484,20 +1389,20 @@ line 9.
 
 pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=825, page=9, 614.295pt x 794.97pt>
+<appendices/PROCEDURE_MANUAL.pdf, id=832, page=3, 614.295pt x 794.97pt>
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 9>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page9 used on input 
+<use appendices/PROCEDURE_MANUAL.pdf, page 3>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page3 used on input 
 line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 9>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page9 used on input 
+<use appendices/PROCEDURE_MANUAL.pdf, page 3>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page3 used on input 
 line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 9>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page9 used on input 
+<use appendices/PROCEDURE_MANUAL.pdf, page 3>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page3 used on input 
 line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 [54
@@ -1506,21 +1411,21 @@ line 9.
 
 pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=832, page=10, 614.295pt x 794.97pt>
+<appendices/PROCEDURE_MANUAL.pdf, id=838, page=4, 614.295pt x 794.97pt>
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 10>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page10 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 4>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page4 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 10>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page10 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 4>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page4 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 10>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page10 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 4>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page4 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 [55
 
@@ -1528,21 +1433,21 @@ Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page10 used on input
 
 pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=839, page=11, 614.295pt x 794.97pt>
+<appendices/PROCEDURE_MANUAL.pdf, id=846, page=5, 614.295pt x 794.97pt>
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 11>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page11 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 5>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page5 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 11>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page11 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 5>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page5 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 11>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page11 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 5>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page5 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 [56
 
@@ -1550,21 +1455,21 @@ Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page11 used on input
 
 pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=848, page=12, 614.295pt x 794.97pt>
+<appendices/PROCEDURE_MANUAL.pdf, id=855, page=6, 614.295pt x 794.97pt>
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 12>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page12 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 6>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page6 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 12>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page12 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 6>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page6 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 12>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page12 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 6>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page6 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 [57
 
@@ -1572,21 +1477,21 @@ Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page12 used on input
 
 pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=856, page=13, 614.295pt x 794.97pt>
+<appendices/PROCEDURE_MANUAL.pdf, id=863, page=7, 614.295pt x 794.97pt>
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 13>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page13 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 7>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page7 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 13>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page13 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 7>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page7 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 13>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page13 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 7>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page7 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 [58
 
@@ -1594,21 +1499,21 @@ Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page13 used on input
 
 pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=864, page=14, 614.295pt x 794.97pt>
+<appendices/PROCEDURE_MANUAL.pdf, id=870, page=8, 614.295pt x 794.97pt>
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 14>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page14 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 8>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page8 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 14>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page14 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 8>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page8 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 14>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page14 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 8>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page8 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 [59
 
@@ -1616,23 +1521,133 @@ Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page14 used on input
 
 pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
 usion: found PDF version <1.7>, but at most version <1.5> allowed
-<appendices/PROCEDURE_MANUAL.pdf, id=871, page=15, 614.295pt x 794.97pt>
+<appendices/PROCEDURE_MANUAL.pdf, id=878, page=9, 614.295pt x 794.97pt>
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 15>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page15 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 9>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page9 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 15>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page15 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 9>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page9 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
-<use appendices/PROCEDURE_MANUAL.pdf, page 15>
-Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page15 used on input
- line 9.
+<use appendices/PROCEDURE_MANUAL.pdf, page 9>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page9 used on input 
+line 9.
 (pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
 [60
+
+ <./appendices/PROCEDURE_MANUAL.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=886, page=10, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 10>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page10 used on input
+ line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 10>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page10 used on input
+ line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 10>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page10 used on input
+ line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[61
+
+ <./appendices/PROCEDURE_MANUAL.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=894, page=11, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 11>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page11 used on input
+ line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 11>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page11 used on input
+ line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 11>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page11 used on input
+ line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[62
+
+ <./appendices/PROCEDURE_MANUAL.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=902, page=12, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 12>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page12 used on input
+ line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 12>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page12 used on input
+ line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 12>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page12 used on input
+ line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[63
+
+ <./appendices/PROCEDURE_MANUAL.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=911, page=13, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 13>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page13 used on input
+ line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 13>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page13 used on input
+ line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 13>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page13 used on input
+ line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[64
+
+ <./appendices/PROCEDURE_MANUAL.pdf>]
+
+pdfTeX warning: pdflatex.exe (file ./appendices/PROCEDURE_MANUAL.pdf): PDF incl
+usion: found PDF version <1.7>, but at most version <1.5> allowed
+<appendices/PROCEDURE_MANUAL.pdf, id=918, page=14, 614.295pt x 794.97pt>
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 14>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page14 used on input
+ line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 14>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page14 used on input
+ line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+File: appendices/PROCEDURE_MANUAL.pdf Graphic file (type pdf)
+<use appendices/PROCEDURE_MANUAL.pdf, page 14>
+Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page14 used on input
+ line 9.
+(pdftex.def)             Requested size: 614.58406pt x 795.3441pt.
+[65
 
  <./appendices/PROCEDURE_MANUAL.pdf>])
 (C:\Users\steve\OneDrive - James Madison University (Dukes)\Desktop\Independent
@@ -1641,27 +1656,31 @@ Package pdftex.def Info: appendices/PROCEDURE_MANUAL.pdf , page15 used on input
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 8FECECF48C9B6A65F6B075ECD1D73CF7;8724.
+(rerunfilecheck)             Checksum: B44DAC085B9E7BDB54FF37483C604CE7;10383.
  ) 
 Here is how much of TeX's memory you used:
- 19562 strings out of 467871
- 327520 string characters out of 5418375
+ 19599 strings out of 467871
+ 328473 string characters out of 5418375
  729016 words of memory out of 5000000
- 47938 multiletter control sequences out of 15000+600000
+ 47962 multiletter control sequences out of 15000+600000
  651016 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,17n,117p,487b,655s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,17n,117p,492b,655s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtm
 r.pfb><C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/txfonts/
 txtt.pfb><C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/newtx
 /ztmb.pfb><C:/Users/steve/AppData/Local/Programs/MiKTeX/fonts/type1/public/newt
 x/ztmr.pfb>
 Output written on "C:\Users\steve\OneDrive - James Madison University (Dukes)\D
-esktop\Independent Study\DNSSEC-Thesis\_build\main.pdf" (65 pages, 4642618 byte
+esktop\Independent Study\DNSSEC-Thesis\_build\main.pdf" (70 pages, 4989651 byte
 s).
 PDF statistics:
- 941 PDF objects out of 1000 (max. 8388607)
- 192 named destinations out of 1000 (max. 500000)
- 710 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 998 PDF objects out of 1000 (max. 8388607)
+ 205 named destinations out of 1000 (max. 500000)
+ 731 words of extra memory for PDF output out of 10000 (max. 10000000)
 

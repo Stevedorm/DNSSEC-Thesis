@@ -6,12 +6,15 @@ PROOF READ CONTENT IN GENERAL
 
 Add more content to later chapters
 
+Pull new photos from VMs with updated terminal output
+
+Canonicalization, RRSIG DNSSEC, Chapter 4 and 5
 REVIEW:
-    DNS Vulnerabilities and Attack
-    DNS Corruption
-    NSEC Records
+    DNS Vulnerabilities and Attack - good?
+    DNS Corruption - good?
+    NSEC Records - needs some more
     Canonicalization
-    Key Rollover
+    Key Rollover - good?
     ALGOS
     PROG
     Beginning of DNSSEC

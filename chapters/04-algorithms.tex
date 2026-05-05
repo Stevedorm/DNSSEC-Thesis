@@ -1,3 +1,129 @@
 \chapter{Algorithms and Data Structures For DNSSEC}
 
+\section{An Introduction to DNSSEC Signing}
+
+Earlier, different records were explained and new resource records were introduced, but how do they actually get signed? Before signing can occur, keys must be 
+generated with \texttt{dnssec-keygen}. This tool creates the necessary public and private keys that will be used for signing the zone file. 
+After the keys are generated, the signing process can be manually completed using a tool called \texttt{dnssec-signzone}. Running this tool in the command line will create 
+the necessary signatures for the zone file.
+
+
+The data is built according to how it is laid out previously in \hyperref[subsec:rrsig]{Resource Record Signature}. In my implementation, I read in a file with the 
+hexadecimal representation of the data, pulled from Wireshark captures.
+
+% Add an example of this command?
+
+\section{Cipher Suites}
+
+% \subsubsection{Hashing}
+
+% In my project, SHA256 was the hashing algorithm of choice. This is a widely used hashing algorithm that is considered to be secure and efficient. 
+% It produces a 256-bit hash, which is a fixed size output that is unique to the input data. This means that even a small change in the input data will 
+% produce a completely different hash, making it difficult for attackers to create a hash collision, especially with a 256-bit hash. 
+
+% \subsubsection{Signing}
+
+% For my project, I am using RSA for signing the data. RSA is a widely used public-key cryptographic algorithm that is based on the mathematical properties of large prime numbers. 
+% It is considered to be a secure algorithm for signing data, as it relies on the difficulty of factoring large integers.
+
+% Some alternative algorithms that could be used for signing are DSA (Digital Signature Algorithm), ECDSA (Elliptic Curve Digital Signature Algorithm), Ed25519.\cite{rfc8624}
+
+\subsection{Hashing with SHA256}
+
+The algorithm of choosing for hashing in this project is SHA-256. This algorithm is widely used in many cryptographic applications, and is considered to be a secure 
+hashing algorithm. It produces a 256-bit hash, which is a fixed size output that is unique to the input data. This means that even a small change in the input data will 
+produce a completely different hash, making it difficult for attackers to create a hash collision. Having $2\textsuperscript{256}$ possible combinations of hashes makes it 
+infeasible for attackers to brute force their way to a collision, which is when two different inputs produce the same hash. With this collision resistance, SHA-256 is a 
+good choice for hashing in DNSSEC, as it helps to ensure the integrity of the data being signed and verified.
+
+Possible example of how different two hashes are?
+
+\subsection{Alternate Hashing Algorithms}
+
+SHA256 is not the only option in DNSSEC for hashing the meta data. There are various other functions, like MD5, SHA1, SHA348, SHA512. 
+There are various pros and cons for each hashing algorithm.
+
+% \subsubsection{MD5}
+
+% With MD5, this algorithm has been cryptographically broken, and should no longer be used in any DNSSEC implementation. 
+% As stated in RFC8624, you MUST NOT use MD5 for signing or validation.
+
+\subsubsection{SHA1}
+
+SHA1 is legacy, and is still used today by some. However, it is being phased out by the future of SHA, SHA2 (SHA256, SHA348, SHA512) 
+and the new SHA3. With SHA1, it is NOT RECOMMENDED the be used for signing, as it is being phased out, but still MUST be used for 
+validation, as some systems still use the legacy algorithm.
+
+\subsubsection{SHA348}
+
+\subsubsection{SHA512}
+
+SHA512 is the biggest hash output size of the SHA2 family. With the biggest output, it is very secure and hash collision is very hard 
+with this algorithm. Compared to the $2\textsuperscript{256}$ of SHA256, $2\textsuperscript{512}$ doubles the number of available hashes, 
+but also doubles the length overall. RFC8624 states that hashing with SHA 256 is NOT RECOMMENDED, do to the size. However, you must be 
+able to validate with SHA512, because it is available to be used. With DNSSEC advancing, developers are trying to keep the size minimal 
+without sacrificing any of the security, so for now, SHA256 is still a great option.
+
+
+\subsection{Signing with RSA}
+
+Rather than having recursion validate the signatures, I am writing C code to do this instead. From using OpenSSL to creating structs to store data, there were 
+various algorithms and data structures that were used to accomplish this task. 
+% For example, a struct I created to store the RRSIG record contains fields for the type of record, 
+% the algorithm used, the labels, the original TTL, the signature expiration and inception times, the key tag, and the signer's name. This is seen below in \cref{fig:rrsig-struct}.
+
+% \begin{figure}[htbp]
+%   \centering
+%   \fbox{\includegraphics[width=0.8\textwidth]{figures/algos/c-struct.png}}
+%   \caption{Structure for storing RRSIG records}
+%   \label{fig:rrsig-struct}
+% \end{figure}
+
+In order to validate the signatures, I had to implement various algorithms for hashing and signing the data. For example, I had to implement the RSA algorithm for signing the data, 
+and the SHA-256 algorithm for hashing the data.
+
+In the environment, I am manually signing these records myself, and then using the public key to verify the signatures. This is a good way to test the validation process, because I 
+can control the data that is being signed and verified. Not only that, but I am also creating the signature myself to prove that the received signature is valid as well.
+
+\subsection{Alternate Signing Algorithms}
+
+Some alternative algorithms that could be used for signing are DSA (Digital Signature Algorithm), ECDSA (Elliptic Curve Digital Signature Algorithm), Ed25519. With ECDSA, the full 
+and best version of this algorithm is behind a pay wall, making it less accessible.\cite{rfc8624}
+
+
+% Both from BASE64 and the DNSSEC key to .pem
+% \subsection{Alternative Key Encoding} 
+
+% In order to use the keys generated in my lab environment, I had to convert them from the format that they were generated in to a format that could be used in my C code. The keys were 
+% generated in the DNSSEC format, which had extra information and wasn't formatted correctly, so I needed to convert them to PEM format to use in my code.
+
+\section{RRSIG Construction}
+% Talk about how I built the data manually, how it could be done more dynamically in the future through code.
+To build the RRSIG records, I followed the format laid out in \hyperref[subsec:rrsig]{Resource Record Signature}. I read in the data from a file, which was pulled from Wireshark captures, 
+and then built the RRSIG record according to the format. First, the RRSIG metadata is built, which includes the type of record, the algorithm used, the labels, the original TTL, the signature 
+expiration and inception times, the key tag, and the signer's name. Then, the canonicalized RRSet is concatenated to the data, and the whole thing is hashed using SHA-256. Finally, the hash 
+is signed using the RSA algorithm with the private key, and the signature is added to the RRSIG record. Pictured below in \cref{fig:rrsig-metadata} is the general layout for the data to be hashed. 
+In this image, the record type is an A record, and the rest of the data is filled in with the appropriate values for the record being signed.
+
+% Try to make a white background and black test, make it more readable
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{figures/algos/rrsig-metadata.png}}
+  \caption{Structure for storing RRSIG records}
+  \label{fig:rrsig-metadata}
+\end{figure}
+
 \section{OpenSSL}
+
+For this project, we used OpenSSL behind the scenes with the tools we ran in the previous section. OpenSSL is a powerful library that provides various cryptographic 
+functions, including those needed for DNSSEC signing. It allows us to generate keys, create signatures, and manage certificates, which are essential components of the DNSSEC infrastructure. 
+OpenSSL even provides support for converting data from Base64 into binary
+
+When I run the \texttt{dnssec-signzone} command, it utilizes OpenSSL to perform the cryptographic operations required for signing the zone file. By doing this, 
+it hashes the data and then signs it with the private key in the background.
+
+% For hashing, OpenSSL provides various algorithms, such as SHA-256, which is the algorithm  of choice for this project. Using the message digest functions in OpenSSL, we can create a hash 
+% of the data that we want to sign. This hash is then signed with the private key to create the signature.
+
+To complete the signing process, OpenSSL provides a function called EVP\_DigestSign, which allows us to create a signature using the specified hashing algorithm and private key. This function 
+takes care of the details of the signing process, making it easier for us to implement DNSSEC signing in our code. Rather than having to separately hash and then sign the data, this function takes care of both.

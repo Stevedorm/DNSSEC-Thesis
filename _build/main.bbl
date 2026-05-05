@@ -3,7 +3,7 @@
 \bibitem{bind-9}
 {BIND9}, ``Introduction to dns and bind 9.''
   \url{https://bind9.readthedocs.io/en/v9.18.39/chapter1.html#the-domain-name-system-dns},
-  2025.
+  2023.
 \newblock Accessed: 2026-1-1.
 
 \bibitem{cloudflare-dns}
@@ -60,6 +60,11 @@
   \url{https://bind9.readthedocs.io/en/v9.18.39/dnssec-guide.html}, 2025.
 \newblock Accessed: 2026-2-25.
 
+\bibitem{nsec-records}
+{dnsimple}, ``What are nsec and ncsec3 records?.''
+  \url{https://support.dnsimple.com/articles/nsec-nsec3-records/}, 2026.
+\newblock Accessed: 2026-4-23.
+
 \bibitem{trust-anchors}
 {BIND9}, ``Trust anchor.''
   \url{https://bind9.readthedocs.io/en/v9.18.39/dnssec-guide.html#trust-anchors},
@@ -75,5 +80,10 @@
 {Vicky Risk, Suzanne Goldlust}, ``Automatic dnssec zone signing key rollover
   explained.'' \url{https://kb.isc.org/docs/aa-00822}, 2021.
 \newblock Accessed: 2026-4-20.
+
+\bibitem{rfc8624}
+{RFC 8624}, ``Algorithm implementation requirements and usage guidance for
+  dnssec.'' \url{https://www.rfc-editor.org/rfc/rfc8624#section-3.1}, 2019.
+\newblock Accessed: 2026-4-23.
 
 \end{thebibliography}

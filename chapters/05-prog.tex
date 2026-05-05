@@ -1,3 +1,164 @@
 \chapter{Programming the Signature and Validation of Several DNSSEC Resource Records}
+\label{chap:prog-chapter}
 
-\section{Signing}
+\section{Main Functionality}
+
+There are several arguments that can be passed to the program: 
+\begin{enumerate}
+  \item The first argument is the name of the file that contains the hexadecimal representation of the data to be signed.
+  \item The second argument is the name of the file that will contain the signature from the server in Base64 format.
+  \item The third argument is the name of the file that contains the private key that will be used for signing.
+  \item The final argument is the name of the file that contains the public key that will be used for verifying the signature.
+\end{enumerate}
+
+Using these arguments, the data is read into buffers in the program, and the base64 signature is read in, converted to binary, 
+and stored in a buffer as well.
+
+\section{Alternative Key Encoding}
+
+The keys that are stored on the DNSSEC servers are in a format that is not directly usable in the C code. Therefore, I had to 
+convert them from the DNSSEC format to PEM format, which is a widely used format for storing cryptographic keys. I had Anthropic's Claude help 
+me with this conversion and wrote code to convert the keys. This code takes both a public and private key from the .key and .private 
+files from the server, and converts the keys into a .pem RSA format that can be used in the C code for signing and verifying the signatures.
+
+
+Overall, the code reads in the DNSSEC key data, determines if it is a public or private key, and then uses OpenSSL functions to convert 
+the key data into the appropriate PEM format. The way the keys are stored in the .key and .private files is in a format that includes 
+extra information, such as the key tag and algorithm, which is not needed for the PEM format.
+
+% \begin{figure}[htbp]
+%   \centering
+%   \fbox{\includegraphics[width=0.8\textwidth]{code/key-conv.png}}
+%   \caption{Code for converting the DNSSEC keys from the .key and .private files into PEM format that can be used in the C code for signing and verifying signatures.}
+%   \label{fig:key-conv}
+% \end{figure}
+
+\section{Converting Base64 Data}
+
+To convert the Base64 signature from the file into a format that can be used for verification, I used OpenSSL's Base64 decoding functions. 
+This allows me to take the Base64-encoded signature and convert it back into its original binary format, which is necessary for the verification process. 
+The code for this conversion is shown in \cref{fig:base64-code}. I enlisted Anthropic's Claude Code Interpreter to help me with this part, and it was able 
+to generate the code for me based on the OpenSSL documentation. This allowed me to focus on the actual signing and validation portions of the project,
+while these more mundane parts were completed using the help of AI.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{code/b64-code.png}}
+  \caption{Code for converting the Base64-encoded signature from the file into its original binary format using OpenSSL's Base64 decoding functions, written by Claude.}
+  \label{fig:base64-code}
+\end{figure}
+
+\section{Hashing the Data}
+
+To hash the data, I used OPENSSL's SHA256 algorithm. This algorithm is widely used in many cryptographic applications, and is considered to be a secure 
+hashing algorithm. It produces a 256-bit hash, which is a fixed size output that is unique to the input data. This means that even a small 
+change in the input data will produce a completely different hash, making it difficult for attackers to create a hash collision. The code that 
+just hashes the data is shown in \cref{fig:hashing-code}.
+
+% Talk about:
+% Canonicalization complexity
+% Byte-order / endianness issues
+% Matching BIND’s exact format
+% Parsing variable-length fields
+% Debugging signature mismatches
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{code/just_hash.png}}
+  \caption{Code from a helper function that hashes the data using OpenSSL's SHA256 algorithm, used for printing the hash of the data to be signed.}
+  \label{fig:hashing-code}
+\end{figure}
+
+\section{Signing the Data}
+
+For signing the hashed data, RSA keys were used. For signing, both public and private keys were needed. The private key is used to sign the data, 
+and the public key is used to verify the signature. The verification code is shown in \hyperref[sec:verify-code]{Verifying the Signature}. The code 
+that just signs the data is shown in \cref{fig:signing-code}.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{code/gen-sig-code.png}}
+  \caption{This code is showing how the signature is created using OpenSSL's RSA signing functions. I am assuming the role of the DNS Server in this code, using the private key to sign the data.}
+  \label{fig:signing-code}
+\end{figure}
+
+\section{Verifying the Signature}
+\label{sec:verify-code}
+
+The code in \cref{fig:gen-verification-code} and \cref{fig:exisiting-verification-code} shows how the signature is verified using OpenSSL's RSA verification functions. I am assuming the role of the DNS Client in this code, 
+using the public key to verify the signatures. First, I verify the generated signature, which is the signature that I created in the previous section. 
+Then, I verify the received signature, which is the signature that was read in from the file that was converted from Base64. If both of these return 
+without error, both signature are then passed to the helper function compare\_sigs.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{code/gen-sig-verify.png}}
+  \caption{Code for verifying the signature using OpenSSL's RSA verification functions.}
+  \label{fig:gen-verification-code}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.8\textwidth]{code/existing-verify-code.png}}
+  \caption{Code for verifying the signature using OpenSSL's RSA verification functions.}
+  \label{fig:exisiting-verification-code}
+\end{figure}
+
+% Additionally, the helper function at the bottom of that code snippet is used to compare the binaries of each signature.
+
+\section{Generating and Validating an Address Resource Record Signature}
+
+The Address Resource Record Signature is the most basic signature. This signature consists of the RRSIG meta data, describing what record is 
+being signed and the logistics of the signature.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.7\textwidth]{code/A_valid_code_ouput.png}}
+  \caption{Output from validating an A RRSIG record.}
+  \label{fig:a-verification}
+\end{figure}
+
+\FloatBarrier
+
+\section{Generating and Validating an Name Server Resource Record Signature}
+
+The Name Server Resource Record was a bit more tricky than the Address Record Signature. 
+This signature consists of ...
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.7\textwidth]{code/ns_valid_output_code.png}}
+  \caption{Output from validating an NS RRSIG record.}
+  \label{fig:ns-verification}
+\end{figure}
+
+\FloatBarrier
+
+\section{Generating and Validating an DNSKEY Resource Record Signature}
+
+The DNSKEY Resource Record Signature is the biggest and one of the more difficult records to sign. This signature requires the KSK to be used, 
+as the DNSKEYs are being signed. The KSK is double the size of the ZSKs, and this leads to a doubly large signature. The output of this 
+record is seen below in \cref{fig:dnskey-verification}.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.7\textwidth]{code/ns_valid_output_code.png}}
+  \caption{Output from validating an DNSKEY RRSIG record.}
+  \label{fig:dnskey-verification}
+\end{figure}
+
+\FloatBarrier
+
+\section{Generating and Validating an Start of Authority Resource Record Signature}
+
+The DNSKEY Resource Record Signature was both the biggest and most difficult to sign. This signature requires the KSK to be used, 
+as the DNSKEYs are being signed. The KSK is double the size of the ZSKs, and this leads to a doubly large signature.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.7\textwidth]{code/ns_valid_output_code.png}}
+  \caption{Output from validating an SOA RRSIG record.}
+  \label{fig:soa-verification}
+\end{figure}
+
+\FloatBarrier

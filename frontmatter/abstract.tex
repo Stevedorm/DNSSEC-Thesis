@@ -2,4 +2,17 @@
 \addcontentsline{toc}{chapter}{Abstract}
 
 % <= 350 words (JMU guideline)
-TBD
+% Abstract: half page brief description, discussed vulnerabilities of DNS, attacks, 
+% implements DNSSEC, The researched algos and code for generating and validating RR records.
+
+This study dives into the Domain Name System and the vulnerabilities that come with plain DNS. 
+These vulnerabilities, like DNS Spoofing and Hijacking, usher in questions about how they can 
+be prevented and mitigated. These attacks are discussed and demonstrated in this paper. This is 
+where the Domain Name System Security Extension, or DNSSEC, comes into play. DNSSEC prevents 
+these attacks by providing authentication and integrity to the data. The DNS data is hashed, 
+providing integrity in the way that if any data was changed, the hash would be different, and signed, 
+brining authentication knowing that only the DNS server could've signed the record with the private key. 
+OpenSSL is used to do this, and I used SHA256 for hashing and RSA for the public key infrastructure. 
+I implemented the signing process in C using these functions and manually built the data to be signed, 
+generating my own signatures, verifying the existing signature, and comparing the binaries of the two 
+to make sure they were valid.
