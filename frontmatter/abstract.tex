@@ -15,4 +15,7 @@ brining authentication knowing that only the DNS server could've signed the reco
 OpenSSL is used to do this, and I used SHA256 for hashing and RSA for the public key infrastructure. 
 I implemented the signing process in C using these functions and manually built the data to be signed, 
 generating my own signatures, verifying the existing signature, and comparing the binaries of the two 
-to make sure they were valid.
+to make sure they were valid. I compiled all of the code into a tar file, accompanied by a Makefile script 
+that can compile the code and generate keys, as well as remove the executable and old key files. There is 
+a command for each record that I signed, like the Address, Name Server, DNSKEY, and Start of Authority records. 
+In the appendix, there is a procedure manual for the early steps of setting up my environment.
