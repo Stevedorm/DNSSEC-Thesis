@@ -6,7 +6,12 @@ PROOF READ CONTENT IN GENERAL
 
 Add more content to later chapters
 
-Pull new photos from VMs with updated terminal output
+Pull new photos from VMs with updated terminal output - done
+
+NEW:
+    Add psuedocode instead of code screenshots
+    Maybe code lines?
+    Add more to end of prog about tar file and setup
 
 Canonicalization, RRSIG DNSSEC, Chapter 4 and 5
 REVIEW:

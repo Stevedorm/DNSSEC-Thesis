@@ -2,24 +2,22 @@
 
 \section{DNSSEC Background}
     DNSSEC, or Domain Name System Security Extension, adds a layer of security to the otherwise vulnerable DNS. DNSSEC adds security by using cryptographic signatures
-with public key cryptography, with the private key signing it and the public key verifying. DNSSEC also implements hashing, adding integrity to the data and preventing 
-zone enumeration, and the signing provides the authentication, knowing that only the private key from the server could've signed that data.
+with public key cryptography, with the private key signing it and the public key verifying. DNSSEC also implements hashing, adding integrity to the data and the signing 
+provides the authentication, knowing that only the private key from the server could've signed that data.
 
 % https://www.sidn.nl/en/news-and-blogs/security-of-dns-isnt-be-assured-unless-dnssec-validation-is-enabled-on-the-end-users-client
 There is an additional flag with dnssec queries, the "ad" flag. This flag is passed along with successful DNSSEC queries, meaning "Authenticated Data". When you query 
-for a domain with dnssec enabled, receiving this flag back instead of a SERVFAIL status means that the data was successfully authenticated. 
+for a domain with dnssec enabled, receiving this flag back instead of a SERVFAIL status means that the data was successfully authenticated. This is normally added by the 
+resolver before being passed onto the client, meaning the resolver says it is authenticated and can be trusted on that last part of the data's journey to the client machine.
 
-% This is NOT True? Should revisit. Do experiment where it doesn't validate. It validates now, still need to make a copy key and corrupt it.
+You will not see it in the below screen shots, and that is because there isn't any validation going on yet. Seeing the records is enough for this part 
+of my project, whereas the next chapters cover the code I wrote to validate these records. Later, when I use the \texttt{delv} command, the data is validate by a resolver.
 
-You will not see it in the 
-below screen shots, and that is because there isn't any validation going on yet. Seeing the records is enough for this part of my project, where as the next chapter I 
-will write code to validate these records.
-
-Below, \cref{fig:dnssec-lab}, is db.lab, but now set for DNSSEC. It changed directories to allow for permission to be more for the owner of the server (me). Originally, 
+Below, \cref{fig:dnssec-lab}, is db.lab, but now set for DNSSEC. The directory was changed to give the zone owner write permissions without requiring root access. Originally, 
 DNS configuration and the db files were in /etc/bind/, but now they moved to /var/lib/bind/ to allow for more freedom and not having to deal with bind ownership. Changing 
-the zone configuration to point to the new db file allows the server to write into this directory. As you can see below, there is a good number of changes to the db file.
-Gone are the @ symbols preceding lines, and there is a new minimum time record. This sets the minimum Time-to-Live (TTL) for records, especially for the NSEC records. There 
-is still a SOA and NS and A records, which have minimally changed from regular DNS. 
+the zone configuration to point to the new db file allows the server to write into this directory. As you can see below, there are a number of changes to the db file.
+Gone are the @ symbols preceding lines, and there is a new minimum time record. This sets the minimum Time-to-Live (TTL) for records, especially for the Next SECure (NSEC) records. There 
+is still a SOA, NS and A records, which have minimally changed from regular DNS. 
 At the bottom of the figure, you can see a \hyperref[subsec:ds]{Delegation Signer} record,
 which came from the child zone. This is an important part of the Chain of trust, allowing the parent to verify the child is the child.\cite{dnssec-ubuntu}
 
@@ -30,19 +28,12 @@ which came from the child zone. This is an important part of the Chain of trust,
   \label{fig:dnssec-lab}
 \end{figure}
 
-% Talk about NSEC records?
 \section{New DNS Resource Records}
 
-    With the regular DNS records previously discussed, there are some new records that must be taken into account. Regarding the \hyperref[subsec:zsk]{Zone Signing Key} 
-and the \hyperref[subsec:ksk]{Key Signing Key}, the algorithms I used for the keys was RSASHA256, this is a good algorithm for encryption and one I am familiar with. The ZSK 
-signs the records from the zone, and the KSK signs the ZSK. The hand shake looks a bit like this, an example of a query for computer.lab, \cref{fig:dnssec-diagram}.
-
-\begin{figure}[htbp]
-  \centering
-  \fbox{\includegraphics[width=0.6\textwidth]{figures/dnssec/dnssec_q_diagram.png}}
-  \caption{A diagram showing a high level view of a DNSSEC query, digging for an Address Record.}
-  \label{fig:dnssec-diagram}
-\end{figure}
+    With the regular DNS records previously discussed, there are some new records that must be taken into account. Regarding the \hyperref[subsubsec:zsk]{Zone Signing Key} 
+and the \hyperref[subsubsec:ksk]{Key Signing Key}, the algorithms I used for the keys was RSASHA256, this is a good algorithm for signing and one I am familiar with. The ZSK 
+signs the records from the zone, and the KSK signs the ZSK. The biggest takeaways from the new resource records is that every record gets signed, and some records exist to 
+just provide more security and prevent attacks, like the \hyperref[subsec:nsec]{Next SECure Records}
 
 \subsection{Resource Record Set}
 
@@ -59,14 +50,14 @@ what its purpose is. \cite{rfc4034}
 
 \subsubsection{Canonical Ordering}
 
-% Talk about canonical ordering here.
-% Add more about order
 In some queries, there are multiple domain names that map to different IPs. Canonical ordering exists because DNSSEC 
 needs to have the same deterministic order for similar records across the board, or else these Resource Record Sets 
-would equate to different hashes.\cite{rfc4034}
+would equate to different hashes. Canonical is in order of most significant labels, like lab has one label, also the root zone in my environment,
+and is more significant than jmu.lab. All uppercase letters are also converted to lowercase and are in alphabetical order.
+If two domains share the exact same uncompressed name, they are grouped in an RRSet, in order of their RDATA, which is the value 
+that the domain holds, like flags, key tags, IP addresses, and so on.\cite{rfc4034}
 
-Below is an example of an adress query that has two domains with two different IP's, mapped together here in the same Resource Record Set.
-% TODO
+Below is an example of an address query that has two domains with two different IP's, mapped together here in the same Resource Record Set.
 
 \begin{figure}[htbp]
   \centering
@@ -78,8 +69,6 @@ Below is an example of an adress query that has two domains with two different I
 
 \subsection{Signature Resource Record}
 \label{subsec:rrsig}
-
-% https://datatracker.ietf.org/doc/html/rfc4034#section-3.1
 
 The Resource Record Signature, or RRSIG record, is used to verify the answers that are received. These are attached to every answer that is sent with DNSSEC. The signatures are used by recursive name 
 servers to verify that the answer to the question is valid. \cite{sec-gen-guide} Below is an example of an address query with a signature, \cref{fig:a-rrsig}.
@@ -98,8 +87,6 @@ represented in the number of seconds since January 1st, 1970, or like the format
 distinguishable by having exactly 14 digits. The seconds option with be a 32-bit integer that won't be longer than 10 digits. The inception date specifies when it was created, and the expiration date 
 being when it is no longer valid. Next is the key tag field, which holds the key tag of the signing key, in this instance the ZSK for the lab zone.
 
-
-% After the data that is sent with the RRSIG and is included in the hash.
 This is shown below in \cref{fig:rrsig_fields}.
 
 \begin{center}
@@ -108,18 +95,15 @@ This is shown below in \cref{fig:rrsig_fields}.
 
 \captionof{figure}{A diagram showing the different fields of the RRSIG record, and what they represent.}
 \label{fig:rrsig_fields}
-% Need to ad more about canonical data and how the signature is created, and how the data is hashed and signed.
 
-All of the metadata inside the RRSIG Record, from the type to the keytag, gets concatenated and then hashed, then signed with the correct key for the type of record. This creates the signature which is the last piece of the RRSIG 
+All of the metadata inside the RRSIG Record, from the type to the keytag, is first in th buffer to get signed, then the resource record sets information gets appended to the meta data and then hashed, then signed with the correct key for the type of record. This creates the signature which is the last piece of the RRSIG 
 resource record puzzle.
-
-% https://oneuptime.com/blog/post/2026-01-08-dnssec-keygen-keys/view
 
 \subsection{DNSKEYs In General}
 
 DNSKEYs are the record that are used to sign and validate RRsets. These keys use public key cryptography, storing the public keys in DNSKEY RRs. These keys are 
-used in different ways, and there are two different keys that we care about in this study, which are the \hyperref[subsec:zsk]{Zone Signing Key} 
-and the \hyperref[subsec:ksk]{Key Signing Key}. The identifying type number that this RR is a DNSKEY is 48.\cite{rfc4034}
+used in different ways, and there are two different keys that we care about in this study, which are the \hyperref[subsubsec:zsk]{Zone Signing Key} 
+and the \hyperref[subsubsec:ksk]{Key Signing Key}. The identifying type number that this RR is a DNSKEY is 48.\cite{rfc4034}
 
 The general format for these RRs is as follows, \cref{fig:dnskey}
 
@@ -137,7 +121,7 @@ then the ZSK can be compromised, and then all of the records can be compromised.
 
 \subsubsection{The Zone Signing Key}
 \phantomsection
-\label{subsec:zsk}
+\label{subsubsec:zsk}
 
 The Zone Signing Key, or "ZSK" for short, is the key that is used to sign data from a zone. It signs all records except for RRset that are related to keys. 
 The ZSK has the 256 flag, indicating that it is the ZSK. This key has a shorter Time To Live, or TTL, because it is sent out and used much more frequently 
@@ -147,15 +131,12 @@ I saw, this is pretty standard.
 
 \subsubsection{The Key Signing Key}
 \phantomsection
-\label{subsec:ksk}
+\label{subsubsec:ksk}
 
-The Key Signing Key, or "KSK", is used to sign what the ZSK does not sign: key-related RRsets. This keys serves another purpose, as it is the bridge between 
+The Key Signing Key, or "KSK", is used to sign what the ZSK does not sign: key-related RRsets. This key serves another purpose, as it is the bridge between 
 a parent and a child zone. The flag for the KSK is 257, indicating that this key is the KSK. Like the Zone Key, this key also follows the public key encryption 
 scheme. This key pair is meant to protect the ZSK for the zone being queried.
 
-
-%  https://datatracker.ietf.org/doc/html/rfc4035#section-2.4
-% Show an evample of DS with coorespond DNSKEY: https://datatracker.ietf.org/doc/html/rfc4034#section-5.4
 \subsection{The Delegation Signer}
 \phantomsection
 \label{subsec:ds}
@@ -167,7 +148,7 @@ ensuring that the responses they receive can be trusted.\cite{dnssec-ubuntu}
 
 These records are generated with the \texttt{dnssec-dsfromkey} command, which takes in the child zone's KSK public key and generates the DS record that can be stored 
 in the parent zone. The output from this command gets pasted directly into the parents zone file, and then the parent can use this to verify the child zone's KSK. 
-Below is an example of a DS record and the command used to generate it, \cref{fig:ds}. After adding this delegation signer record to the parent zone, I had to run an rndc reload the zone.
+Below is an example of a DS record and the command used to generate it, \cref{fig:ds}. After adding this delegation signer record to the parent zone, I had to run \texttt{rndc reload} to reload the zone.
 
 \begin{figure}[htbp]
   \centering
@@ -177,8 +158,8 @@ Below is an example of a DS record and the command used to generate it, \cref{fi
   \label{fig:ds}
 \end{figure}
 
-% Add more/ reword?
 \subsection{The Next Secure Resource Record}
+\label{subsec:nsec}
 
 The Next Secure Record, or NSEC record, is used to prove that a name does not exist. This is used in the case of a query for a non-existent domain, where the 
 server can respond with an NSEC record that proves the non-existence of the domain. This is done by including the next existing domain in the zone, and then 
@@ -188,7 +169,7 @@ An example of an NSEC record is shown below in \cref{fig:nsec}.
 \begin{figure}[htbp]
   \centering
   \fbox{\includegraphics[width=0.8\textwidth]{figures/dnssec/nsec-record.png}}
-  \caption{In this query, i tried to ask about a zone that didn't exist and got this response.}
+  \caption{In this query, I tried to ask about a zone that didn't exist and got this response.}
   \label{fig:nsec}
 \end{figure}
 
@@ -214,12 +195,11 @@ a trust anchor is below in \cref{fig:anchor}. This record is stored on the clien
 The trust anchor is the root of the trust, and the client can use this to verify the parent zone's KSK, which then can be used to verify the ZSK, which then can be used to verify the records from the zone. 
 This chain continues onto the child zone, where the parent can verify the child zone's KSK with the DS record, and then use that KSK to verify the ZSK, which 
 then can be used to verify the records from the child zone. This is a repetitive process, where the parent can verify the child, and then the child can verify 
-the next child, and so on. \cite{trust-chain} A figure of the chain of trust is shown below in \hyperref[sec:dnssec-env]{DNSSEC In the Environment}, \cref{fig:chain}.
+the next child, and so on. \cite{trust-chain} A figure of the chain of trust is shown below in \hyperref[sec:dnssec-env]{DNSSEC In the Environment}, \cref{fig:chain}. 
+Maintaining the chain of trust also requires key management, as the keys do not last forever and need to be rotated out, as seen in \hyperref[sec:rollover]{Key Rollovers}.
 
-% Figure showing DNSSEC Chain of Trust
-
-% Add more here, maybe move?
 \section{Key Rollovers}
+\label{sec:rollover}
 
 I ran into an issue when trying to run my validation code, where my ZSK had outlived its 60 day TTL. I was testing my validation code, seen in 
 \hyperref[chap:prog-chapter]{Programming the Signature and Validation of Several DNSSEC Resource Records}, and noticed it was failing where it used to succeed. 
@@ -249,8 +229,8 @@ my setup settings. However, this is not how key rollovers are supposed to work, 
 
 \begin{itemize}
     \item First, the new key is generated and added to the zone, and then signed with the old key. This way, the new key is trusted by the parent zone, and can be used to sign records.
-    \item Then, after a period of time, the old key is removed from the zone, and the new key is used to sign records. This way, there is no gap in trust, and the new key can be used without interruption.
-    \item Finally, the old key is removed from the parent zone, and the new key is used to sign records. This way, there is no gap in trust, and the new key can be used without interruption.
+    \item Then, the clock is ticking on the RRSIGs signed by the old key, because when they expire, the old key is removed from the zone. This way, there is no gap in trust, and the new key can be used without interruption.
+    \item Finally, the old key is removed from the parent zone after the signatures expire, and the key rollover is complete.
 \end{itemize}
 
 This is what the keys would look like before you remove the old key that is still active but not being used to sign anymore, pulled for my .lab server, \cref{fig:lab-keys}. The RRSIGs do 
@@ -278,11 +258,9 @@ server, seen below in \cref{fig:jmu-keys}.
 
 \FloatBarrier
 
+% Come back and add more?
 \section{DNSSEC Options}
 
-% Section to talk about my dnssec policy, key management, etc.
-% talk about purge-keys...
-% See what these really mean in depth
 My client is the validator, with dnssec-validation set to yes. It has a trust anchor that was manually copied from the parent zone.
 
 \subsection{DNSSEC Policy}
@@ -307,12 +285,10 @@ especially important for the ZSK, which has a shorter TTL and is more likely to 
 \subsection{Signing}
 
 Right now, I am using Inline Signing, which automatically generates keys and signs the files. This setting also creates and keeps a separate signed zone file. Instead 
-of running the \texttt{dnssec-signzone} and \texttt{dnssec-keygen} command, the server automatically signs the zone when it starts up. This is makes resigning the zone when it expires on the server easier, 
+of running the \texttt{dnssec-signzone} and \texttt{dnssec-keygen} command, the server automatically signs the zone when it starts up. This makes resigning the zone when it expires on the server easier, 
 and also makes it easier to manage the keys. The server will automatically generate the keys for the zone, and then sign the zone with those keys. I just specified the algorithm, 
 size, and time to live for the keys. It also reloads the zone automatically when the keys expire or zones are changed, which is a nice feature. This is a good option for this project, because it allows 
 me to focus on the validation part of the project, rather than the signing part.
-
-% NOTE: Still gathering information on this, and seeing if fully manual signing is worth it, because I'm not sure if you can sign RR independently
 
 \section{DNSSEC In The Testbed Environment}
 \label{sec:dnssec-env}
@@ -321,7 +297,7 @@ With DNSSEC on the internet, there is normally a validating resolver separate fr
 from the server before the client gets the response back. Normally, this is done recursively. For this study, there is no recursion and instead the answers 
 will be manually validated.
 
-Below is an example of the Chain of Trust in the environment \cref{fig:chain}.
+Below, in \cref{fig:chain}, is an example of the Chain of Trust in the environment.
 
 \begin{figure}[htbp]
   \centering
@@ -355,7 +331,7 @@ valid and has not been tampered with, as seen in \cref{fig:delv-valid}.
 \begin{figure}[htbp]
   \centering
   \fbox{\includegraphics[width=0.8\textwidth]{figures/attacks/delv-valid-A.png}}
-  \caption{A picture of the command used to manually sign the zone after making changes to the db file.}
+  \caption{The fully validated output when \texttt{delv} executes without error, showing the record and the accompanying signature.}
   \label{fig:delv-valid}
 \end{figure}
 
@@ -365,7 +341,7 @@ that DNSSEC is working, I signed the zone, then made a change to the db file to 
 \begin{figure}[htbp]
   \centering
   \fbox{\includegraphics[width=0.8\textwidth]{figures/attacks/delv-injection.png}}
-  \caption{This is the output of a \texttt{delv} command.}
+  \caption{This is the output of a \texttt{delv} command that caught a malicious injection and rejected the response.}
   \label{fig:delv}
 \end{figure}
 

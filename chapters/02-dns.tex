@@ -32,7 +32,8 @@ UDP message.\cite{bind-9}
 
 
 \subsection{DNS Resource Records}
-  These DNS records are the most common records used in building a DNS server. These records are all in db files, which are database files used for each zone defined. For example, the zone ".lab" will have a db.lab file. You can name it whatever, 
+
+These DNS records are the most common records used in building a DNS server. These records are all in db files, which are database files used for each zone defined. For example, the zone ".lab" will have a db.lab file. You can name it whatever, 
 as long as it aligns with the named.conf.local zone path defined for the zone. It is best practice to have the domain name as the db files extension. For both the A and NS records, their line begins with an @ symbol. Below is an example of my db.lab 
 file for the lab zone on VM1.
 
@@ -44,7 +45,8 @@ file for the lab zone on VM1.
 \end{figure}
 
 \subsubsection{Start Of Authority Records}
-  SOA records, or "Start Of Authority" records, show the domain name that the specific db file has authority over. There are several sub records within. The MNAME is the domain name of the name server of the original or primary source of data
+
+SOA records, or "Start Of Authority" records, show the domain name that the specific db file has authority over. There are several sub records within. The MNAME is the domain name of the name server of the original or primary source of data
 for the zone. Like a .com, or for this study, .jmu and .lab. These are typically preceded with an ns1, which will come into play later with \hyperref[subsubsec:ns]{Nameserver Records} later. The next record is a RNAME, which is the Responsible Person record. 
 For this project, I have root.jmu or root.lab for the root having responsibility. The next record is the serial number,
 which Bind uses to load different serial versions of the zone. This record has the space to be an unsigned 32 bit number. It should be updated every time there is a change to the db file. Some developers like to use the date it was edited on to help 
@@ -58,10 +60,9 @@ give up. Lastly, the expire record defines another 32 bit time value that gives 
   \label{fig:soa}
 \end{figure}
 
-% TODO: Change wording below
-
 \subsubsection{Address Records}
-  A records are address records, "A" for short. These are the records you get when a domain maps to an IP address of a given domain. This is the most fundamental type of DNS record.
+
+A records are address records, "A" for short. These are the records you get when a domain maps to an IP address of a given domain. This is the most fundamental type of DNS record.
 There are also "AAAA" records, which are for IPv6 traffic, but for this study we will only focus on IPv4 IPs. These records enable a user's device to connect with and load a website, 
 or whatever is at the IP address.\cite{a-records} As seen below, in \cref{fig:a_dig}, when querying for an ip at one of my DNS Servers, I am returned with the IP address of that record.
 
@@ -82,11 +83,11 @@ Below, \cref{fig:a}, is an example of what these records look like.
 \end{figure}
 
 
-\subsubsection{Nameserver Records}
+\subsubsection{Name Server Records}
 \phantomsection
 \label{subsubsec:ns}
 
-  NS records stand for "Nameserver" records, and indicate which DNS server is authoritative for that domain. Like in the SOA, ns1.lab shows which server is authoritative for the .lab domain.
+NS records stand for Name Server records, and indicate which DNS server is authoritative for that domain. Like in the SOA, ns1.lab shows which server is authoritative for the .lab domain.
 Domains can have multiple NS records, like .lab has, which indicate primary and secondary nameservers for domains. For instance, in db.lab, there are multiple NS records, one pointing the the server itself and another 
 pointing to the secondary server for the .jmu.lab domain.\cite{ns-records} See \cref{fig:ns} for an example.
 
@@ -225,7 +226,8 @@ shows a diagram of how this attack works.
 \section{Simulated DNS Attacks In The Testbed Environment}
 \label{sec:dns-attacks}
 
-To show these attacks, I simulated them in the testbed environment. I assumed the role of the attacker and was able to hijack VM1, the root dns server of the virtual network. As seen in the figure below, the first step was to take control of the parent 
+To show these attacks, I simulated them in the testbed environment. I assumed the role of the attacker and was able to hijack VM1, the root dns server of the virtual network. I was able to gain root access to the server, allowing me to modify it 
+however I pleased. As seen in the figure below, the first step was to take control of the parent 
 server and then change the db.lab file to have a malicious zone, which is shown in \cref{fig:mal-zone}. Instead of being redirected to jmu.lab. NS, users are now redirected to the attacker's ns.evil.lab. This is a form of DNS Hijacking, and it also 
 allows for DNS Spoofing and Cache Poisoning to occur. After hijacking the server, I was able to modify any record. Instead of just modifying the NS record, I could also modify an A record to have a malicious IP address, which would redirect users and 
 resolvers to a different malicious IP address, making the attack complete and compromising the user.
