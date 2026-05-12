@@ -3,8 +3,8 @@
 \section{DNS Background}
 \label{sec:dns-background}
 
-DNS started as ARPANET, which was very inefficient and used a centralized hosts file to map the domain names to IP addresses. When a change
-was made, it had to be redistributed to all of the systems. With number of users and systems needed increasing, this became very 
+DNS, or the Domain Naming System, was preceded by a centralized hosts file system on ARPANET, which was very inefficient and used a centralized hosts file to map the domain names to IP addresses. When a change
+was made, it had to be redistributed to all of the systems. With number of users and systems increasing, this became very 
 hard to maintain, which led to DNS today.\cite{bind-9}
 
 In my research about DNS, I learned a lot about what happens behind the scenes with DNS Servers.
@@ -26,14 +26,14 @@ like a tree. Below in \cref{fig:dns} is a diagram demonstrating this hierarchy.\
 A domain is the label of a node in the tree. A dot in a domain name means that it must traverse to another layer to get more information. Like in the above example, 
 we start with "example", being at the Second-Level domain, then traverses to ".com" at the Top-Level domain, then finally the root, ".", server. Put it all together and you get 
 example.com., with the end period making a Fully Qualified Domain Name, or FQDN. This period is usually hidden behind the scenes, and as users we do not use it. Root servers
-is the beginning of all DNS name resolutions, which makes the name root make sense. Like a tree, the DNS tree needs its roots to work.
-However, it helps to see the root domain being reached in this instance. There are 13 root servers due to historical reasons of how many addresses could be put into a 512 byte 
+are the beginning of all DNS name resolutions, which makes the name root make sense. Like a tree, the DNS tree needs its roots to work.
+However, it helps to see the root domain being reached in this instance. There are 13 root servers due to historical reasons of how many name server records that could be put into a 512 byte 
 UDP message.\cite{bind-9}
 
 
 \subsection{DNS Resource Records}
 
-These DNS records are the most common records used in building a DNS server. These records are all in db files, which are database files used for each zone defined. For example, the zone ".lab" will have a db.lab file. You can name it whatever, 
+Resource Records are the building blocks of the DNS system. These records are the most common records used in building a DNS server. These records are all in db files, which are database files used for each zone defined. For example, the zone ".lab" will have a db.lab file. You can name it whatever, 
 as long as it aligns with the named.conf.local zone path defined for the zone. It is best practice to have the domain name as the db files extension. For both the A and NS records, their line begins with an @ symbol. Below is an example of my db.lab 
 file for the lab zone on VM1.
 
@@ -100,9 +100,12 @@ pointing to the secondary server for the .jmu.lab domain.\cite{ns-records} See \
 
 
 \section{The Testbed DNS Environment}
-There are numerous similarities between DNS with the internet and this testbed study. The bridge between the user and DNS servers is the DNS resolver or name resolution. In the project, the client digs at a server, and gets a response. This is a higher level abstraction, 
-as there are no websites mapped to the IPs on my DNS servers, just more local IPs which could be a website. There is also no official "." or root domain, but my "root" domain is lab., which is also my top level domain. This is seen in \cref{fig:env}.
-In this setup, authority is held in the parent vm and passed downward onto the child server. In real DNS, a recursive resolver is used and traverses the different levels of domains.
+There are numerous similarities between DNS with the internet and this testbed study. The bridge between the user and DNS servers is the DNS 
+resolver or name resolution. In the project, the client digs at a server, and gets a response. The test bed doesn't doesn't have recursive 
+resolution, meaning they talk directly to each other. There is also no official "." 
+or root domain, but my "root" domain is lab., which is also my top level domain. This is seen in \cref{fig:env}.
+In this setup, authority is held in the parent virtual machine and passed downward onto the child server. In real DNS, a recursive resolver 
+is used and then traverse the different levels of domains.
 
 % \FloatBarrier
 
@@ -129,33 +132,28 @@ Quad is the final piece, and this domain maps to 192.168.107.64. You can query t
 \FloatBarrier
 
 In this study, both the parent and the child server have authority over their own domains, and you can also traverse the tree to query the parent for 
-information on the child server, as seen below in \cref{fig:p-c}. There are also no IPV6 records, as this is disabled in the configuration of the servers.
+information on the child server, as seen below in \cref{fig:p-c}. There are also no IPv6 records, as this is disabled in the configuration of the servers.
 
 \begin{figure}[htbp]
   \centering
   \fbox{\includegraphics[width=0.8\textwidth]{figures/dns/dig_p_get_c.png}}
-  \caption{Querying the parent for information about the child, the querying the child with that information.}
+  \caption{Querying the parent for information about the child, then querying the child with that information.}
   \label{fig:p-c}
 \end{figure}
 
 
-
-
-% Do more research in this area, read papers and beef it up.
-
 \section{DNS Vulnerabilities}
 
-    DNS without DNSSEC is very insecure and vulnerable to a plethora of attacks. Without DNSSEC, queries are readable to any person on the internet. An attacker could easily intercept this traffic and 
+    DNS without DNSSEC is very insecure and vulnerable to a plethora of attacks. Without DNSSEC, queries are readable to any observer on the network path, or man-in-the-middle. An attacker could easily intercept this traffic and 
 replace it with malicious content. This is where DNSSEC comes into play, helping to mitigate and prevent many attacks from occurring by providing integrity and authentication to the data. It also proves that the information is coming from a trusted, authoritative source.
 
 \subsection{DNS Spoofing/Cache Poisoning}
 
-This is an especially vulnerable part of DNS without DNSSEC. This attack is a textbook man-in-the-middle attack, 
-when the attacker intercepts a query and replaces it with their malicious information. DNS spoofing is when an 
-attacker inserts their malicious address in place of a cached address. This attack is using DNS Hijacking in this 
-instance, to redirect to what the attacker wants them to see. They pretend to be a DNS nameserver and forge a reply, 
-and with UDP it makes it even easier for this attack to occur. Cache poisoning is DNS Spoofing without having to 
-hijack the query. The systems involved with DNS, like servers, computers, and routers can cache DNS lookups for quicker recall.
+This is an especially vulnerable part of DNS without DNSSEC. This attack can occur through forged DNS responses, often without requiring full man-in-the-middle 
+positioning. DNS spoofing occurs when an 
+attacker forges DNS responses in an attempt to impersonate a legitimate DNS server. They pretend to be a DNS nameserver and forge a reply, 
+and with UDP it makes it even easier for this attack to occur. Cache poisoning occurs when an attacker forges DNS responses 
+in an attempt to impersonate a legitimate DNS server. The systems involved with DNS, like servers, computers, and routers can cache DNS lookups for quicker recall.
 An attacker can poison the cache by replacing an entry with a spoofed domain. This spoofed domain gets accessed 
 until the cache gets refreshed and the spoofed site gets replaced.\cite{cache-poisoning} 
 
@@ -172,7 +170,6 @@ attack of forged responses with various query IDs and source ports. If the attac
 the correct query ID and source port, then the forged response will be accepted by the nameserver and 
 cached for future use, seen in \cref{fig:dns-spoof} below.
 
-% TODO: FORMATTING NEEDS TO BE FIXED
 
 \begin{figure}[htbp]
   \centering
@@ -195,19 +192,13 @@ to forge a response. Additionally, having a wider range of possible ports and lo
 attackers to successfully perform this attack. However, without DNSSEC, there is still a risk of this attack being successful, 
 especially if the attacker has access to the network traffic and can intercept queries and responses.
 
-% TODO: Add more below?
-
-% Acording to the article, cache poisoning is when the attacker injects bad data into a recursive nameservers cache, which leads to it distributing this data without knowing and the client does not know either. The host names are legit, 
-% but the server they are visiting cannot be trusted and is bad.
-
 \subsection{DNS Hijacking}
 
 DNS Hijacking occurs when an attacker tries to redirect where the client is going with their query, by gaining root access to the server. They can perform a 
 man-in-the-middle attack and take the query and replace it with their IP, causing the user's machine 
 to directly communicate with the attacker. They could also give an IP that delivers a malicious payload, or redirects 
 the client to a malicious website, allowing the attacker to steal sensitive information. These are 
-some of the most basic types of attacks when it comes the DNS hijacking\cite{hijacking2}. In \cref{fig:dns-hijack} below, it
-shows a diagram of how this attack works.
+some of the most basic types of attacks when it comes to DNS hijacking\cite{hijacking2}. There is a diagram of how this attack works, shown in \cref{fig:dns-hijack}.
 
 \begin{figure}[htbp]
   \centering
@@ -217,7 +208,7 @@ shows a diagram of how this attack works.
 \end{figure}
 
 \begin{enumerate}
-  \item The attacker hijacks the DNS server, either by exploiting vulnerabilities in the server software or by gaining unauthorized access to the server. This allows the attacker to control the responses that the server sends back to clients, in this case changing the ip of computer.lab to the attacker's IP.
+  \item The attacker hijacks the DNS server, either by exploiting vulnerabilities in the server software or by gaining unauthorized access to the server. This allows the attacker to control the responses that the server sends back to clients, in this case changing the IP of computer.lab to the attacker's IP.
   \item The client makes a query to the DNS server, asking for the IP address of a domain name.
   \item The DNS server sends the malicious response back to the client, containing the IP address of a malicious website instead of the legitimate one. 
   \item Finally, the client unknowingly connects to the attacker's website, which can be used to steal sensitive information, such as login credentials or financial data, or to distribute malware.
@@ -226,7 +217,7 @@ shows a diagram of how this attack works.
 \section{Simulated DNS Attacks In The Testbed Environment}
 \label{sec:dns-attacks}
 
-To show these attacks, I simulated them in the testbed environment. I assumed the role of the attacker and was able to hijack VM1, the root dns server of the virtual network. I was able to gain root access to the server, allowing me to modify it 
+To show these attacks, I simulated them in the testbed environment. I assumed the role of the attacker and was able to hijack VM1, the root DNS server of the virtual network. I was able to gain root access to the server, allowing me to modify it 
 however I pleased. As seen in the figure below, the first step was to take control of the parent 
 server and then change the db.lab file to have a malicious zone, which is shown in \cref{fig:mal-zone}. Instead of being redirected to jmu.lab. NS, users are now redirected to the attacker's ns.evil.lab. This is a form of DNS Hijacking, and it also 
 allows for DNS Spoofing and Cache Poisoning to occur. After hijacking the server, I was able to modify any record. Instead of just modifying the NS record, I could also modify an A record to have a malicious IP address, which would redirect users and 
@@ -250,4 +241,6 @@ Without DNSSEC, there is no way for the client to know that this is not the real
 \end{figure}
 
 In this query, the client is asking for the NS record of jmu.lab, and instead of getting the legitimate NS record, they are getting the attacker's NS record. This is a successful DNS Hijacking attack, 
-and it also allows for DNS Spoofing and Cache Poisoning to occur. These attacks are successful without DNSSEC, but later in \hyperref[sec:dnssec-attacks]{Simulated Attacks with DNSSEC Enabled}
+and it also allows for DNS Spoofing and Cache Poisoning to occur. These attacks are successful without DNSSEC, but later in \hyperref[sec:dnssec-attacks]{Simulated Attacks with DNSSEC Enabled}, these attacks will fail. 
+
+In the next chapter, I will discuss the implementation of DNSSEC and how it helps to prevent these attacks from being successful.

@@ -3,7 +3,7 @@
 \section{DNSSEC Background}
     DNSSEC, or Domain Name System Security Extension, adds a layer of security to the otherwise vulnerable DNS. DNSSEC adds security by using cryptographic signatures
 with public key cryptography, with the private key signing it and the public key verifying. DNSSEC also implements hashing, adding integrity to the data and the signing 
-provides the authentication, knowing that only the private key from the server could've signed that data.
+provides the authentication, knowing that only the private key from the server could have signed that data.
 
 % https://www.sidn.nl/en/news-and-blogs/security-of-dns-isnt-be-assured-unless-dnssec-validation-is-enabled-on-the-end-users-client
 There is an additional flag with dnssec queries, the "ad" flag. This flag is passed along with successful DNSSEC queries, meaning "Authenticated Data". When you query 
@@ -17,7 +17,7 @@ Below, \cref{fig:dnssec-lab}, is db.lab, but now set for DNSSEC. The directory w
 DNS configuration and the db files were in /etc/bind/, but now they moved to /var/lib/bind/ to allow for more freedom and not having to deal with bind ownership. Changing 
 the zone configuration to point to the new db file allows the server to write into this directory. As you can see below, there are a number of changes to the db file.
 Gone are the @ symbols preceding lines, and there is a new minimum time record. This sets the minimum Time-to-Live (TTL) for records, especially for the Next SECure (NSEC) records. There 
-is still a SOA, NS and A records, which have minimally changed from regular DNS. 
+is still a SOA, NS, and A records, which have minimally changed from regular DNS. 
 At the bottom of the figure, you can see a \hyperref[subsec:ds]{Delegation Signer} record,
 which came from the child zone. This is an important part of the Chain of trust, allowing the parent to verify the child is the child.\cite{dnssec-ubuntu}
 
@@ -28,12 +28,21 @@ which came from the child zone. This is an important part of the Chain of trust,
   \label{fig:dnssec-lab}
 \end{figure}
 
+\subsection{Integrity vs Authenticity}
+
+DNSSEC provides both of these security properties, but they are different. DNSSEC does not encrypt data, it simply 
+digests it with a hash function, providing integrity where if the input data is changed, a different hash will 
+result. The authentication is provided by the signatures, which are generated with the private key and verified with 
+the corresponding public key. This shows that the data came from a trusted source, because only the server's private 
+key could have generated that signature.
+
+
 \section{New DNS Resource Records}
 
     With the regular DNS records previously discussed, there are some new records that must be taken into account. Regarding the \hyperref[subsubsec:zsk]{Zone Signing Key} 
 and the \hyperref[subsubsec:ksk]{Key Signing Key}, the algorithms I used for the keys was RSASHA256, this is a good algorithm for signing and one I am familiar with. The ZSK 
-signs the records from the zone, and the KSK signs the ZSK. The biggest takeaways from the new resource records is that every record gets signed, and some records exist to 
-just provide more security and prevent attacks, like the \hyperref[subsec:nsec]{Next SECure Records}
+signs the records from the zone, and the KSK signs the DNSKEY resource record set of both keys. The biggest takeaways from the new resource records is that every record gets signed, and some records exist to 
+just provide more security and prevent attacks, like the \hyperref[subsec:nsec]{Next SECure Records}.
 
 \subsection{Resource Record Set}
 
@@ -52,8 +61,8 @@ what its purpose is. \cite{rfc4034}
 
 In some queries, there are multiple domain names that map to different IPs. Canonical ordering exists because DNSSEC 
 needs to have the same deterministic order for similar records across the board, or else these Resource Record Sets 
-would equate to different hashes. Canonical is in order of most significant labels, like lab has one label, also the root zone in my environment,
-and is more significant than jmu.lab. All uppercase letters are also converted to lowercase and are in alphabetical order.
+would equate to different hashes. Canonical is that names are sorted from right to left, starting at the root like lab has one label,
+and is more significant than jmu.lab with a label to the left. All uppercase letters are also converted to lowercase and are in alphabetical order.
 If two domains share the exact same uncompressed name, they are grouped in an RRSet, in order of their RDATA, which is the value 
 that the domain holds, like flags, key tags, IP addresses, and so on.\cite{rfc4034}
 
@@ -96,7 +105,7 @@ This is shown below in \cref{fig:rrsig_fields}.
 \captionof{figure}{A diagram showing the different fields of the RRSIG record, and what they represent.}
 \label{fig:rrsig_fields}
 
-All of the metadata inside the RRSIG Record, from the type to the keytag, is first in th buffer to get signed, then the resource record sets information gets appended to the meta data and then hashed, then signed with the correct key for the type of record. This creates the signature which is the last piece of the RRSIG 
+All of the metadata inside the RRSIG Record, from the type to the keytag, is first in the buffer to get signed, then the canonical resource record set's information gets appended to the meta data and then hashed, then signed with the correct key for the type of record. This creates the signature which is the last piece of the RRSIG 
 resource record puzzle.
 
 \subsection{DNSKEYs In General}
@@ -114,10 +123,13 @@ The general format for these RRs is as follows, \cref{fig:dnskey}
   \label{fig:dnskey}
 \end{figure}
 
-These keys are stored in /var/cache/bind/, and are generated with the \texttt{dnssec-keygen} command. There are two parts of these keys, a ".key" and ".private", with the zone name and key tag in the name. There is an 
-example of these stored records below. The keys are generated with the algorithm specified in the dnssec policy, which is RSASHA256 in this case. 
-Generally, the KSK is generated with a larger key size than the ZSK, because the KSK is used to sign the ZSK, which is used to sign the records. The KSK is more important to protect, because if it is compromised, 
-then the ZSK can be compromised, and then all of the records can be compromised. The ZSK is used more frequently, so it is more likely to be compromised, but it is also easier to replace than the KSK.
+These keys are stored in /var/cache/bind/, and are generated with the \texttt{dnssec-keygen} command. There 
+are two parts of these keys, a ".key" and ".private", with the zone name and key tag in the name. 
+The keys are generated with the algorithm specified in the dnssec policy, which is RSASHA256 in this case. 
+Generally, the KSK is generated with a larger key size than the ZSK, because the KSK is used to sign the ZSK, 
+which is used to sign the records. The KSK is more important to protect, because if it is compromised, 
+then the ZSK can be compromised, and then all of the records can be compromised. The ZSK is used more 
+frequently, so it is more likely to be compromised, but it is also easier to replace than the KSK.
 
 \subsubsection{The Zone Signing Key}
 \phantomsection
@@ -125,7 +137,7 @@ then the ZSK can be compromised, and then all of the records can be compromised.
 
 The Zone Signing Key, or "ZSK" for short, is the key that is used to sign data from a zone. It signs all records except for RRset that are related to keys. 
 The ZSK has the 256 flag, indicating that it is the ZSK. This key has a shorter Time To Live, or TTL, because it is sent out and used much more frequently 
-than the Key Signing Key. Seen later under \hyperref[subsec:dnssec-policy]{DNSSEC Policy}, I set the time to live for the ZSK to be 60 days, where as the KSK is set to be a year. From what 
+than the Key Signing Key. Seen later under \hyperref[subsec:dnssec-policy]{DNSSEC Policy}, I set the time to live for the ZSK to be 60 days, whereas the KSK is set to be a year. From what 
 I saw, this is pretty standard.
 
 
@@ -205,9 +217,9 @@ I ran into an issue when trying to run my validation code, where my ZSK had outl
 \hyperref[chap:prog-chapter]{Programming the Signature and Validation of Several DNSSEC Resource Records}, and noticed it was failing where it used to succeed. 
 I decided to check out my keys and sure enough, they had expired and could no longer be used. I then pulled the newly generated keys from the servers 
 and tried to query for new signature records. However, I noticed there were two signatures attached to zone records and three keys being signed in a 
-DNSKEY query, seen in \cref{fig:two-a-sigs} and \cref{fig:three-keys} below. This is because the old ZSK is still active but wasn't used for signing anymore, 
+DNSKEY query, seen in \cref{fig:two-a-sigs} and \cref{fig:three-keys} below. This is because the old ZSK is still active but was no longer used for signing, 
 and the new ZSK is being activated and used to sign the zone. The old key is still active to ensure the transition to the new key is smooth, and can validate 
-any records leftover in the cache. 
+any cached records signed with the old key.\cite{key-rollover}
 
 \begin{figure}[htbp]
   \centering
@@ -258,10 +270,7 @@ server, seen below in \cref{fig:jmu-keys}.
 
 \FloatBarrier
 
-% Come back and add more?
 \section{DNSSEC Options}
-
-My client is the validator, with dnssec-validation set to yes. It has a trust anchor that was manually copied from the parent zone.
 
 \subsection{DNSSEC Policy}
 \phantomsection
@@ -272,23 +281,33 @@ Setting these settings also means that the keys are generated in the background 
 
 \begin{figure}[htbp]
   \centering
-  \fbox{\includegraphics[width=0.7\textwidth]{figures/dnssec/key-rollover/purge-dnssec-policy.png}}
-  \caption{This is what I added to my dnssec policy I created called "rsa-policy". This was then added to the zone configuration to implement this policy.}
+  \fbox{\includegraphics[width=0.9\textwidth]{figures/dnssec/dnssec-policy.png}}
+  \caption{This is what I added to my dnssec policy I created called "rsa-policy". Both servers have the same policy.}
   \label{fig:pol}
 \end{figure}
 
-% Maybe add more/reword?
-I later added the purge-keys option to my policy, which automatically removes old keys after a certain period of time. This is a 
-good option to have, because it ensures that old keys are removed in a timely manner, and that there is no gap in trust. This is 
-especially important for the ZSK, which has a shorter TTL and is more likely to be compromised.
+I added some specifics to the policy, like an unlimited TTL for both of the keys, allowing for less hassle with rollovers and keeping 
+the signatures that I have validating now stay valid, reducing the maintenance burden for anyone reproducing the environment. Signatures 
+now don't expire for ten years, which is not good practice in the real world, but for the test bed environment, it makes other aspects 
+easier. Having signatures last this long increase the window of exposure, if a key were to be compromised, then signature would also be compromised. This also allows for more practice in managing keys, forcing manual action to be taken to regenerate keys. Adding the other 
+settings, like the propagation time, allows the keys to quickly sign the records and have the signatures available 
+for validation. The algorithm is set to RSASHA256, which is a good algorithm for signing and one I am familiar with.
 
+% Add a figure for inline singing?
 \subsection{Signing}
 
 Right now, I am using Inline Signing, which automatically generates keys and signs the files. This setting also creates and keeps a separate signed zone file. Instead 
 of running the \texttt{dnssec-signzone} and \texttt{dnssec-keygen} command, the server automatically signs the zone when it starts up. This makes resigning the zone when it expires on the server easier, 
 and also makes it easier to manage the keys. The server will automatically generate the keys for the zone, and then sign the zone with those keys. I just specified the algorithm, 
 size, and time to live for the keys. It also reloads the zone automatically when the keys expire or zones are changed, which is a nice feature. This is a good option for this project, because it allows 
-me to focus on the validation part of the project, rather than the signing part.
+me to focus on the validation part of the project, rather than the signing part. \cref{fig:signing-policy} shows this below.
+
+\begin{figure}[htbp]
+  \centering
+  \fbox{\includegraphics[width=0.9\textwidth]{figures/dnssec/named-conf-local-updatedvm1.png}}
+  \caption{This is the specifications for the zones in name.conf.local, showing the inline signing option. This is the same for both servers.}
+  \label{fig:signing-policy}
+\end{figure}
 
 \section{DNSSEC In The Testbed Environment}
 \label{sec:dnssec-env}
@@ -305,8 +324,6 @@ Below, in \cref{fig:chain}, is an example of the Chain of Trust in the environme
   \caption{A diagram showing the Chain of Trust, with the trust anchor at the root, and the parent and child zones below. The arrows indicate the direction of trust, with each level trusting the next.}
   \label{fig:chain}
 \end{figure}
-
-% NEEDS MORE BELOW, or does it?
 
 \section{Simulated Attacks with DNSSEC Enabled}
 \label{sec:dnssec-attacks}
@@ -336,7 +353,7 @@ valid and has not been tampered with, as seen in \cref{fig:delv-valid}.
 \end{figure}
 
 After signing the data, I had to reload the zone to have the changes take effect. This is done with the \texttt{rndc reload} command, which updates the new configurations. So, to prove 
-that DNSSEC is working, I signed the zone, then made a change to the db file to have a malicious zone, and then reloaded the zone. After doing this, I ran a dig query for computer.lab, and got the following response, \cref{fig:delv}.
+that DNSSEC is working, I signed the zone, then made a change to the db file to have a malicious zone, and then reloaded the zone. After doing this, I ran a \texttt{delv} query for computer.lab, and got the following response, \cref{fig:delv}.
 
 \begin{figure}[htbp]
   \centering
@@ -368,3 +385,9 @@ which means that the client cannot verify any of the records from the parent zon
   \caption{The error above shows a \texttt{delv} command for computer.lab, but the trust anchor is not valid, because the data was tampered with.}
   \label{fig:cor-anchor}
 \end{figure}
+
+\FloatBarrier
+
+The error, "broken trust chain", shows that the trust anchor is no longer valid and cannot be trusted, a good catch by \texttt{delv}. This shows that DNSSEC 
+is working, because it is able to detect that the trust anchor was tampered with and is not valid, which means that the client cannot trust any of the records 
+from the parent zone or any of the child zones. 

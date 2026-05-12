@@ -13,6 +13,7 @@
 \@writefile{toc}{\contentsline {section}{\numberline {1.4}Virtual Machine Fundamentals}{2}{section.1.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {1.5}Testbed Virtual Network}{3}{section.1.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {1.6}Bind9}{3}{section.1.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {1.7}Roadmap}{3}{section.1.7}\protected@file@percent }
 \citation{bind-9}
 \citation{cloudflare-dns}
 \citation{bind-9}
@@ -42,12 +43,12 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces An example of digging for an A record, the short flag used to only give me the ip.}}{7}{figure.caption.5}\protected@file@percent }
 \newlabel{fig:a_dig}{{2.4}{7}{An example of digging for an A record, the short flag used to only give me the ip}{figure.caption.5}{}}
 \newlabel{fig:a_dig@cref}{{[figure][4][2]2.4}{[1][7][]7}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces An example of A records in the parent servers db.lab, computer.lab and bc.lab}}{7}{figure.caption.6}\protected@file@percent }
-\newlabel{fig:a}{{2.5}{7}{An example of A records in the parent servers db.lab, computer.lab and bc.lab}{figure.caption.6}{}}
-\newlabel{fig:a@cref}{{[figure][5][2]2.5}{[1][7][]7}{}{}{}}
-\@writefile{toc}{\contentsline {subsubsection}{Nameserver Records}{8}{figure.caption.6}\protected@file@percent }
-\newlabel{subsubsec:ns}{{2.1.1}{8}{Nameserver Records}{section*.7}{}}
-\newlabel{subsubsec:ns@cref}{{[subsection][1][2,1]2.1.1}{[1][7][]8}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Name Server Records}{7}{figure.caption.6}\protected@file@percent }
+\newlabel{subsubsec:ns}{{2.1.1}{7}{Name Server Records}{section*.7}{}}
+\newlabel{subsubsec:ns@cref}{{[subsection][1][2,1]2.1.1}{[1][7][]7}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces An example of A records in the parent servers db.lab, computer.lab and bc.lab}}{8}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:a}{{2.5}{8}{An example of A records in the parent servers db.lab, computer.lab and bc.lab}{figure.caption.6}{}}
+\newlabel{fig:a@cref}{{[figure][5][2]2.5}{[1][7][]8}{}{}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces An example of NS records in the parent servers db.lab}}{8}{figure.caption.8}\protected@file@percent }
 \newlabel{fig:ns}{{2.6}{8}{An example of NS records in the parent servers db.lab}{figure.caption.8}{}}
 \newlabel{fig:ns@cref}{{[figure][6][2]2.6}{[1][8][]8}{}{}{}}
@@ -59,8 +60,8 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces This is a diagram showing the zones and their relationship.}}{10}{figure.caption.10}\protected@file@percent }
 \newlabel{fig:zones}{{2.8}{10}{This is a diagram showing the zones and their relationship}{figure.caption.10}{}}
 \newlabel{fig:zones@cref}{{[figure][8][2]2.8}{[1][9][]10}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Querying the parent for information about the child, the querying the child with that information.}}{10}{figure.caption.11}\protected@file@percent }
-\newlabel{fig:p-c}{{2.9}{10}{Querying the parent for information about the child, the querying the child with that information}{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.9}{\ignorespaces Querying the parent for information about the child, then querying the child with that information.}}{10}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:p-c}{{2.9}{10}{Querying the parent for information about the child, then querying the child with that information}{figure.caption.11}{}}
 \newlabel{fig:p-c@cref}{{[figure][9][2]2.9}{[1][10][]10}{}{}{}}
 \citation{cache-poisoning}
 \citation{spoof-article}
@@ -88,172 +89,238 @@
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
 \@writefile{toc}{\contentsline {section}{\numberline {3.1}DNSSEC Background}{17}{section.3.1}\protected@file@percent }
-\citation{rfc4034}
 \@writefile{lof}{\contentsline {figure}{\numberline {3.1}{\ignorespaces The new DNSSEC db.lab}}{18}{figure.caption.16}\protected@file@percent }
 \newlabel{fig:dnssec-lab}{{3.1}{18}{The new DNSSEC db.lab}{figure.caption.16}{}}
 \newlabel{fig:dnssec-lab@cref}{{[figure][1][3]3.1}{[1][18][]18}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.2}New DNS Resource Records}{18}{section.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Integrity vs Authenticity}{18}{subsection.3.1.1}\protected@file@percent }
 \citation{rfc4034}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces A diagram showing a high level view of a DNSSEC query, digging for an Address Record.}}{19}{figure.caption.17}\protected@file@percent }
-\newlabel{fig:dnssec-diagram}{{3.2}{19}{A diagram showing a high level view of a DNSSEC query, digging for an Address Record}{figure.caption.17}{}}
-\newlabel{fig:dnssec-diagram@cref}{{[figure][2][3]3.2}{[1][18][]19}{}{}{}}
+\citation{rfc4034}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}New DNS Resource Records}{19}{section.3.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Resource Record Set}{19}{subsection.3.2.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces This query shows a dig at the parent for the DNSKEYs}}{19}{figure.caption.18}\protected@file@percent }
-\newlabel{fig:dnskey_diagram}{{3.3}{19}{This query shows a dig at the parent for the DNSKEYs}{figure.caption.18}{}}
-\newlabel{fig:dnskey_diagram@cref}{{[figure][3][3]3.3}{[1][19][]19}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.2}{\ignorespaces This query shows a dig at the parent for the DNSKEYs}}{19}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:dnskey_diagram}{{3.2}{19}{This query shows a dig at the parent for the DNSKEYs}{figure.caption.17}{}}
+\newlabel{fig:dnskey_diagram@cref}{{[figure][2][3]3.2}{[1][19][]19}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{Canonical Ordering}{19}{figure.caption.17}\protected@file@percent }
 \citation{sec-gen-guide}
-\@writefile{toc}{\contentsline {subsubsection}{Canonical Ordering}{20}{figure.caption.18}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces This diagram of an address query shows canonical ordering in action, grouping two domains in the same set in a specific order.}}{20}{figure.caption.19}\protected@file@percent }
-\newlabel{fig:a_dnssec_diagram}{{3.4}{20}{This diagram of an address query shows canonical ordering in action, grouping two domains in the same set in a specific order}{figure.caption.19}{}}
-\newlabel{fig:a_dnssec_diagram@cref}{{[figure][4][3]3.4}{[1][20][]20}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.3}{\ignorespaces This diagram of an address query shows canonical ordering in action, grouping two domains in the same set in a specific order.}}{20}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:a_dnssec_diagram}{{3.3}{20}{This diagram of an address query shows canonical ordering in action, grouping two domains in the same set in a specific order}{figure.caption.18}{}}
+\newlabel{fig:a_dnssec_diagram@cref}{{[figure][3][3]3.3}{[1][20][]20}{}{}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}Signature Resource Record}{20}{subsection.3.2.2}\protected@file@percent }
 \newlabel{subsec:rrsig}{{3.2.2}{20}{Signature Resource Record}{subsection.3.2.2}{}}
 \newlabel{subsec:rrsig@cref}{{[subsection][2][3,2]3.2.2}{[1][20][]20}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces Address record with a RRSIG from the ZSK}}{21}{figure.3.5}\protected@file@percent }
-\newlabel{fig:a-rrsig}{{3.5}{21}{Address record with a RRSIG from the ZSK}{figure.3.5}{}}
-\newlabel{fig:a-rrsig@cref}{{[figure][5][3]3.5}{[1][21][]21}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.4}{\ignorespaces Address record with a RRSIG from the ZSK}}{21}{figure.3.4}\protected@file@percent }
+\newlabel{fig:a-rrsig}{{3.4}{21}{Address record with a RRSIG from the ZSK}{figure.3.4}{}}
+\newlabel{fig:a-rrsig@cref}{{[figure][4][3]3.4}{[1][21][]21}{}{}{}}
 \citation{rfc4034}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces A diagram showing the different fields of the RRSIG record, and what they represent.}}{22}{figure.3.6}\protected@file@percent }
-\newlabel{fig:rrsig_fields}{{3.6}{22}{A diagram showing the different fields of the RRSIG record, and what they represent}{figure.3.6}{}}
-\newlabel{fig:rrsig_fields@cref}{{[figure][6][3]3.6}{[1][22][]22}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.5}{\ignorespaces A diagram showing the different fields of the RRSIG record, and what they represent.}}{22}{figure.3.5}\protected@file@percent }
+\newlabel{fig:rrsig_fields}{{3.5}{22}{A diagram showing the different fields of the RRSIG record, and what they represent}{figure.3.5}{}}
+\newlabel{fig:rrsig_fields@cref}{{[figure][5][3]3.5}{[1][22][]22}{}{}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.3}DNSKEYs In General}{22}{subsection.3.2.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces This query shows a dig at the parent for the DNSKEYs}}{23}{figure.caption.20}\protected@file@percent }
-\newlabel{fig:dnskey}{{3.7}{23}{This query shows a dig at the parent for the DNSKEYs}{figure.caption.20}{}}
-\newlabel{fig:dnskey@cref}{{[figure][7][3]3.7}{[1][22][]23}{}{}{}}
-\@writefile{toc}{\contentsline {subsubsection}{The Zone Signing Key}{23}{figure.caption.20}\protected@file@percent }
-\newlabel{subsec:zsk}{{3.2.3}{23}{The Zone Signing Key}{section*.21}{}}
-\newlabel{subsec:zsk@cref}{{[subsection][3][3,2]3.2.3}{[1][23][]23}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.6}{\ignorespaces This query shows a dig at the parent for the DNSKEYs}}{23}{figure.caption.19}\protected@file@percent }
+\newlabel{fig:dnskey}{{3.6}{23}{This query shows a dig at the parent for the DNSKEYs}{figure.caption.19}{}}
+\newlabel{fig:dnskey@cref}{{[figure][6][3]3.6}{[1][22][]23}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{The Zone Signing Key}{23}{figure.caption.19}\protected@file@percent }
+\newlabel{subsubsec:zsk}{{3.2.3}{23}{The Zone Signing Key}{section*.20}{}}
+\newlabel{subsubsec:zsk@cref}{{[subsection][3][3,2]3.2.3}{[1][23][]23}{}{}{}}
 \citation{dnssec-ubuntu}
 \citation{nsec-records}
-\@writefile{toc}{\contentsline {subsubsection}{The Key Signing Key}{24}{section*.21}\protected@file@percent }
-\newlabel{subsec:ksk}{{3.2.3}{24}{The Key Signing Key}{section*.22}{}}
-\newlabel{subsec:ksk@cref}{{[subsection][3][3,2]3.2.3}{[1][23][]24}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{The Key Signing Key}{24}{section*.20}\protected@file@percent }
+\newlabel{subsubsec:ksk}{{3.2.3}{24}{The Key Signing Key}{section*.21}{}}
+\newlabel{subsubsec:ksk@cref}{{[subsection][3][3,2]3.2.3}{[1][23][]24}{}{}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}The Delegation Signer}{24}{subsection.3.2.4}\protected@file@percent }
-\newlabel{subsec:ds}{{3.2.4}{24}{The Delegation Signer}{section*.23}{}}
+\newlabel{subsec:ds}{{3.2.4}{24}{The Delegation Signer}{section*.22}{}}
 \newlabel{subsec:ds@cref}{{[subsection][4][3,2]3.2.4}{[1][24][]24}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces The first image is the command used to generate the DS on the child server, then the output in the parent zone file.}}{24}{figure.caption.24}\protected@file@percent }
-\newlabel{fig:ds}{{3.8}{24}{The first image is the command used to generate the DS on the child server, then the output in the parent zone file}{figure.caption.24}{}}
-\newlabel{fig:ds@cref}{{[figure][8][3]3.8}{[1][24][]24}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.7}{\ignorespaces The first image is the command used to generate the DS on the child server, then the output in the parent zone file.}}{24}{figure.caption.23}\protected@file@percent }
+\newlabel{fig:ds}{{3.7}{24}{The first image is the command used to generate the DS on the child server, then the output in the parent zone file}{figure.caption.23}{}}
+\newlabel{fig:ds@cref}{{[figure][7][3]3.7}{[1][24][]24}{}{}{}}
 \citation{nsec-records}
 \citation{trust-anchors}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.5}The Next Secure Resource Record}{25}{subsection.3.2.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces In this query, i tried to ask about a zone that didn't exist and got this response.}}{25}{figure.caption.25}\protected@file@percent }
-\newlabel{fig:nsec}{{3.9}{25}{In this query, i tried to ask about a zone that didn't exist and got this response}{figure.caption.25}{}}
-\newlabel{fig:nsec@cref}{{[figure][9][3]3.9}{[1][25][]25}{}{}{}}
+\newlabel{subsec:nsec}{{3.2.5}{25}{The Next Secure Resource Record}{subsection.3.2.5}{}}
+\newlabel{subsec:nsec@cref}{{[subsection][5][3,2]3.2.5}{[1][24][]25}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.8}{\ignorespaces In this query, I tried to ask about a zone that didn't exist and got this response.}}{25}{figure.caption.24}\protected@file@percent }
+\newlabel{fig:nsec}{{3.8}{25}{In this query, I tried to ask about a zone that didn't exist and got this response}{figure.caption.24}{}}
+\newlabel{fig:nsec@cref}{{[figure][8][3]3.8}{[1][25][]25}{}{}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.3}The Chain Of Trust}{25}{section.3.3}\protected@file@percent }
 \citation{trust-chain}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces An Example of my Trust Anchor}}{26}{figure.caption.26}\protected@file@percent }
-\newlabel{fig:anchor}{{3.10}{26}{An Example of my Trust Anchor}{figure.caption.26}{}}
-\newlabel{fig:anchor@cref}{{[figure][10][3]3.10}{[1][26][]26}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {3.4}Key Rollovers}{26}{section.3.4}\protected@file@percent }
 \citation{key-rollover}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces A dig query for quad.jmu.lab that shows two signatures attached to the address record. This is because the old ZSK is still active, and the new ZSK is being activated.}}{27}{figure.caption.27}\protected@file@percent }
-\newlabel{fig:two-a-sigs}{{3.11}{27}{A dig query for quad.jmu.lab that shows two signatures attached to the address record. This is because the old ZSK is still active, and the new ZSK is being activated}{figure.caption.27}{}}
-\newlabel{fig:two-a-sigs@cref}{{[figure][11][3]3.11}{[1][26][]27}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces A dig query that has been shortened to show the two ZSKs (256), one inactive and one being activated and the KSK(257).}}{27}{figure.caption.28}\protected@file@percent }
-\newlabel{fig:three-keys}{{3.12}{27}{A dig query that has been shortened to show the two ZSKs (256), one inactive and one being activated and the KSK(257)}{figure.caption.28}{}}
-\newlabel{fig:three-keys@cref}{{[figure][12][3]3.12}{[1][26][]27}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces The first ZSK, 34104, is the old key that doesn't sign anymore, below is the new ZSK, 12978, that is being activated and signing the zone. The KSK, 5852, is still active and signing the ZSKs.}}{28}{figure.caption.29}\protected@file@percent }
-\newlabel{fig:lab-keys}{{3.13}{28}{The first ZSK, 34104, is the old key that doesn't sign anymore, below is the new ZSK, 12978, that is being activated and signing the zone. The KSK, 5852, is still active and signing the ZSKs}{figure.caption.29}{}}
-\newlabel{fig:lab-keys@cref}{{[figure][13][3]3.13}{[1][28][]28}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces This figure shows the status of the keys on the jmu.lab server after the old ZSK was removed. The new ZSK is active and being used to sign records, but the old ZSK was deleted before the new key was activated, which caused a gap in trust and the signatures to fail validation.}}{29}{figure.caption.30}\protected@file@percent }
-\newlabel{fig:jmu-keys}{{3.14}{29}{This figure shows the status of the keys on the jmu.lab server after the old ZSK was removed. The new ZSK is active and being used to sign records, but the old ZSK was deleted before the new key was activated, which caused a gap in trust and the signatures to fail validation}{figure.caption.30}{}}
-\newlabel{fig:jmu-keys@cref}{{[figure][14][3]3.14}{[1][28][]29}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.9}{\ignorespaces An Example of my Trust Anchor}}{26}{figure.caption.25}\protected@file@percent }
+\newlabel{fig:anchor}{{3.9}{26}{An Example of my Trust Anchor}{figure.caption.25}{}}
+\newlabel{fig:anchor@cref}{{[figure][9][3]3.9}{[1][26][]26}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Key Rollovers}{26}{section.3.4}\protected@file@percent }
+\newlabel{sec:rollover}{{3.4}{26}{Key Rollovers}{section.3.4}{}}
+\newlabel{sec:rollover@cref}{{[section][4][3]3.4}{[1][26][]26}{}{}{}}
+\citation{key-rollover}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.10}{\ignorespaces A dig query for quad.jmu.lab that shows two signatures attached to the address record. This is because the old ZSK is still active, and the new ZSK is being activated.}}{27}{figure.caption.26}\protected@file@percent }
+\newlabel{fig:two-a-sigs}{{3.10}{27}{A dig query for quad.jmu.lab that shows two signatures attached to the address record. This is because the old ZSK is still active, and the new ZSK is being activated}{figure.caption.26}{}}
+\newlabel{fig:two-a-sigs@cref}{{[figure][10][3]3.10}{[1][27][]27}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.11}{\ignorespaces A dig query that has been shortened to show the two ZSKs (256), one inactive and one being activated and the KSK(257).}}{27}{figure.caption.27}\protected@file@percent }
+\newlabel{fig:three-keys}{{3.11}{27}{A dig query that has been shortened to show the two ZSKs (256), one inactive and one being activated and the KSK(257)}{figure.caption.27}{}}
+\newlabel{fig:three-keys@cref}{{[figure][11][3]3.11}{[1][27][]27}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.12}{\ignorespaces The first ZSK, 34104, is the old key that doesn't sign anymore, below is the new ZSK, 12978, that is being activated and signing the zone. The KSK, 5852, is still active and signing the ZSKs.}}{28}{figure.caption.28}\protected@file@percent }
+\newlabel{fig:lab-keys}{{3.12}{28}{The first ZSK, 34104, is the old key that doesn't sign anymore, below is the new ZSK, 12978, that is being activated and signing the zone. The KSK, 5852, is still active and signing the ZSKs}{figure.caption.28}{}}
+\newlabel{fig:lab-keys@cref}{{[figure][12][3]3.12}{[1][28][]28}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.13}{\ignorespaces This figure shows the status of the keys on the jmu.lab server after the old ZSK was removed. The new ZSK is active and being used to sign records, but the old ZSK was deleted before the new key was activated, which caused a gap in trust and the signatures to fail validation.}}{29}{figure.caption.29}\protected@file@percent }
+\newlabel{fig:jmu-keys}{{3.13}{29}{This figure shows the status of the keys on the jmu.lab server after the old ZSK was removed. The new ZSK is active and being used to sign records, but the old ZSK was deleted before the new key was activated, which caused a gap in trust and the signatures to fail validation}{figure.caption.29}{}}
+\newlabel{fig:jmu-keys@cref}{{[figure][13][3]3.13}{[1][28][]29}{}{}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.5}DNSSEC Options}{29}{section.3.5}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5.1}DNSSEC Policy}{29}{subsection.3.5.1}\protected@file@percent }
-\newlabel{subsec:dnssec-policy}{{3.5.1}{29}{DNSSEC Policy}{section*.31}{}}
+\newlabel{subsec:dnssec-policy}{{3.5.1}{29}{DNSSEC Policy}{section*.30}{}}
 \newlabel{subsec:dnssec-policy@cref}{{[subsection][1][3,5]3.5.1}{[1][29][]29}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces This is what I added to my dnssec policy I created called "rsa-policy". This was then added to the zone configuration to implement this policy.}}{29}{figure.caption.32}\protected@file@percent }
-\newlabel{fig:pol}{{3.15}{29}{This is what I added to my dnssec policy I created called "rsa-policy". This was then added to the zone configuration to implement this policy}{figure.caption.32}{}}
-\newlabel{fig:pol@cref}{{[figure][15][3]3.15}{[1][29][]29}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.14}{\ignorespaces This is what I added to my dnssec policy I created called "rsa-policy". Both servers have the same policy.}}{29}{figure.caption.31}\protected@file@percent }
+\newlabel{fig:pol}{{3.14}{29}{This is what I added to my dnssec policy I created called "rsa-policy". Both servers have the same policy}{figure.caption.31}{}}
+\newlabel{fig:pol@cref}{{[figure][14][3]3.14}{[1][29][]29}{}{}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.5.2}Signing}{30}{subsection.3.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {3.6}DNSSEC In The Testbed Environment}{30}{section.3.6}\protected@file@percent }
-\newlabel{sec:dnssec-env}{{3.6}{30}{DNSSEC In The Testbed Environment}{section.3.6}{}}
-\newlabel{sec:dnssec-env@cref}{{[section][6][3]3.6}{[1][30][]30}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces A diagram showing the Chain of Trust, with the trust anchor at the root, and the parent and child zones below. The arrows indicate the direction of trust, with each level trusting the next.}}{31}{figure.caption.33}\protected@file@percent }
-\newlabel{fig:chain}{{3.16}{31}{A diagram showing the Chain of Trust, with the trust anchor at the root, and the parent and child zones below. The arrows indicate the direction of trust, with each level trusting the next}{figure.caption.33}{}}
-\newlabel{fig:chain@cref}{{[figure][16][3]3.16}{[1][30][]31}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.15}{\ignorespaces This is the specifications for the zones in name.conf.local, showing the inline signing option. This is the same for both servers.}}{31}{figure.caption.32}\protected@file@percent }
+\newlabel{fig:signing-policy}{{3.15}{31}{This is the specifications for the zones in name.conf.local, showing the inline signing option. This is the same for both servers}{figure.caption.32}{}}
+\newlabel{fig:signing-policy@cref}{{[figure][15][3]3.15}{[1][30][]31}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.6}DNSSEC In The Testbed Environment}{31}{section.3.6}\protected@file@percent }
+\newlabel{sec:dnssec-env}{{3.6}{31}{DNSSEC In The Testbed Environment}{section.3.6}{}}
+\newlabel{sec:dnssec-env@cref}{{[section][6][3]3.6}{[1][30][]31}{}{}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {3.7}Simulated Attacks with DNSSEC Enabled}{31}{section.3.7}\protected@file@percent }
 \newlabel{sec:dnssec-attacks}{{3.7}{31}{Simulated Attacks with DNSSEC Enabled}{section.3.7}{}}
-\newlabel{sec:dnssec-attacks@cref}{{[section][7][3]3.7}{[1][30][]31}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces A capture of the \texttt  {dnssec-signzone} command being used to sign the lab zone.}}{31}{figure.caption.34}\protected@file@percent }
-\newlabel{fig:manual-signing}{{3.17}{31}{A capture of the \texttt {dnssec-signzone} command being used to sign the lab zone}{figure.caption.34}{}}
-\newlabel{fig:manual-signing@cref}{{[figure][17][3]3.17}{[1][31][]31}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces A picture of the command used to manually sign the zone after making changes to the db file.}}{32}{figure.caption.35}\protected@file@percent }
-\newlabel{fig:delv-valid}{{3.18}{32}{A picture of the command used to manually sign the zone after making changes to the db file}{figure.caption.35}{}}
-\newlabel{fig:delv-valid@cref}{{[figure][18][3]3.18}{[1][32][]32}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.19}{\ignorespaces This is the output of a \texttt  {delv} command.}}{32}{figure.caption.36}\protected@file@percent }
-\newlabel{fig:delv}{{3.19}{32}{This is the output of a \texttt {delv} command}{figure.caption.36}{}}
-\newlabel{fig:delv@cref}{{[figure][19][3]3.19}{[1][32][]32}{}{}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.1}Corrupting the DNS Data}{32}{subsection.3.7.1}\protected@file@percent }
+\newlabel{sec:dnssec-attacks@cref}{{[section][7][3]3.7}{[1][31][]31}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.16}{\ignorespaces A diagram showing the Chain of Trust, with the trust anchor at the root, and the parent and child zones below. The arrows indicate the direction of trust, with each level trusting the next.}}{32}{figure.caption.33}\protected@file@percent }
+\newlabel{fig:chain}{{3.16}{32}{A diagram showing the Chain of Trust, with the trust anchor at the root, and the parent and child zones below. The arrows indicate the direction of trust, with each level trusting the next}{figure.caption.33}{}}
+\newlabel{fig:chain@cref}{{[figure][16][3]3.16}{[1][31][]32}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.17}{\ignorespaces A capture of the \texttt  {dnssec-signzone} command being used to sign the lab zone.}}{32}{figure.caption.34}\protected@file@percent }
+\newlabel{fig:manual-signing}{{3.17}{32}{A capture of the \texttt {dnssec-signzone} command being used to sign the lab zone}{figure.caption.34}{}}
+\newlabel{fig:manual-signing@cref}{{[figure][17][3]3.17}{[1][31][]32}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.18}{\ignorespaces The fully validated output when \texttt  {delv} executes without error, showing the record and the accompanying signature.}}{33}{figure.caption.35}\protected@file@percent }
+\newlabel{fig:delv-valid}{{3.18}{33}{The fully validated output when \texttt {delv} executes without error, showing the record and the accompanying signature}{figure.caption.35}{}}
+\newlabel{fig:delv-valid@cref}{{[figure][18][3]3.18}{[1][32][]33}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.19}{\ignorespaces This is the output of a \texttt  {delv} command that caught a malicious injection and rejected the response.}}{33}{figure.caption.36}\protected@file@percent }
+\newlabel{fig:delv}{{3.19}{33}{This is the output of a \texttt {delv} command that caught a malicious injection and rejected the response}{figure.caption.36}{}}
+\newlabel{fig:delv@cref}{{[figure][19][3]3.19}{[1][32][]33}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.7.1}Corrupting the DNS Data}{33}{subsection.3.7.1}\protected@file@percent }
 \@writefile{lof}{\contentsline {figure}{\numberline {3.20}{\ignorespaces The output above shows a \texttt  {delv} command for computer.lab, but the RRSIG is not valid, because the data was tampered with.}}{33}{figure.caption.37}\protected@file@percent }
 \newlabel{fig:cor-rrsig}{{3.20}{33}{The output above shows a \texttt {delv} command for computer.lab, but the RRSIG is not valid, because the data was tampered with}{figure.caption.37}{}}
-\newlabel{fig:cor-rrsig@cref}{{[figure][20][3]3.20}{[1][32][]33}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {3.21}{\ignorespaces The error above shows a \texttt  {delv} command for computer.lab, but the trust anchor is not valid, because the data was tampered with.}}{33}{figure.caption.38}\protected@file@percent }
-\newlabel{fig:cor-anchor}{{3.21}{33}{The error above shows a \texttt {delv} command for computer.lab, but the trust anchor is not valid, because the data was tampered with}{figure.caption.38}{}}
-\newlabel{fig:cor-anchor@cref}{{[figure][21][3]3.21}{[1][33][]33}{}{}{}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {4}Algorithms and Data Structures For DNSSEC}{34}{chapter.4}\protected@file@percent }
+\newlabel{fig:cor-rrsig@cref}{{[figure][20][3]3.20}{[1][33][]33}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3.21}{\ignorespaces The error above shows a \texttt  {delv} command for computer.lab, but the trust anchor is not valid, because the data was tampered with.}}{34}{figure.caption.38}\protected@file@percent }
+\newlabel{fig:cor-anchor}{{3.21}{34}{The error above shows a \texttt {delv} command for computer.lab, but the trust anchor is not valid, because the data was tampered with}{figure.caption.38}{}}
+\newlabel{fig:cor-anchor@cref}{{[figure][21][3]3.21}{[1][34][]34}{}{}{}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Algorithms and Data Structures For DNSSEC}{35}{chapter.4}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {4.1}An Introduction to DNSSEC Signing}{34}{section.4.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.2}Cipher Suites}{34}{section.4.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Hashing with SHA256}{34}{subsection.4.2.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Alternate Hashing Algorithms}{35}{subsection.4.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{SHA1}{35}{subsection.4.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{SHA348}{35}{subsection.4.2.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsubsection}{SHA512}{35}{subsection.4.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}An Introduction to DNSSEC Signing}{35}{section.4.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Cipher Suites}{35}{section.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.1}Hashing with SHA256}{35}{subsection.4.2.1}\protected@file@percent }
 \citation{rfc8624}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Two strings, "hello" and "Hello" being hashed, producing two very different digests.}}{36}{figure.caption.39}\protected@file@percent }
+\newlabel{fig:hashes}{{4.1}{36}{Two strings, "hello" and "Hello" being hashed, producing two very different digests}{figure.caption.39}{}}
+\newlabel{fig:hashes@cref}{{[figure][1][4]4.1}{[1][36][]36}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.2}Alternate Hashing Algorithms}{36}{subsection.4.2.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2.3}Signing with RSA}{36}{subsection.4.2.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Alternate Signing Algorithms}{36}{subsection.4.2.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {4.3}RRSIG Construction}{36}{section.4.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Structure for storing RRSIG records}}{37}{figure.caption.39}\protected@file@percent }
-\newlabel{fig:rrsig-metadata}{{4.1}{37}{Structure for storing RRSIG records}{figure.caption.39}{}}
-\newlabel{fig:rrsig-metadata@cref}{{[figure][1][4]4.1}{[1][37][]37}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4.4}OpenSSL}{37}{section.4.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {chapter}{\numberline {5}Programming the Signature and Validation of Several DNSSEC Resource Records}{39}{chapter.5}\protected@file@percent }
+\citation{ecdsa}
+\citation{rfc4034}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2.4}Alternate Signing Algorithms}{37}{subsection.4.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.3}RRSIG Construction}{37}{section.4.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces A diagram of how the data is laid out and then hashed for signatures, generated by Claude.}}{38}{figure.caption.40}\protected@file@percent }
+\newlabel{fig:rrsig-metadata}{{4.2}{38}{A diagram of how the data is laid out and then hashed for signatures, generated by Claude}{figure.caption.40}{}}
+\newlabel{fig:rrsig-metadata@cref}{{[figure][2][4]4.2}{[1][38][]38}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3.1}Importance Of Canonicalization}{38}{subsection.4.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4.4}OpenSSL}{38}{section.4.4}\protected@file@percent }
+\citation{evp-sign}
+\citation{bind-9}
+\@writefile{toc}{\contentsline {section}{\numberline {4.5}Performance Considerations}{39}{section.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{\numberline {5}Programming the Signature and Validation of Several DNSSEC Resource Records}{40}{chapter.5}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\newlabel{chap:prog-chapter}{{5}{39}{Programming the Signature and Validation of Several DNSSEC Resource Records}{chapter.5}{}}
-\newlabel{chap:prog-chapter@cref}{{[chapter][5][]5}{[1][39][]39}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.1}Main Functionality}{39}{section.5.1}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Alternative Key Encoding}{40}{section.5.2}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.3}Converting Base64 Data}{40}{section.5.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.4}Hashing the Data}{40}{section.5.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces Code for converting the Base64-encoded signature from the file into its original binary format using OpenSSL's Base64 decoding functions, written by Claude.}}{41}{figure.caption.40}\protected@file@percent }
-\newlabel{fig:base64-code}{{5.1}{41}{Code for converting the Base64-encoded signature from the file into its original binary format using OpenSSL's Base64 decoding functions, written by Claude}{figure.caption.40}{}}
-\newlabel{fig:base64-code@cref}{{[figure][1][5]5.1}{[1][40][]41}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Code from a helper function that hashes the data using OpenSSL's SHA256 algorithm, used for printing the hash of the data to be signed.}}{42}{figure.caption.41}\protected@file@percent }
-\newlabel{fig:hashing-code}{{5.2}{42}{Code from a helper function that hashes the data using OpenSSL's SHA256 algorithm, used for printing the hash of the data to be signed}{figure.caption.41}{}}
-\newlabel{fig:hashing-code@cref}{{[figure][2][5]5.2}{[1][41][]42}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.5}Signing the Data}{42}{section.5.5}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5.6}Verifying the Signature}{42}{section.5.6}\protected@file@percent }
-\newlabel{sec:verify-code}{{5.6}{42}{Verifying the Signature}{section.5.6}{}}
-\newlabel{sec:verify-code@cref}{{[section][6][5]5.6}{[1][42][]42}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces This code is showing how the signature is created using OpenSSL's RSA signing functions. I am assuming the role of the DNS Server in this code, using the private key to sign the data.}}{43}{figure.caption.42}\protected@file@percent }
-\newlabel{fig:signing-code}{{5.3}{43}{This code is showing how the signature is created using OpenSSL's RSA signing functions. I am assuming the role of the DNS Server in this code, using the private key to sign the data}{figure.caption.42}{}}
-\newlabel{fig:signing-code@cref}{{[figure][3][5]5.3}{[1][42][]43}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces Code for verifying the signature using OpenSSL's RSA verification functions.}}{43}{figure.caption.43}\protected@file@percent }
-\newlabel{fig:gen-verification-code}{{5.4}{43}{Code for verifying the signature using OpenSSL's RSA verification functions}{figure.caption.43}{}}
-\newlabel{fig:gen-verification-code@cref}{{[figure][4][5]5.4}{[1][42][]43}{}{}{}}
-\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Code for verifying the signature using OpenSSL's RSA verification functions.}}{44}{figure.caption.44}\protected@file@percent }
-\newlabel{fig:exisiting-verification-code}{{5.5}{44}{Code for verifying the signature using OpenSSL's RSA verification functions}{figure.caption.44}{}}
-\newlabel{fig:exisiting-verification-code@cref}{{[figure][5][5]5.5}{[1][42][]44}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.7}Generating and Validating an Address Resource Record Signature}{44}{section.5.7}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Output from validating an A RRSIG record.}}{45}{figure.caption.45}\protected@file@percent }
-\newlabel{fig:a-verification}{{5.6}{45}{Output from validating an A RRSIG record}{figure.caption.45}{}}
-\newlabel{fig:a-verification@cref}{{[figure][6][5]5.6}{[1][44][]45}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.8}Generating and Validating an Name Server Resource Record Signature}{45}{section.5.8}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Output from validating an NS RRSIG record.}}{46}{figure.caption.46}\protected@file@percent }
-\newlabel{fig:ns-verification}{{5.7}{46}{Output from validating an NS RRSIG record}{figure.caption.46}{}}
-\newlabel{fig:ns-verification@cref}{{[figure][7][5]5.7}{[1][45][]46}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.9}Generating and Validating an DNSKEY Resource Record Signature}{46}{section.5.9}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Output from validating an DNSKEY RRSIG record.}}{47}{figure.caption.47}\protected@file@percent }
-\newlabel{fig:dnskey-verification}{{5.8}{47}{Output from validating an DNSKEY RRSIG record}{figure.caption.47}{}}
-\newlabel{fig:dnskey-verification@cref}{{[figure][8][5]5.8}{[1][46][]47}{}{}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.10}Generating and Validating an Start of Authority Resource Record Signature}{47}{section.5.10}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Output from validating an SOA RRSIG record.}}{48}{figure.caption.48}\protected@file@percent }
-\newlabel{fig:soa-verification}{{5.9}{48}{Output from validating an SOA RRSIG record}{figure.caption.48}{}}
-\newlabel{fig:soa-verification@cref}{{[figure][9][5]5.9}{[1][47][]48}{}{}{}}
+\newlabel{chap:prog-chapter}{{5}{40}{Programming the Signature and Validation of Several DNSSEC Resource Records}{chapter.5}{}}
+\newlabel{chap:prog-chapter@cref}{{[chapter][5][]5}{[1][40][]40}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.1}Main Functionality}{40}{section.5.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.1}{\ignorespaces A snippet of code at the top of the main function, validating the input and providing a helpful message to make sure the user inputs the correct elements in the correct order.}}{41}{figure.caption.41}\protected@file@percent }
+\newlabel{fig:input}{{5.1}{41}{A snippet of code at the top of the main function, validating the input and providing a helpful message to make sure the user inputs the correct elements in the correct order}{figure.caption.41}{}}
+\newlabel{fig:input@cref}{{[figure][1][5]5.1}{[1][40][]41}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.2}{\ignorespaces Flow of the DNSSEC code implementation.}}{42}{figure.caption.42}\protected@file@percent }
+\newlabel{fig:code-flow}{{5.2}{42}{Flow of the DNSSEC code implementation}{figure.caption.42}{}}
+\newlabel{fig:code-flow@cref}{{[figure][2][5]5.2}{[1][41][]42}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Converting Base64 Data}{42}{section.5.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces Pseudocode for converting the Base64-encoded signature from the file into its original binary format using OpenSSL's Base64 decoding functions, written by Claude.}}{43}{figure.caption.43}\protected@file@percent }
+\newlabel{fig:base64-code}{{5.3}{43}{Pseudocode for converting the Base64-encoded signature from the file into its original binary format using OpenSSL's Base64 decoding functions, written by Claude}{figure.caption.43}{}}
+\newlabel{fig:base64-code@cref}{{[figure][3][5]5.3}{[1][42][]43}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Alternative Key Encoding}{43}{section.5.3}\protected@file@percent }
+\citation{evp-sign}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces A comparison between a DNSKEY private key (top) and the converted PEM format private key (bottom).}}{44}{figure.caption.44}\protected@file@percent }
+\newlabel{fig:keys}{{5.4}{44}{A comparison between a DNSKEY private key (top) and the converted PEM format private key (bottom)}{figure.caption.44}{}}
+\newlabel{fig:keys@cref}{{[figure][4][5]5.4}{[1][43][]44}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Hashing the Data}{44}{section.5.4}\protected@file@percent }
+\citation{evp-verify}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces Code from a helper function that hashes the data using OpenSSL's SHA256 algorithm, used for printing the hash of the data to be signed.}}{45}{figure.caption.45}\protected@file@percent }
+\newlabel{fig:hashing-code}{{5.5}{45}{Code from a helper function that hashes the data using OpenSSL's SHA256 algorithm, used for printing the hash of the data to be signed}{figure.caption.45}{}}
+\newlabel{fig:hashing-code@cref}{{[figure][5][5]5.5}{[1][44][]45}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.5}Signing the Data}{45}{section.5.5}\protected@file@percent }
+\newlabel{sec:signing}{{5.5}{45}{Signing the Data}{section.5.5}{}}
+\newlabel{sec:signing@cref}{{[section][5][5]5.5}{[1][44][]45}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Pseudocode showing how the signature is created using OpenSSL's RSA signing functions. I am assuming the role of the DNS Server in this code, using the private key to sign the data.}}{45}{figure.caption.46}\protected@file@percent }
+\newlabel{fig:signing-code}{{5.6}{45}{Pseudocode showing how the signature is created using OpenSSL's RSA signing functions. I am assuming the role of the DNS Server in this code, using the private key to sign the data}{figure.caption.46}{}}
+\newlabel{fig:signing-code@cref}{{[figure][6][5]5.6}{[1][45][]45}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.6}Verifying the Signature}{46}{section.5.6}\protected@file@percent }
+\newlabel{sec:verify-code}{{5.6}{46}{Verifying the Signature}{section.5.6}{}}
+\newlabel{sec:verify-code@cref}{{[section][6][5]5.6}{[1][45][]46}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Pseudocode for verifying the generated signature using OpenSSL's RSA verification functions.}}{46}{figure.caption.47}\protected@file@percent }
+\newlabel{fig:gen-verification-code}{{5.7}{46}{Pseudocode for verifying the generated signature using OpenSSL's RSA verification functions}{figure.caption.47}{}}
+\newlabel{fig:gen-verification-code@cref}{{[figure][7][5]5.7}{[1][46][]46}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Pseudocode for verifying the existing signature using OpenSSL's RSA verification functions.}}{46}{figure.caption.48}\protected@file@percent }
+\newlabel{fig:existing-verification-code}{{5.8}{46}{Pseudocode for verifying the existing signature using OpenSSL's RSA verification functions}{figure.caption.48}{}}
+\newlabel{fig:existing-verification-code@cref}{{[figure][8][5]5.8}{[1][46][]46}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces {Pseudocode for the helper function that compares the generated signature and the existing signature}}}{47}{figure.caption.49}\protected@file@percent }
+\newlabel{fig:comp}{{5.9}{47}{Pseudocode for the helper function that compares the generated signature and the existing signature}{figure.caption.49}{}}
+\newlabel{fig:comp@cref}{{[figure][9][5]5.9}{[1][47][]47}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.7}Tar File And Contents}{47}{section.5.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.1}Directory Setup}{47}{subsection.5.7.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces A diagram showing the contents of the tar ball.}}{48}{figure.caption.50}\protected@file@percent }
+\newlabel{fig:directory-structure}{{5.10}{48}{A diagram showing the contents of the tar ball}{figure.caption.50}{}}
+\newlabel{fig:directory-structure@cref}{{[figure][10][5]5.10}{[1][48][]48}{}{}{}}
+\@writefile{toc}{\contentsline {subsubsection}{private\_keys And public\_keys}{48}{figure.caption.50}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{hex\_in}{48}{figure.caption.50}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{signatures}{49}{figure.caption.50}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{vm\_files}{49}{figure.caption.50}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.7.2}Makefile Script}{49}{subsection.5.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Compilation}{49}{subsection.5.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{Cleaning}{49}{subsection.5.7.2}\protected@file@percent }
+\citation{rfc4034}
+\citation{rfc4034}
+\@writefile{toc}{\contentsline {subsubsection}{Verification}{50}{subsection.5.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.8}Wire Format Construction}{50}{section.5.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8.1}Overview}{50}{subsection.5.8.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8.2}Approach}{50}{subsection.5.8.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces A screenshot of Wireshark showing a compressed name, as well as other data in order. You can see in the blue highlighted area is the name server's name, with the uncompressed ns and the compressed pointer for the rest of the name.}}{51}{figure.caption.51}\protected@file@percent }
+\newlabel{fig:wireshark-name}{{5.11}{51}{A screenshot of Wireshark showing a compressed name, as well as other data in order. You can see in the blue highlighted area is the name server's name, with the uncompressed ns and the compressed pointer for the rest of the name}{figure.caption.51}{}}
+\newlabel{fig:wireshark-name@cref}{{[figure][11][5]5.11}{[1][51][]51}{}{}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.8.3}Commonalities And Exceptions}{51}{subsection.5.8.3}\protected@file@percent }
+\citation{rfc4034}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces A diagram showing the header and data for an Address record signature.}}{52}{figure.caption.52}\protected@file@percent }
+\newlabel{fig:rrsig-diagram}{{5.12}{52}{A diagram showing the header and data for an Address record signature}{figure.caption.52}{}}
+\newlabel{fig:rrsig-diagram@cref}{{[figure][12][5]5.12}{[1][51][]52}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.9}Generating and Validating an Address Resource Record Signature}{52}{section.5.9}\protected@file@percent }
+\citation{rfc4034}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces Output from validating an A RRSIG record.}}{53}{figure.caption.53}\protected@file@percent }
+\newlabel{fig:a-verification}{{5.13}{53}{Output from validating an A RRSIG record}{figure.caption.53}{}}
+\newlabel{fig:a-verification@cref}{{[figure][13][5]5.13}{[1][53][]53}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.10}Generating and Validating a Name Server Resource Record Signature}{53}{section.5.10}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces Output from validating an NS RRSIG record.}}{54}{figure.caption.54}\protected@file@percent }
+\newlabel{fig:ns-verification}{{5.14}{54}{Output from validating an NS RRSIG record}{figure.caption.54}{}}
+\newlabel{fig:ns-verification@cref}{{[figure][14][5]5.14}{[1][54][]54}{}{}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.11}Generating and Validating a DNSKEY Resource Record Signature}{54}{section.5.11}\protected@file@percent }
+\citation{rfc4034}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.15}{\ignorespaces A diagram showing the RDATA of the DNSKEY records.}}{55}{figure.caption.55}\protected@file@percent }
+\newlabel{fig:dnskey-rdata}{{5.15}{55}{A diagram showing the RDATA of the DNSKEY records}{figure.caption.55}{}}
+\newlabel{fig:dnskey-rdata@cref}{{[figure][15][5]5.15}{[1][55][]55}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.16}{\ignorespaces Wireshark traffic showing the first four bytes of the public key material, followed by the rest of the key.}}{56}{figure.caption.56}\protected@file@percent }
+\newlabel{fig:wireshark-key}{{5.16}{56}{Wireshark traffic showing the first four bytes of the public key material, followed by the rest of the key}{figure.caption.56}{}}
+\newlabel{fig:wireshark-key@cref}{{[figure][16][5]5.16}{[1][55][]56}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.17}{\ignorespaces Output from validating a DNSKEY RRSIG record.}}{56}{figure.caption.57}\protected@file@percent }
+\newlabel{fig:dnskey-verification}{{5.17}{56}{Output from validating a DNSKEY RRSIG record}{figure.caption.57}{}}
+\newlabel{fig:dnskey-verification@cref}{{[figure][17][5]5.17}{[1][55][]56}{}{}{}}
+\citation{rfc4034}
+\@writefile{toc}{\contentsline {section}{\numberline {5.12}Generating and Validating a Start of Authority Resource Record Signature}{57}{section.5.12}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {5.18}{\ignorespaces An example of a SOA record for my lab zone, showing the RNAME and MNAME, as well as the other fields.}}{57}{figure.caption.58}\protected@file@percent }
+\newlabel{fig:soa-ex}{{5.18}{57}{An example of a SOA record for my lab zone, showing the RNAME and MNAME, as well as the other fields}{figure.caption.58}{}}
+\newlabel{fig:soa-ex@cref}{{[figure][18][5]5.18}{[1][57][]57}{}{}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.19}{\ignorespaces Output from validating a SOA RRSIG record.}}{58}{figure.caption.59}\protected@file@percent }
+\newlabel{fig:soa-verification}{{5.19}{58}{Output from validating a SOA RRSIG record}{figure.caption.59}{}}
+\newlabel{fig:soa-verification@cref}{{[figure][19][5]5.19}{[1][57][]58}{}{}{}}
 \bibdata{references}
 \bibcite{bind-9}{1}
 \bibcite{cloudflare-dns}{2}
@@ -271,8 +338,11 @@
 \bibcite{trust-chain}{14}
 \bibcite{key-rollover}{15}
 \bibcite{rfc8624}{16}
-\@writefile{toc}{\contentsline {chapter}{\numberline {A}Appendix}{51}{appendix.A}\protected@file@percent }
+\bibcite{ecdsa}{17}
+\bibcite{evp-sign}{18}
+\bibcite{evp-verify}{19}
+\@writefile{toc}{\contentsline {chapter}{\numberline {A}Appendix}{61}{appendix.A}\protected@file@percent }
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {A.1}Procedure Manual}{51}{section.A.1}\protected@file@percent }
-\gdef \@abspage@last{70}
+\@writefile{toc}{\contentsline {section}{\numberline {A.1}Procedure Manual}{61}{section.A.1}\protected@file@percent }
+\gdef \@abspage@last{80}

@@ -86,4 +86,20 @@
   dnssec.'' \url{https://www.rfc-editor.org/rfc/rfc8624#section-3.1}, 2019.
 \newblock Accessed: 2026-4-23.
 
+\bibitem{ecdsa}
+{Nawaz Dhandala}, ``How to choose the right dnssec algorithm (rsa vs ecdsa).''
+  \url{https://oneuptime.com/blog/post/2026-01-15-choose-dnssec-algorithm-rsa-ecdsa/view},
+  2026.
+\newblock Accessed: 2026-4-30.
+
+\bibitem{evp-sign}
+{OpenSSL Project Authors}, ``Evp\_digestsigninit.''
+  \url{https://docs.openssl.org/master/man3/EVP_DigestSignInit/}, 2024.
+\newblock Accessed: 2026-4-30.
+
+\bibitem{evp-verify}
+{OpenSSL Project Authors}, ``Evp\_digestverifyinit.''
+  \url{https://docs.openssl.org/master/man3/EVP_DigestVerifyInit/}, 2024.
+\newblock Accessed: 2026-4-30.
+
 \end{thebibliography}

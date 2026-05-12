@@ -3,22 +3,23 @@
 \section{Motivation}
     DNS by itself is insecure and vulnerable to attack. With DNSSEC, these vulnerabilities are contained and mitigated.
 
-    My personal motivation for this study was a hand on security project, advised by Dr. Aboutabl, who has become one of my personal favorite
-professors here at JMU. His Information Security class helped further my interest for security, and when he mentioned this study, I knew I had to seize the opportunity.
+    My personal motivation for this study was a hands-on security project, advised by Dr. Aboutabl, whose Information Security class helped 
+further my interest for security, and when he mentioned this study, I knew I had to seize the opportunity.
 
 
 \section{Problem Statement}
 The problem we are trying to solve here is a dive into DNS Security Extension, or DNSSEC, and how it changes DNS. Using a testbed network 
 of virtual machines on a virtual network, I was able to use Bind9 to be able to set up the DNS environment, then convert it to use DNSSEC. 
 In this study of DNSSEC, I will be looking at the algorithms and data structures used in DNSSEC, and how they are used to secure DNS. I will 
-also be looking at the performance of DNSSEC, and how it compares to DNS.
-% Not sure what to put here, might remove.
-% DNS by itself is insecure and vulnerable to attack. With DNSSEC, these vulnerabilites are contained and mitigated.
+also be looking at the performance of DNSSEC, and how it compares to DNS. DNS is also used on a daily basis by just about nearly all internet users, 
+making it very valuable to keep secure.
+
 
 \section{Contributions}
 
 I contributed the research and implementation of the DNS testbed environment, the algorithms and data structures used in DNSSEC, and the performance 
-analysis of DNSSEC. I also contributed to the writing of this thesis, and the presentation of the results. I also manually wrote the code to generate 
+analysis of DNSSEC. I also contributed to the writing of this thesis, and the presentation of the results. I manually constructed the data to match the DNS wire-format, exactly how 
+DNSSEC implementations do. I also manually wrote the code to generate 
 signatures and validate them, which is a good way to test the validation process, because I can control the data that is being signed and verified. Not 
 only that, but I am also creating the signature myself to prove that the received signature is valid as well. I used Draw.io to create my diagrams.
 
@@ -29,21 +30,25 @@ provided feedback on the writing of this thesis, and the presentation of the res
 
 \section{Virtual Machine Fundamentals}
 
-I have never dealt directly with Virtual Machines before, and building a network of them was something I had never really thought about. However, the thought excited me 
+Virtual Machines were a new tool for this project, and building a network of them was something I had never really thought about. However, the thought excited me 
 and it seemed like a great opportunity to learn a new skill. Setting up the first one was a bit of a learning curve, but after setting up the first one to the specifications I wanted,
 I was able to clone the rest as needed.
 
-The software I used to set up the testbed network for my DNSSEC program was VMWare Workstation. This software made it very easy to set up the virtual machines and network. Having a built in option to create a virtual
-network was very nice. I was also able to connect to the internet and download the necessary tools I needed, like Bind9, VMWare Tools, Wireshark, gcc and more. % Check if openssl library is installed, git/github to pull code from code base.
-I also chose to use git for version control and being able to edit the code on multiple devices if needed.
+The software I used to set up the testbed network for my DNSSEC program was VMware Workstation. This software made it very easy to set up the virtual machines and network. Having a built in option to create a virtual
+network was very nice. I was also able to connect to the internet and download the necessary tools I needed, like Bind9, VMware Tools, Wireshark, gcc and more..
+I also used git for version control, which allowed me to edit the code on multiple devices if needed.
 
 \section{Testbed Virtual Network}
 
-On VM Workstation, it is very easy and simple to set up a Virtual Network. Under the "Edit" tab in the menu, I was able to create a new vmnet and customize it to my needs. I made a custom network, isolated from the outside networks. The IP I used
-was 192.168.107.X, with a subnet mask of 255.255.255.0. The 192.168 is an IP reserved for local networks, so this was perfect for me to to use. There was an option to enable or disable DHCP service. Enabling it meant that you could let DCHP assign 
-addresses to machines on the network. For me, I wanted to statically and manually assign IPs without and DHCP intervention, so I deselected this option to have more control in my environment.
+On VM Workstation, it is fairly simple to set up a Virtual Network. I was able to create a new vmnet and customize it to my needs. I made a custom network, isolated from the outside networks. The IP I used
+was 192.168.107.X, with a subnet mask of 255.255.255.0. The 192.168 is an IP range reserved for local networks, so this was perfect for me to use. There was an option to enable or disable DHCP service. Enabling it meant that you could let DHCP assign 
+addresses to machines on the network. For me, I wanted to statically and manually assign IPs without DHCP intervention, so I deselected this option to have more control in my environment.
 
 \section{Bind9}
 
 I installed Bind9 on all of the VMs in the Virtual Network. The version I installed was 9.18.39. I decided on Bind9 because it was a good option to be used on Ubuntu machines and gave me the control I wanted.
 
+\section{Roadmap}
+
+We start with background on DNS in Chapter 2, then we will move on to the implementation of DNSSEC in Chapter 3. In Chapter 4, we will look at the algorithms and data structures used in DNSSEC, 
+and how they are used to secure DNS. Finally, in Chapter 5, we will look at the manual implementation of DNSSEC, using C and OpenSSL.

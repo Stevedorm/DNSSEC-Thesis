@@ -6,12 +6,13 @@
 \contentsline {section}{\numberline {1.4}Virtual Machine Fundamentals}{2}{section.1.4}%
 \contentsline {section}{\numberline {1.5}Testbed Virtual Network}{3}{section.1.5}%
 \contentsline {section}{\numberline {1.6}Bind9}{3}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Roadmap}{3}{section.1.7}%
 \contentsline {chapter}{\numberline {2}Introduction to the Domain Naming System}{4}{chapter.2}%
 \contentsline {section}{\numberline {2.1}DNS Background}{4}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}DNS Resource Records}{5}{subsection.2.1.1}%
 \contentsline {subsubsection}{Start Of Authority Records}{6}{figure.caption.3}%
 \contentsline {subsubsection}{Address Records}{7}{figure.caption.4}%
-\contentsline {subsubsection}{Nameserver Records}{8}{figure.caption.6}%
+\contentsline {subsubsection}{Name Server Records}{7}{figure.caption.6}%
 \contentsline {section}{\numberline {2.2}The Testbed DNS Environment}{8}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Testbed Environment Zones}{9}{subsection.2.2.1}%
 \contentsline {section}{\numberline {2.3}DNS Vulnerabilities}{11}{section.2.3}%
@@ -20,13 +21,14 @@
 \contentsline {section}{\numberline {2.4}Simulated DNS Attacks In The Testbed Environment}{14}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Introduction to DNS Security Extension}{17}{chapter.3}%
 \contentsline {section}{\numberline {3.1}DNSSEC Background}{17}{section.3.1}%
-\contentsline {section}{\numberline {3.2}New DNS Resource Records}{18}{section.3.2}%
+\contentsline {subsection}{\numberline {3.1.1}Integrity vs Authenticity}{18}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}New DNS Resource Records}{19}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Resource Record Set}{19}{subsection.3.2.1}%
-\contentsline {subsubsection}{Canonical Ordering}{20}{figure.caption.18}%
+\contentsline {subsubsection}{Canonical Ordering}{19}{figure.caption.17}%
 \contentsline {subsection}{\numberline {3.2.2}Signature Resource Record}{20}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}DNSKEYs In General}{22}{subsection.3.2.3}%
-\contentsline {subsubsection}{The Zone Signing Key}{23}{figure.caption.20}%
-\contentsline {subsubsection}{The Key Signing Key}{24}{section*.21}%
+\contentsline {subsubsection}{The Zone Signing Key}{23}{figure.caption.19}%
+\contentsline {subsubsection}{The Key Signing Key}{24}{section*.20}%
 \contentsline {subsection}{\numberline {3.2.4}The Delegation Signer}{24}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}The Next Secure Resource Record}{25}{subsection.3.2.5}%
 \contentsline {section}{\numberline {3.3}The Chain Of Trust}{25}{section.3.3}%
@@ -34,31 +36,44 @@
 \contentsline {section}{\numberline {3.5}DNSSEC Options}{29}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}DNSSEC Policy}{29}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}Signing}{30}{subsection.3.5.2}%
-\contentsline {section}{\numberline {3.6}DNSSEC In The Testbed Environment}{30}{section.3.6}%
+\contentsline {section}{\numberline {3.6}DNSSEC In The Testbed Environment}{31}{section.3.6}%
 \contentsline {section}{\numberline {3.7}Simulated Attacks with DNSSEC Enabled}{31}{section.3.7}%
-\contentsline {subsection}{\numberline {3.7.1}Corrupting the DNS Data}{32}{subsection.3.7.1}%
-\contentsline {chapter}{\numberline {4}Algorithms and Data Structures For DNSSEC}{34}{chapter.4}%
-\contentsline {section}{\numberline {4.1}An Introduction to DNSSEC Signing}{34}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Cipher Suites}{34}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Hashing with SHA256}{34}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Alternate Hashing Algorithms}{35}{subsection.4.2.2}%
-\contentsline {subsubsection}{SHA1}{35}{subsection.4.2.2}%
-\contentsline {subsubsection}{SHA348}{35}{subsection.4.2.2}%
-\contentsline {subsubsection}{SHA512}{35}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {3.7.1}Corrupting the DNS Data}{33}{subsection.3.7.1}%
+\contentsline {chapter}{\numberline {4}Algorithms and Data Structures For DNSSEC}{35}{chapter.4}%
+\contentsline {section}{\numberline {4.1}An Introduction to DNSSEC Signing}{35}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Cipher Suites}{35}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Hashing with SHA256}{35}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Alternate Hashing Algorithms}{36}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}Signing with RSA}{36}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Alternate Signing Algorithms}{36}{subsection.4.2.4}%
-\contentsline {section}{\numberline {4.3}RRSIG Construction}{36}{section.4.3}%
-\contentsline {section}{\numberline {4.4}OpenSSL}{37}{section.4.4}%
-\contentsline {chapter}{\numberline {5}Programming the Signature and Validation of Several DNSSEC Resource Records}{39}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Main Functionality}{39}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Alternative Key Encoding}{40}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Converting Base64 Data}{40}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Hashing the Data}{40}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Signing the Data}{42}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Verifying the Signature}{42}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Generating and Validating an Address Resource Record Signature}{44}{section.5.7}%
-\contentsline {section}{\numberline {5.8}Generating and Validating an Name Server Resource Record Signature}{45}{section.5.8}%
-\contentsline {section}{\numberline {5.9}Generating and Validating an DNSKEY Resource Record Signature}{46}{section.5.9}%
-\contentsline {section}{\numberline {5.10}Generating and Validating an Start of Authority Resource Record Signature}{47}{section.5.10}%
-\contentsline {chapter}{\numberline {A}Appendix}{51}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Procedure Manual}{51}{section.A.1}%
+\contentsline {subsection}{\numberline {4.2.4}Alternate Signing Algorithms}{37}{subsection.4.2.4}%
+\contentsline {section}{\numberline {4.3}RRSIG Construction}{37}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Importance Of Canonicalization}{38}{subsection.4.3.1}%
+\contentsline {section}{\numberline {4.4}OpenSSL}{38}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Performance Considerations}{39}{section.4.5}%
+\contentsline {chapter}{\numberline {5}Programming the Signature and Validation of Several DNSSEC Resource Records}{40}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Main Functionality}{40}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Converting Base64 Data}{42}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Alternative Key Encoding}{43}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Hashing the Data}{44}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Signing the Data}{45}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Verifying the Signature}{46}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Tar File And Contents}{47}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Directory Setup}{47}{subsection.5.7.1}%
+\contentsline {subsubsection}{private\_keys And public\_keys}{48}{figure.caption.50}%
+\contentsline {subsubsection}{hex\_in}{48}{figure.caption.50}%
+\contentsline {subsubsection}{signatures}{49}{figure.caption.50}%
+\contentsline {subsubsection}{vm\_files}{49}{figure.caption.50}%
+\contentsline {subsection}{\numberline {5.7.2}Makefile Script}{49}{subsection.5.7.2}%
+\contentsline {subsubsection}{Compilation}{49}{subsection.5.7.2}%
+\contentsline {subsubsection}{Cleaning}{49}{subsection.5.7.2}%
+\contentsline {subsubsection}{Verification}{50}{subsection.5.7.2}%
+\contentsline {section}{\numberline {5.8}Wire Format Construction}{50}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Overview}{50}{subsection.5.8.1}%
+\contentsline {subsection}{\numberline {5.8.2}Approach}{50}{subsection.5.8.2}%
+\contentsline {subsection}{\numberline {5.8.3}Commonalities And Exceptions}{51}{subsection.5.8.3}%
+\contentsline {section}{\numberline {5.9}Generating and Validating an Address Resource Record Signature}{52}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Generating and Validating a Name Server Resource Record Signature}{53}{section.5.10}%
+\contentsline {section}{\numberline {5.11}Generating and Validating a DNSKEY Resource Record Signature}{54}{section.5.11}%
+\contentsline {section}{\numberline {5.12}Generating and Validating a Start of Authority Resource Record Signature}{57}{section.5.12}%
+\contentsline {chapter}{\numberline {A}Appendix}{61}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Procedure Manual}{61}{section.A.1}%

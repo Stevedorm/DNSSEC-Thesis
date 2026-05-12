@@ -13,6 +13,9 @@ NEW:
     Maybe code lines?
     Add more to end of prog about tar file and setup
 
+Ask Aboutabl about removing the key TTLs, so that future 
+people working don't have to refresh keys
+
 Canonicalization, RRSIG DNSSEC, Chapter 4 and 5
 REVIEW:
     DNS Vulnerabilities and Attack - good?
