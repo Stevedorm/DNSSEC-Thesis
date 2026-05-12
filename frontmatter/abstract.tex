@@ -5,17 +5,17 @@
 % Abstract: half page brief description, discussed vulnerabilities of DNS, attacks, 
 % implements DNSSEC, The researched algos and code for generating and validating RR records.
 
-This study dives into the Domain Name System and the vulnerabilities that come with plain DNS. 
+This study investigates the Domain Name System and the vulnerabilities that come with plain DNS. 
 These vulnerabilities, like DNS Spoofing and Hijacking, usher in questions about how they can 
-be prevented and mitigated. These attacks are discussed and demonstrated in this paper. This is 
+be prevented and mitigated. These attacks are discussed and demonstrated in this paper in a testbed environment. This is 
 where the Domain Name System Security Extension, or DNSSEC, comes into play. DNSSEC prevents 
 these attacks by providing authentication and integrity to the data. The DNS data is hashed, 
 providing integrity in the way that if any data was changed, the hash would be different, and signed, 
-brining authentication knowing that only the DNS server could've signed the record with the private key. 
+bringing authentication knowing that only the DNS server could have signed the record with the private key. 
 OpenSSL is used to do this, and I used SHA256 for hashing and RSA for the public key infrastructure. 
 I implemented the signing process in C using these functions and manually built the data to be signed, 
 generating my own signatures, verifying the existing signature, and comparing the binaries of the two 
-to make sure they were valid. I compiled all of the code into a tar file, accompanied by a Makefile script 
-that can compile the code and generate keys, as well as remove the executable and old key files. There is 
-a command for each record that I signed, like the Address, Name Server, DNSKEY, and Start of Authority records. 
-In the appendix, there is a procedure manual for the early steps of setting up my environment.
+to make sure they were valid. I compiled all of the code into a tar archive, accompanied by a Makefile script 
+for compilation and key management, as well as remove the executable and old key files. A target exists for 
+each validated record type, including the Address, Name Server, DNSKEY, and Start of Authority records. 
+The appendix contains a procedure manual for the early steps of setting up the environment.
